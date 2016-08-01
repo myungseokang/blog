@@ -1,8 +1,9 @@
 ---
 layout: post
 title:  "Markdown 문법 알아보기"
-date:   2016-07-04
+date:   2016-08-01
 excerpt: "Keep Calm and Code Python."
+tag:
 - markdown
 - syntax
 - jekyll
