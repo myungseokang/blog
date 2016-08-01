@@ -1,13 +1,10 @@
 ---
 layout: post
-title:  "Markdown Syntax"
-date:   2016-03-15
-excerpt: "Just about everything you'll need to style in the theme: headings, paragraphs, blockquotes, tables, code blocks, and more."
-tag:
-- markdown 
+title:  "Markdown 문법 알아보기"
+date:   2016-07-04
+excerpt: "Keep Calm and Code Python."
+- markdown
 - syntax
-- sample
-- test
 - jekyll
 comments: true
 ---

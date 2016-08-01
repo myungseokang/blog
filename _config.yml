@@ -1,7 +1,7 @@
 # Site
 title:              Leop0ld
 bio:                "Leop0ld! a brief Leop0ld's Blog."
-description:        "Moon is a minimal, one column jekyll theme for your blog."
+description:        "Keep Calm and Code Python."
 reading_time:       true
 words_per_minute:   200
 logo:               'assets/img/logo.png'
@@ -38,13 +38,13 @@ disqus_shortname:   Leop0ld
   #ad-slot:
 #bing-verify:
 #email:
-twitter:            l3opold7
+twitter:            leop0ld7
 facebook:           leop0ld
 github:             Leop0ld
 #stackoverflow:     123456/username   from a "http://stackoverflow.com/users/123456/username" link
 #linkedin:          username
 #xing:              username
-instagram:          l3opold7
+instagram:          myungseokang
 #lastfm:            username
 #tumblr:            username
 #pinterest:         username
