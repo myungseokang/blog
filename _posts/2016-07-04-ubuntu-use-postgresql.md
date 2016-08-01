@@ -16,7 +16,7 @@ comments: true
 
 가장 먼저
 
-```
+```shell
 $ sudo apt-get update
 ```
 
@@ -24,13 +24,13 @@ $ sudo apt-get update
 
 그 다음 postgresql을 설치해줍니다.
 
-```
+```shell
 $ sudo apt-get install postgresql
 ```
 
 자 그럼 이제 잘 설치가 되었는지 접속해보도록 하겠습니다.
 
-```
+```shell
 $ sudo -u postgres psql
 ```
 
@@ -38,7 +38,7 @@ $ sudo -u postgres psql
 
 잘 들어가졌다면 셸이 다음과 같이 변하게 됩니다.
 
-```
+```sql
 postgres=#
 ```
 
@@ -48,7 +48,7 @@ postgres=#
 
 postgres 는 기본적으로 생성되는 root 계정이라 패스워드를 변경해주어야 합니다.
 
-```
+```sql
 ALTER USER postgres with encrypted password '설정할 패스워드';
 ```
 
@@ -56,7 +56,7 @@ password 다음에 싱글쿼터로 설정할 패스워드를 감싸주는 걸 �
 
 그리고 \q로 종료를 한 뒤, postgresql을 재시작해줍니다.
 
-```
+```shell
 $ sudo /etc/init.d/postgresql restart
 ```
 
@@ -64,7 +64,7 @@ $ sudo /etc/init.d/postgresql restart
 
 그 다음에는 패스워드 설정이 잘되었는지 확인하기 위해 아래의 명령어로 접속해봅시다!
 
-```
+```shell
 $ psql -U postgres -h localhost
 ```
 
@@ -82,7 +82,7 @@ $ psql -U postgres -h localhost
 
 먼저 db를 만들고 그 db 안에서 table을 만들고 데이터를 삽입하는 작업을 해보도록 하겠습니다!
 
-```
+```shell
 $ sudo -u postgres createdb 데이터베이스_이름
 ```
 
@@ -90,13 +90,13 @@ $ sudo -u postgres createdb 데이터베이스_이름
 
 그리고 만든 db에 접속하고 싶으면 아래의 명령어를 입력하면 됩니다.
 
-```
+```shell
 $ sudo -u postgres psql 데이터베이스_이름
 ```
 
 잘 접속했다면 프롬프트가 바뀌어있는 것을 확인할 수 있습니다.
 
-```
+```sql
 데이터베이스_이름=#
 ```
 
@@ -106,7 +106,7 @@ $ sudo -u postgres psql 데이터베이스_이름
 
 그리고 db에 접속했으니 이제 table을 만들어보도록 하겠습니다!
 
-```
+```sql
 test=# create table hello (
 test(# id    integer primary key,
 test(# val1  char(16),
@@ -117,7 +117,7 @@ CREATE TABLE
 
 이런 식으로 만들 수 있습니다.
 
-```
+```sql
 test=# insert into hello values (
 test(# 1,
 test(# 'hello world!',
@@ -130,7 +130,7 @@ INSERT 0 1
 
 그리고 select 구문으로 조회를 해보겠습니다.
 
-```
+```sql
 test=# select * from hello;
  id |       val1       |     val2     
 ----+------------------+--------------
