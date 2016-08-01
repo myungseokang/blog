@@ -35,3 +35,5 @@ comments: true
 - settings.py: Database, Static files, app 등등 Django에 관한 여러가지 설정들을 다루는 파일입니다.
 
 - manage.py:
+
+- 진행중!

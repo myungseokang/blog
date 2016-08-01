@@ -205,3 +205,5 @@ pyenv activate venv
 참고로 여기서 지정한 venv 라는 virtualenv는 미리 만들어져 있어야합니다!
 
 위와 같이 .env 파일을 설정해주게 되면 디렉토리 진입시 .env 파일이 실행되어 venv 라는 가상환경이 activate 되는 것입니다.
+
+이상 읽어주셔서 감사합니다 :)

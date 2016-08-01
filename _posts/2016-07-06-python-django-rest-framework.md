@@ -42,3 +42,5 @@ urls.py에 view 이름을 추가해줍니다.
 
 python manage.py runserver 를 해주고 확인해줍니다.
 [http://127.0.0.1:8000/](http://127.0.0.1:8000)
+
+이상 읽어주셔서 감사합니다 :)

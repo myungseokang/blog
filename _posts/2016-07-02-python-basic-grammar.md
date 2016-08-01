@@ -821,3 +821,6 @@ except CustomError as e:
 
 
 ### 16. Init(초기화)
+
+
+**현재 진행중입니다~**

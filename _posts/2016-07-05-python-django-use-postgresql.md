@@ -88,3 +88,5 @@ DATABASES = {
 ```
 
 DATABASE 부분을 위와 같이 설정해주고 makemigration을 진행한 뒤 migrate 를 진행해주게 되면 잘 실행됩니다!
+
+이상 읽어주셔서 감사합니다 :)
