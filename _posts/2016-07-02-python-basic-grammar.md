@@ -621,14 +621,14 @@ print(result)  # [3, 6, 9, 12, 15]
 
 Python에서는 다음과 같이 함수를 정의합니다.
 
-```Python
+```python
 def fuction_name(parameter):
     code here
 ```
 
 호출할 때도 간단합니다.
 
-```Python
+```python
 function_name(parameter)
 ```
 
@@ -636,7 +636,7 @@ function_name(parameter)
 
 예를 들어보겠습니다.
 
-```Python
+```python
 def hello(num):
     for i in range(0,num):
         print('hello,'+str(i))
