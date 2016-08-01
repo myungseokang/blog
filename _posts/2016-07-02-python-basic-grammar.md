@@ -2,7 +2,7 @@
 layout: post
 title:  "Python 기초 문법 알아보기"
 date:   2016-07-02
-excerpt: "Keep Calm and Code Python."
+excerpt: "Learning Python Basic Grammar"
 tag:
 - Python
 - Python Grammar
@@ -99,6 +99,7 @@ test = "I don't need Coke!"
 print(test)  # I don't need Coke!
 
 ```
+
 "",'' 로 감싸진 문자열을 string으로 인식합니다.
 싱글쿼터 혹은 더블쿼터를 문자열로 사용하려면 앞에 \ 가 들어가야 합니다.
 다른 방법으로는 더블쿼터로 문자열을 감싸고 문자열 내에서 싱글쿼터를 사용하는 것입니다.
@@ -107,6 +108,7 @@ print(test)  # I don't need Coke!
 test = r'C:\Nature'
 print(test)  # C:\Nature
 ```
+
 r'' 로 문자열을 감싸주게 되면 raw라는 뜻으로 아무 의미없는 문자열이라는 것을 나타내줍니다.
 
 ```python
@@ -116,6 +118,7 @@ last = 'Kang'
 print(first + last)  # Myungseo Kang
 print(last * 5)      # KangKangKangKangKang
 ```
+
 \+ 기호를 이용해서 문자열을 합치는 것이 가능합니다.
 또한 * 기호를 이용해서 문자열을 반복하는 것이 가능합니다.
 
@@ -130,15 +133,18 @@ print(test_str[1])   # e
 print(test_str[-1])  # d
 print(test_str[-2])  # l
 ```
+
 List의 인덱스 부분에 음수를 넣어서 오른쪽부터 가져올 수 있습니다.
 
 주의할 점은 음수로 인덱싱할 경우에는 0부터 시작이 아니라 1부터 시작합니다.
+
 ```python
 print(test_str[2:5])  # opo
 print(test_str[3:6])  # pol
 print(test_str[:5])   # Leopo
 print(test_str[3:])   # pold
 ```
+
 이렇게 범위를 인덱스로 지정해서 호출하는 것도 가능합니다.
 
 주의할 점은 콜론 앞의 숫자는 포함되지만 뒤의 숫자는 포함되지 않습니다.
@@ -160,7 +166,9 @@ elif name is 'Kang':
 else:
     print('Hello Everyone!')
 ```
+
 python의 조건문은 이런식으로 구성되어 있습니다.
+
 ```python
 if 조건문:
     코드
@@ -169,6 +177,7 @@ elif 조건문2:
 else:
     코드
 ```
+
 이런 식으로 구성되어 있습니다.
 
 특이한 점이 있다면 C언어처럼 else if를 쓰는 것이 아니라,
@@ -185,14 +194,17 @@ b = [1, 3, 5]
 c = ['Leopold', 'Myungseo', 'Kang', 'L3opold7']
 d = [7, 9, ['Myungseo', 'L3opold7']]
 ```
+
 List 안에는 여러가지 자료형을 담을 수 있습니다.
 
 List에도 Slicing String에서 말한 것들을 적용할 수 있습니다.
+
 ```python
 print(b[-1])     # 5
 print(c[-2])     # Kang
 print(d[-1][0])  # Myungseo
 ```
+
 이중 List에서 인덱싱은 다음과 같이 할 수 있습니다.
 
 ```python
@@ -202,6 +214,7 @@ test[3] = 6
 
 print(test)  # [1, 2, 3, 6, 5]
 ```
+
 이렇게 인덱스를 지정해서 직접 값을 바꿔줄 수 있습니다.
 
 ```python
@@ -211,6 +224,7 @@ test[2:3] = ['a', 'b', 'c']
 
 print(test)  # [1, 2, 'a', 'b', 'c', '4', '5']
 ```
+
 2이상 3미만의 인덱스 부분에 a,b,c List를 변경해주는 것입니다.
 
 ```python
@@ -225,6 +239,7 @@ del test[2]
 
 print(test)  # ['a', 'b', 'd', 'e']
 ```
+
 del 함수를 사용해서 삭제할 수도 있습니다.
 
 ```python
@@ -233,6 +248,7 @@ del test[2:4]
 
 print(test)  # ['a', 'b', 'e']
 ```
+
 마찬가지로 인덱스를 범위로 지정하는 것 또한 가능합니다.
 
 
@@ -243,6 +259,7 @@ test = [1, 2]
 test.append(3)  # 맨 뒤에 값 추가
 print(test)  # [1, 2, 3]
 ```
+
 append(x) 함수는 인자를 1개밖에 받지 않기 때문에 여러개의 인자를 넘겨줄 경우 에러가 납니다.
 
 ```python
@@ -253,6 +270,7 @@ print(test)  # [1, 2, 3, 4, 5]
 test.sort(reverse=True)
 print(test)  # [5, 4, 3, 2, 1]
 ```
+
 sort() 함수는 List를 자동으로 정렬해줍니다.
 역순으로 정렬하기 위해서는 sort 함수에 reverse 옵션을 True로 설정해주면 됩니다.
 
@@ -261,6 +279,7 @@ test = [3, 1, 2]
 test.reverse()
 print(test)  # [2, 1, 3]
 ```
+
 reverse() 함수는 현재의 List를 역순으로 뒤집어 줍니다.
 정렬은 하지 않고 현재의 List를 역순으로 뒤집어 줍니다.
 
@@ -269,6 +288,7 @@ test = [1, 2, 3, 4, 5]
 print(test.index(3))  # 2
 print(test.index(5))  # 4
 ```
+
 index(x) 함수는 x 라는 값이 있는 경우 , x 의 인덱스를 반환해주는 함수입니다.
 
 ```python
@@ -276,6 +296,7 @@ test = [1, 2, 3, 4, 5]
 test.insert(0, 6)
 print(test)  # [6, 1, 2, 3, 4, 5]
 ```
+
 insert(x, y) 함수는 x 위치에 y 라는 값을 삽입해주는 함수입니다.
 
 ```python
@@ -283,6 +304,7 @@ test = [1, 2, 3, 4, 3]
 test.remove(3)
 print(test)  # [1, 2, 4, 3]
 ```
+
 remove(x) 함수는 첫 번째로 나오는 x 라는 값을 List에서 삭제해주는 함수입니다.
 보시다시피 뒷부분에 있는 3은 삭제되지 않았습니다.
 
@@ -291,6 +313,7 @@ test = [1, 2, 3]
 print(test.pop())  # 3
 print(test)        # [1, 2]
 ```
+
 pop() 함수는 List의 가장 마지막 인덱스의 값을 반환해주고 그 값을 삭제해주는 함수입니다.
 위의 예제에서 굳이 3이라는 값이 필요없을 경우에는 print() 함수를 빼도 상관없습니다.
 
@@ -298,6 +321,7 @@ pop() 함수는 List의 가장 마지막 인덱스의 값을 반환해주고 그
 test = [1, 2, 3, 1, 1]
 print(test.count(1))  # 3
 ```
+
 count(x) 함수는 x 라는 값이 List 안에 몇 개나 있는지 반환해주는 함수입니다.
 
 ```python
@@ -305,6 +329,7 @@ test = [1, 2, 3]
 test.extend([4, 5, 6])
 print(test)  # [1, 2, 3, 4, 5, 6]
 ```
+
 extend(x) 함수는 x 부분에 List를 받아서 원래의 List와 병합시켜주는 함수입니다.
 
 List에서는 위와 같은 내장 함수들을 사용할 수 있습니다.
@@ -318,6 +343,7 @@ Tuple은 조금 특이한 List라고 해도 무방할 정도로 List와 성격�
 List에 대한 설명은 위에서 자세하게 했으므로 Tuple과의 차이점을 간단하게 언급하고자 합니다.
 
 List는 [] 대괄호로 묶이지만 Tuple은 () 소괄호로 묶입니다.
+
 ```python
 tp1 = ()
 tp2 = (1,)
@@ -325,6 +351,7 @@ tp3 = (1, 2, 3, 4, 5)
 tp4 = (1, 2, (3, 4, 5))
 tp5 = 1, 2, 3
 ```
+
 Tuple의 선언은 다음과 같이 할 수 있습니다.
 List와 거의 비슷하지만 다른 점이 조금 있습니다.
 1개의 요소만을 가질때 튜플은 tp2 와 같이 뒤에 반드시 콤마(,) 가 와야합니다.
@@ -338,6 +365,7 @@ List는 항시 값의 변화가 가능하지만 Tuple은 불가능합니다.
 간단하게 List와 비슷한 점도 짚고 넘어가겠습니다.
 
 Tuple은 인덱싱, 슬라이싱, 병합, 반복 모두 가능합니다.
+
 ```python
 tp1 = (1, 2, 3)
 tp2 = (4, 5, 6)
@@ -356,6 +384,7 @@ Dictionary는 키=값 형태로 이루어진 자료형입니다.
 대표적인 예로는 루비의 Hash와 C#의 Dictionary가 있습니다.
 
 이제 Dictionary라는 것은 어떻게 생겼는지 알아보도록 하겠습니다.
+
 ```python
 dic1 = dict()
 dic2 = {'k1': 'v1', 'k2': 'v2', 'k3': 'v3'}
@@ -371,6 +400,7 @@ print(dic4)               # {'firstname': 'Myungseo', 'lastname': 'Kang'}
 print(dic4['firstname'])  # Myungseo
 print(dic5['ls'])         # ['a', 'b', 'c']
 ```
+
 빈 Dictionary를 만들땐 dict() 함수를 사용하면 됩니다.
 물론 내용이 있는 Dictionary를 만들 때 사용해도 됩니다!
 그리고 value 값을 호출할 때는 Dictionary이름['키값'] 으로 호출하게 되면 값을 얻을 수 있습니다.
@@ -382,6 +412,7 @@ test[2] = 'second'
 
 print(test)  # {2: 'second', 1: 'first'}
 ```
+
 Dictionary는 간단하게 키값을 지정해주고 추가해주면 됩니다.
 
 ```python
@@ -390,6 +421,7 @@ test = {1: 'first', 2: 'second', 3: 'third'}
 del test[2]
 print(test)  # {1: 'first', 3: 'third'}
 ```
+
 삭제는 List에서 사용했듯이 del() 함수를 사용하면 됩니다.
 
 ```python
@@ -398,6 +430,7 @@ print(test.keys())    # dict_keys(['name', 'nickname', 'birthday'])
 print(test.values())  # dict_values(['Myungseo', 'L3opold7', '0523'])
 print(test.items())   # dict_items([('nickname', 'L3opold7'), ('name', 'Myungseo'), ('birthday', '0523')])
 ```
+
 keys(), values() 함수를 통해서 딕셔너리의 key 혹은 value를 dict_keys 혹은 dict_values 객체로 얻을 수 있습니다.
 items() 함수는 key와 value를 Tuple을 사용해서 묶은 값을 dict_items 라는 객체로 반환해줍니다.
 
@@ -406,6 +439,7 @@ test = {'name': 'Myungseo', 'nickname': 'L3opold7', 'birthday': '0523'}
 test.clear()
 print(test)  # {}
 ```
+
 clear() 함수를 이용해서 모두 지워버릴 수 있다!
 
 ```python
@@ -416,6 +450,7 @@ print(test.get('name'))    # Myungseo
 print(test['name'])        # Myungseo
 print(test['no_key'])      # Error
 ```
+
 test['no_key'] 의 경우에는 Error를 내뱉지만 test.get('no_key')는 None 객체를 반환하기 때문에 get(x, y) 함수를 쓰는 것이 더 적절해보입니다.
 get(x, y) 함수는 Dictionary 안에 x 라는 키 값이 없을 경우 y 라는 디폴트 값을 반환해줍니다.
 
@@ -432,6 +467,7 @@ print('no_key' in test)  # False
 집합 자료형인 Set 입니다.
 말 그대로 집합을 나타내기 위한 자료형입니다.
 특징으로는 중복을 허용하지 않고, 순서가 없다는 것이 있습니다.
+
 ```python
 s = set([1, 2, 3, 4, 5])
 print(s)  # {1, 2, 3, 4, 5}
@@ -439,6 +475,7 @@ print(s)  # {1, 2, 3, 4, 5}
 hello = set('Hello World!')
 print(hello)  # {' ', 'H', '!', 'e', 'l', 'o', 'd', 'W', 'r'}
 ```
+
 위와 같이 선언할 수 있습니다.
 위에서 말한 두 가지 특징이 잘 드러나는 것을 볼 수 있습니다.
 
@@ -456,6 +493,7 @@ print(set1 | set2)  # {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
 print(set1 - set2)  # {1, 2, 3, 4}
 print(set2 - set1)  # {0, 8, 9, 7}
 ```
+
 차례대로 교집합, 합집합, set1-set2 차집합, set2-set1 차집합 입니다.
 위의 코드는 아래와 같이 나타낼수도 있습니다.
 
@@ -468,6 +506,7 @@ print(set1.union(set2))         # {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
 print(set1.difference(set2))    # {1, 2, 3, 4}
 print(set2.difference(set1))    # {0, 8, 9, 7}
 ```
+
 이렇게 Set 자료형의 내장 함수를 통해서 교집합, 차집합, 합집합을 구할 수 있습니다.
 
 ```python
@@ -478,6 +517,7 @@ print(set1)  # {1, 2, 3, 4}
 set1.add(5)
 print(set1)  # {1, 2, 3, 4, 5}
 ```
+
 add(x) 함수를 통해서 값을 추가할 수 있습니다.
 Set 자료형의 특징답게 기존에 있던 값을 추가할 경우에는 추가되지 않습니다.
 
@@ -487,6 +527,7 @@ set1.update([3, 4, 5])
 
 print(set1)  # {1, 2, 3, 4, 5}
 ```
+
 update(x) 함수를 통해서 여러 개의 값을 추가할 수 있습니다.
 x의 위치에는 iterable, 즉 반복 가능한 자료형이 와야합니다.
 List나 Tuple이 대표적인 예입니다.
@@ -497,6 +538,7 @@ set1.remove(3)
 
 print(set1)  # {1, 2, 4, 5}
 ```
+
 특정 값을 제거하고 싶을 경우에는 remove(x) 함수를 사용하면 됩니다.
 x의 위치에는 제거하고 싶은 값을 적어줍니다.
 
@@ -535,6 +577,7 @@ for (i, j) in test:
     7
     '''
 ```
+
 이렇게도 사용이 가능합니다.
 C언어의 for문보다는 간편하게 사용할 수 있는 것 같습니다.
 
@@ -542,9 +585,11 @@ C언어의 for문보다는 간편하게 사용할 수 있는 것 같습니다.
 for i in range(0, 10):
     print(i)
 ```
+
 range 객체를 이용해서 쉽게 for문을 만들수도 있습니다.
 
 간단하게 List 내장 함수와 for문을 이용한 예제를 보겠습니다.
+
 ```python
 test_list = [1, 2, 3, 4, 5]
 result = []
@@ -554,7 +599,9 @@ for num in test_list:
 
 print(result)  # [3, 6, 9, 12, 15]
 ```
+
 이런 코드를 아래와 같이 요약할 수 있습니다
+
 ```python
 test_list = [1, 2, 3, 4, 5]
 
@@ -562,6 +609,7 @@ result = [num * 3 for in test_list]
 
 print(result)  # [3, 6, 9, 12, 15]
 ```
+
 이렇게 for문을 알아보았습니다.
 
 
@@ -572,24 +620,31 @@ print(result)  # [3, 6, 9, 12, 15]
 일단 코드의 가독성이 높아지고, 코드를 재사용 할수도 있습니다.
 
 Python에서는 다음과 같이 함수를 정의합니다.
+
 ```Python
 def fuction_name(parameter):
     code here
 ```
+
 호출할 때도 간단합니다.
+
 ```Python
 function_name(parameter)
 ```
+
 처럼 호출해주게 되면 함수의 코드가 실행됩니다.
 
 예를 들어보겠습니다.
+
 ```Python
 def hello(num):
     for i in range(0,num):
         print('hello,'+str(i))
 ```
+
 이렇게 함수를 설정해주게 되면
 hello 함수를 인자값으로 5를 넘겨서 실행해주게 되면
+
 ```
 hello,0
 hello,1
@@ -597,6 +652,7 @@ hello,2
 hello,3
 hello,4
 ```
+
 이렇게 나오게 됩니다.
 range 객체로 0, num 까지의 iterable 객체를 만들어줬고, print 함수로 i를 str 함수를 이용해 문자열로 바꾼 뒤, 출력해주고 있습니다.
 
@@ -610,6 +666,7 @@ def multiply_number(num):
 
 prime_number_check(5)  # 7500
 ```
+
 이런 식으로 multiply_number 함수안에 print 함수를 써서 multiply_number만 호출해도 print 함수까지 같이 호출할 수 있습니다.
 
 다음에는 Lambda라는 익명 함수에 대해 알아보겠습니다.
@@ -636,6 +693,7 @@ print(multiply_number(5))  # 7500
 func_range = list(map(lambda x: x*1000, (range(1, 6))))
 print(func_range)  # [1000, 2000, 3000, 4000, 5000]
 ```
+
 이 코드는 lambda 키워드로 Lambda(익명 함수)를 만들고, range 함수로 1~5 객체를 만들었습니다.
 두개의 값을 map()이라는 함수를 사용해서 Mapping(매핑)을 해주고 있습니다. 즉, x의 값이 1,2,3,4,5가 됩니다.
 그 다음 list() 함수로 List 객체를 만듭니다.

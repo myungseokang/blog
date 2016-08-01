@@ -1,8 +1,8 @@
 ---
 layout: post
-title:  "Python 기초 문법 알아보기"
+title:  "Django 기초 알아보기"
 date:   2016-07-03
-excerpt: "Keep Calm and Code Python."
+excerpt: "Learning Django basic"
 tag:
 - Python
 - Django

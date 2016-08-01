@@ -2,7 +2,7 @@
 layout: post
 title:  "Django REST Framework 알아보기"
 date:   2016-07-06
-excerpt: "Keep Calm and Code Python."
+excerpt: "Learing Django REST Framework"
 tag:
 - Python
 - Django Rest Framework

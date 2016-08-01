@@ -2,7 +2,7 @@
 layout: post
 title:  "Markdown 문법 알아보기"
 date:   2016-08-01
-excerpt: "Keep Calm and Code Python."
+excerpt: "Learning Markdown Grammar"
 tag:
 - markdown
 - syntax

@@ -2,7 +2,7 @@
 layout: post
 title:  "Django에서 S3에 Static, Media 파일 Serve하고 사용하기"
 date:   2016-07-27
-excerpt: "Keep Calm and Code Python."
+excerpt: "Using S3 for Serving Static and Media files in Django"
 tag:
 - Python
 - Django
@@ -82,6 +82,7 @@ comments: true
 (단, template 에서 static 태그를 사용하셔야 합니다. URL에 많이 주의해주세요. 세세한 부분까지 신경써야 합니다.)
 
 settings.py
+
 ```python
 if DEBUG:
     STATIC_URL = '/static/'
@@ -111,4 +112,5 @@ else:
     MEDIA_URL = "https://%s/" % AWS_S3_CUSTOM_DOMAIN
     DEFAULT_FILE_STORAGE = 'storages.backends.s3boto.S3BotoStorage'
 ```
+
 allowed_hosts 설정을 해주셔야 합니다. => ['\*']

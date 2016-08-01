@@ -2,7 +2,7 @@
 layout: post
 title:  "EC2에서 Nginx+uWSGI로 python3로 작성한 django 앱 배포하기"
 date:   2016-07-29
-excerpt: "Keep Calm and Code Python."
+excerpt: "Using Nginx+uWSGI for Deploying Django project"
 tag:
 - Python
 - Django
@@ -36,6 +36,7 @@ Django : 1.10.rc1
 
 
 ### 0. virtualenv, virtualenvwrapper 설치와 세팅
+
 ```shell
 $ sudo apt-get update
 $ sudo apt-get install python3-pip
@@ -52,10 +53,12 @@ $ echo "export WORKON_HOME=~/.virtualenvs" >> ~/.bashrc
 $ echo "source /usr/local/bin/virtualenvwrapper.sh" >> ~/.bashrc
 $ source ~/.bashrc
 ```
+
 그리고 virtualenvwrapper와 virtualenv 관한 설정을 bashrc에 넣어줍니다.
 
 
 ### 1. Django 설정
+
 ```shell
 user@hostname:~$ mkvirtualenv ENV_NAME
 (ENV_NAME)user@hostname:~$
@@ -67,12 +70,14 @@ user@hostname:~$ mkvirtualenv ENV_NAME
 (ENV_NAME)user@hostname:~/PROJECT_NAME$ python manage.py collectstatic
 (ENV_NAME)user@hostname:~/PROJECT_NAME$ python manage runserver 0.0.0.0:8000
 ```
+
 collectstatic 명령어 쓸 때, settings.py에 static_root는 설정되어 있다고 가정함
 마지막으로 runserver로 확인함
 잘 실행된다면 uwsgi 설정쪽으로 넘어감
 
 
 ### 2. uWSGI 설정
+
 ```shell
 $ sudo apt-get install python-dev
 $ sudo pip3 install uwsgi # sudo를 이용한 전체 시스템에 설치
