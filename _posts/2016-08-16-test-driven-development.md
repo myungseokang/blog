@@ -77,6 +77,8 @@ An explicit wait is code you define to wait for a certain condition to occur bef
 
 명시적 대기는 특정 조건이 코드에서 더 진행하기 전에 발생할 때까지 기다릴 정의 코드입니다.(feat. Translate Google)
 
+implicit wait 같은 경우에는 그 시간내에 로딩이 되지 않을 경우 테스트의 결과가 의도한대로 나오지 않을 수 있기때문에 explicit wait을 쓰는 것이 편합니다.
+
 Never Use Stupid Wait!
 
 
