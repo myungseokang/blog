@@ -7,7 +7,7 @@ comments: false
 ---
 
 <center>
-    <img src="/assets/img/profile_image.jpg" alt="Profile Image" style="width: 400px; height: 400px;"/>
+    <img src="/assets/img/profile_image.jpg" alt="Profile Image" style="width: 400px; height: 400px; border-radius: 5px;"/>
     <a href="http://github.com/Leop0ld"><b>Leop0ld</b></a>, Web Developer, Myungseo Kang
 </center>
 
