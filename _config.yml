@@ -4,7 +4,7 @@ bio:                "Leop0ld! a brief Leop0ld's Blog."
 description:        "Keep Calm and Code Python."
 reading_time:       true
 words_per_minute:   200
-logo:               'https://scontent.xx.fbcdn.net/v/t1.0-9/13903234_757526031054576_7552832372024984023_n.jpg?oh=3250f986920a1cc9530c12623bbbd538&oe=584613C4'
+logo:               'assets/img/profile_image.jpg'
 background:         'assets/img/placeholder-big.jpg'
 tiled_bg:           false   # Set this true if you want to tile your background image, otherwise it will be covered
 locale:             en_US
