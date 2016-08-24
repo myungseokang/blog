@@ -13,6 +13,8 @@ comments: true
 
 ## Mac에서 Sublime Text3 설치하고 사용하기
 
+> 참고 링크: [Link](http://jos39.tistory.com/243)(여러가지 좋은 플러그인들을 소개해줍니다.)
+
 윈도우에 Atom이 있다면 Mac에는 Sublime Text 가 있습니다!
 
 ### Sublime Text3 설치하기
