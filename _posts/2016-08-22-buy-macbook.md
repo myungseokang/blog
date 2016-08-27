@@ -4,6 +4,7 @@ title:  "Buy Macbook Pro Retina!"
 date:   2016-08-22
 excerpt: "Macbook Pro Retina"
 tag:
+- Mac
 - Macbook Pro Retina
 - Macbook
 - Apple
