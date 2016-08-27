@@ -19,8 +19,9 @@ $ ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/maste
 
 너무 간단합니다.
 
-그리고 터미널에서 
-```
-brew update
+그리고
+터미널에서 
+```shell
+$ brew update
 ```
 만 해주면 잘 설치되었는지 확인할 수 있습니다.

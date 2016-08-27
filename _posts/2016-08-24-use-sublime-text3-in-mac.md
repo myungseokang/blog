@@ -5,7 +5,6 @@ date:   2016-08-24
 excerpt: "Using Pyenv, Virtualenv, Autoenv in Mac"
 tag:
 - Mac
-- macOS
 - Sublime Text
 - Sublime Text3
 comments: true
@@ -30,7 +29,7 @@ comments: true
 
 서브라임을 터미널에서
 ```shell
-$ sublime .  # open current directory using Submlime Text
+$ sublime .
 ```
 이런 식으로 사용하기 위해서는 약간의 설정이 필요합니다.
 
@@ -54,7 +53,7 @@ $ sublime
 1. <kbd>Ctrl</kbd>+<kbd>`</kbd> 를 눌러서 Text Console을 열어줍니다.
 
 2. 그 다음 아래의 코드를 입력해줍니다!!
-```shell
+```
 import urllib.request,os,hashlib; h = 'eb2297e1a458f27d836c04bb0cbaf282' + 'd0e7a3098092775ccb37ca9d6b2e4b7d'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)
 ```
 입력하게 되면 Package Controller가 설치됩니다.
