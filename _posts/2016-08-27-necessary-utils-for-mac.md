@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "필수 Mac 유틸!"
-date:   2016-08-24
+date:   2016-08-27
 excerpt: "Necessary utils for Mac"
 tag:
 - Mac
@@ -11,7 +11,7 @@ comments: true
 
 ## Mac용 util 모음!
 
-![Karabiner](https://pqrs.org/osx/karabiner/img/karabiner-icon@2x.png)
+![Karabiner](https://pqrs.org/osx/karabiner/img/karabiner-icon@2x.png){: width: }
 1. [Karabiner](https://pqrs.org/osx/karabiner/index.html.en): 키 매핑을 도와주는 프로그램. 뿐만 아니라 키보드 같은 걸 연결했을때도 키 매핑을 지정할 수 있기 때문에 (키보드를 좋아하는 저로선) 무지 편합니다.
 ![Alfred](https://www.alfredapp.com/media/logo@2x.png)
 2. [Alfred](https://www.alfredapp.com/): <kbd>alt</kbd>+<kbd>space</kbd> 로 spotlight 같은 기능을 사용할 수 있게 해주는 프로그램입니다.
