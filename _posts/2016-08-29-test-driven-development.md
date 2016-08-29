@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Django TDD 알아보기"
-date:   2016-08-16
+date:   2016-08-29
 excerpt: "Learning Test-Driven Development"
 tag:
 - Python
@@ -104,3 +104,7 @@ Tips.
 단위 테스트(Unit Test)
 - 단위 테스트란? 프로그래머 관점에서 그 내부를 테스트하는 것
 - 단위 테스트는 버그없이 깔끔한 코드가 되도록 도와줍니다
+
+### Smoke Test
+스모크 테스트(Smoke Test)
+- 스모크 테스트란? CSS 같은 정적 파일이 잘 로딩되었는지 테스트하는 것
