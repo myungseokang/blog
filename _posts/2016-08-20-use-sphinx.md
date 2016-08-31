@@ -22,3 +22,5 @@ Sphinx는 Docstring을 Document로 바꿔주는 편리한 라이브러리이다.
 Travis CI, Coveralls도 마찬가지다.
 당장의 손실보다는 후에 얻게될 이득이 훨씬 크기에 도입하는 것이다.
 Sphinx 는 간단하게 pip로 설치해서 사용하면 된다.
+
+

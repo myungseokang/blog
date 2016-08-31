@@ -11,7 +11,7 @@ tag:
 comments: true
 ---
 
-# Ubuntu에서 virtualenv + virtualenvwrapper 사용해서 python 개발환경 세팅하기
+# Ubuntu에서 virtualenv + virtualenvwrapper 사용해서 python 개발환경 세팅하
 > python 3.x 기준
 
 ## 0. 필수 패키지 설치

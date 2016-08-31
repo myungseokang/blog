@@ -11,7 +11,7 @@ tag:
 comments: true
 ---
 
-# Django에서 S3 Seoul 리전에 Static, Media 파일 Serve하고 사용하기
+# Django에서 S3 Seoul 리전에 Static, Media 파일 Serve하고 사용하
 
 **참고한 웹사이트**
 

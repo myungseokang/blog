@@ -13,7 +13,7 @@ tag:
 comments: true
 ---
 
-# EC2에서 Nginx+uWSGI로 Python3로 작성한 django 앱 배포하기
+# EC2에서 Nginx+uWSGI로 Python3로 작성한 django 앱 배포하
 > Python 3.x 버전 기준
 
 매우 많이 참고한 곳

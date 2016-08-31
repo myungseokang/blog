@@ -9,7 +9,7 @@ tag:
 comments: true
 ---
 
-# Python 문법 알아보기
+# Python 문법 알아보
 
 ## 0. Python(파이썬)
 > Python 3.x 버전 기준
