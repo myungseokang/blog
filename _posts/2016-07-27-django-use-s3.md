@@ -11,6 +11,8 @@ tag:
 comments: true
 ---
 
+# Django에서 S3 Seoul 리전에 Static, Media 파일 Serve하고 사용하기
+
 **참고한 웹사이트**
 
 [http://sebatyler.github.io/2016/07/16/django-storages-seoul.html](http://sebatyler.github.io/2016/07/16/django-storages-seoul.html)
@@ -18,7 +20,7 @@ comments: true
 [http://intersnipe.blogspot.kr/2015/02/django-media-file-local-s3.html](http://intersnipe.blogspot.kr/2015/02/django-media-file-local-s3.html)
 
 
-### 1. S3 설정하기
+## 1. S3 설정하기
 
  - 버킷을 만드세요
  - 새로운 유저를 만드세요. AWS IAM으로 가서 'create new users'를 클릭하세요. 5개의 칸이 한꺼번에 뜬는데 한개만 만드셔도 무방합니다. 그리고 하단의  'Generate an access key for each User' 체크 박스를 선택하세요.
@@ -76,7 +78,7 @@ comments: true
 ```
 
 
-### 2. Django 설정하기
+## 2. Django 설정하기
 
 저는 현재 EC2, S3 모두 서울 리전으로 사용하고 있는데, 아래와 같이 설정해주니 잘 작동했습니다.
 (단, template 에서 static 태그를 사용하셔야 합니다. URL에 많이 주의해주세요. 세세한 부분까지 신경써야 합니다.)

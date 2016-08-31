@@ -11,7 +11,7 @@ tag:
 comments: true
 ---
 
-## Mac에서 oh my zsh와 iTerm 사용하기
+# Mac에서 oh my zsh와 iTerm 사용하기
 
 먼저 iTerm을 설치해줍니다.
 
@@ -26,7 +26,7 @@ zsh의 강력한 특징 중에 하나는 Tap-completion 입니다.
 이러한 zsh에다가 oh my zsh를 다운받고 Git 관련 테마를 입힐 경우 정말정말 사용이 편한 환경을 구축할 수 있습니다.
 
 
-### zsh 설치하기
+## zsh 설치하기
 
 ```shell
 $ zsh --version
@@ -49,7 +49,7 @@ $ chsh -s `which zsh`
 이렇게 기본 셸을 bash가 아닌 zsh로 지정해줍니다.
 
 
-### oh my zsh 설치하기
+## oh my zsh 설치하기
 
 ```shell
 $ sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
@@ -57,7 +57,7 @@ $ sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/m
 위의 명령어로 간단하게 설치할 수 있습니다. 단, git이 설치되어 있다는 전제하에 가능합니다.
 
 
-### agnoster & solarized theme 적용하고 사용하기
+## agnoster & solarized theme 적용하고 사용하기
 
 iTerm을 solarized dark 테마로 적용시켜 봅시다.
 

@@ -10,6 +10,8 @@ tag:
 comments: true
 ---
 
+# Perceptron 알아보기
+
 ## 기초 용어 정리
 
 뉴런(Neuran): 인공신경망을 구성하는 가장 작은 요소입니다.

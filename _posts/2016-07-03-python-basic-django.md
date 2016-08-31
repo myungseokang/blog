@@ -10,10 +10,10 @@ comments: true
 ---
 
 
-## Django 기초
+# Django 기초
 
 
-### 1. MVC, MTV
+## 1. MVC, MTV
 
 - MVC(Model, Controller, View)
  - 어플리케이션을 세가지 역할로 구분한 개발 방법론!
@@ -33,19 +33,19 @@ MTV 코딩 순서
  - CBV의 경우에는 Model을 코딩하고 View가 매우 간단하기 때문에 View를 코딩한 뒤 Template을 코딩하는 방식
 
 
-### 2. Django 개념
+## 2. Django 개념
 
 - Django: Python 기반의 오픈소스 웹 어플리케이션 프레임워크
 
 
-### 3. settings.py
+## 3. settings.py
 
 - Database, Static files, app 등등 Django에 관한 여러가지 설정들을 다루는 파일입니다.
 - 필수 사항: 데이터베이스, 템플릿, 정적 파일, 애플리케이션, 타임존
 - settings.py를 알아두면 Django에 대한 전반적 이해가 수월!
 
 
-### 4. models.py
+## 4. models.py
 
 - 테이블을 정의하는 부분
 - ORM(Object Realation Mapping)을 이용해서 클래스와 데이터베이스의 테이블을 매핑해줌
@@ -58,7 +58,7 @@ MTV 코딩 순서
   - 변경사항을 직접 데이터베이스에 적용하는 방식(migrate)
 
 
-### 5. views.py
+## 5. views.py
 
 - 로직을 코딩하는 부분! 중요함
 - 가독성과 유지보수를 생각하면서 코딩해야함
@@ -66,7 +66,7 @@ MTV 코딩 순서
 - 잘 쓰면 CBV가 훨씬 간편하고 좋은듯(주관적인 의견)
 
 
-### 6. urls.py
+## 6. urls.py
 
 - URL을 정의할 때는 urls.py를 앱 안에 만듦으로서 여러개로 나눌 수 있음
 - 보통 위의 방식을 쓰지만 간단할 경우에는 프로젝트의 urls.py 한개에 몰아넣을 수도 있음
@@ -75,7 +75,7 @@ MTV 코딩 순서
 - reverse나 url 템플릿 태그에서 매우 중요한 부분
 
 
-### 7. templates
+## 7. templates
 
 - templates(\*.html)파일들을 모아두기 위한 디렉토리
 

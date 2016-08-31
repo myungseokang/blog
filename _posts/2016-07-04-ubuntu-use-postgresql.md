@@ -10,9 +10,9 @@ tag:
 comments: true
 ---
 
-## Ubuntu에서 PostgreSQL 사용하기
+# Ubuntu에서 PostgreSQL 사용하기
 
-### 1. PostgreSQL 설치하기
+## 1. PostgreSQL 설치하기
 
 가장 먼저
 
@@ -77,8 +77,7 @@ $ psql -U postgres -h localhost
 이제 본격적으로 Database를 만들고 사용해보도록 하겠습니다.
 
 
-
-### 2. PostgreSQL 사용하기
+## 2. PostgreSQL 사용하기
 
 먼저 db를 만들고 그 db 안에서 table을 만들고 데이터를 삽입하는 작업을 해보도록 하겠습니다!
 

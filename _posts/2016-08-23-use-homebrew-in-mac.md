@@ -10,7 +10,7 @@ tag:
 comments: true
 ---
 
-## Mac에서 Homebrew 사용하기 + Sublime Text 사용하기
+# Mac에서 Homebrew 사용하기 + Sublime Text 사용하기
 
 ```shell
 $ ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"

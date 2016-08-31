@@ -12,6 +12,8 @@ tag:
 - EC2
 comments: true
 ---
+
+# EC2에서 Nginx+uWSGI로 Python3로 작성한 django 앱 배포하기
 > Python 3.x 버전 기준
 
 매우 많이 참고한 곳
@@ -35,7 +37,7 @@ Django : 1.10.rc1
 --------------------------------------------------------------
 
 
-### 0. virtualenv, virtualenvwrapper 설치와 세팅
+## 0. virtualenv, virtualenvwrapper 설치와 세팅
 
 ```shell
 $ sudo apt-get update
@@ -57,7 +59,7 @@ $ source ~/.bashrc
 그리고 virtualenvwrapper와 virtualenv 관한 설정을 bashrc에 넣어줍니다.
 
 
-### 1. Django 설정
+## 1. Django 설정
 
 ```shell
 user@hostname:~$ mkvirtualenv ENV_NAME
@@ -76,7 +78,7 @@ collectstatic 명령어 쓸 때, settings.py에 static_root는 설정되어 있�
 잘 실행된다면 uwsgi 설정쪽으로 넘어감
 
 
-### 2. uWSGI 설정
+## 2. uWSGI 설정
 
 ```shell
 $ sudo apt-get install python-dev
@@ -187,7 +189,7 @@ setuid, setgid -> 어떤 유저와 그룹으로 동작될 지를 설정해줍니
 emperor 옵션을 주면 디렉토리를 인자로 넘겨주게 되는데 이 디렉토리 안에 있는 앱들이 모두 작동하는 것 같습니다.
 
 
-### 3. Nginx 설정
+## 3. Nginx 설정
 
 마지막으로 nginx를 설치하고 nginx 설정 파일만 만들어주면 됩니다.
 

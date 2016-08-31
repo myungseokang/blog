@@ -12,7 +12,10 @@ tag:
 comments: true
 ---
 
-### 0. Git과 필수 패키지 설치
+# Ubuntu Python 개발환경 세팅하기
+
+## 0. Git과 필수 패키지 설치기
+
 ```shell
 sudo apt-get update
 ```
@@ -30,7 +33,7 @@ sudo apt-get install python3-pip
 pip install virtualenv
 ```
 
-### 1. pyenv 설치
+## 1. pyenv 설치
 
 pyenv는 git을 통해 받을 수 있습니다.
 
@@ -62,7 +65,7 @@ $ pyenv --version
 을 입력해주게 되면 pyenv의 버전이 나오게 됩니다.
 
 
-### 2. pyenv-virtualenv 설치하기
+## 2. pyenv-virtualenv 설치하기
 
 그 다음으로는 pyenv 안에서 virtualenv를 사용하기 위해서 pyenv-virtualenv 라는 플러그인을 설치해야 합니다.
 
@@ -133,7 +136,7 @@ $ pyenv activate venv
 그리고 이런 복잡한 과정들을 폴더를 옮기면 자동으로 virtualenv를 바꿔주는 것이 autoenv입니다.
 
 
-### 3. autoenv 설치하기
+## 3. autoenv 설치하기
 
 autoenv는 폴더를 이동하면 자동으로 virtualenv가 설정되도록 해주는 것입니다.
 
