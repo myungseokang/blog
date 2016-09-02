@@ -46,30 +46,3 @@ react.js 파일은 컴포넌트 부분을 담당하고, react-dom.js 파일은 �
 
 **JSX**: Babel에서 지원하는 HTML or XML 같은 문법을 자동으로 native JavaScript로 변환해줍니다.
 
-```javascript
-var hello = (
-	<div class="hello">
-		Hello, React!
-	</div>
-)
-```
-
-원래는 ()도 안써도 가능하지만 가독성을 위해 써주는 것이 좋다고 합니다.
-그리고 JSX는 container로 한번 감싸줘야 합니다.
-즉,
-
-```html
-<h1>hello</h1>
-<h2>world</h2>
-
-<!-- 위와 같은 형식이 아니라 -->
-
-<div>
-    <h1>Hello</h1>
-    <h2>React</h2>
-</div>
-
-<!-- 이렇게 작성해주세요 -->
-```
-
-JSX는 이렇게 한번 감싸줘야하는 특징을 갖고 있습니다.ㄴ
