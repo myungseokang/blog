@@ -44,12 +44,11 @@ react.js 파일은 컴포넌트 부분을 담당하고, react-dom.js 파일은 �
 
 - ES6: ECMAScript6 라는 말의 약자로써 2016년 1월에 발표된 JavaScript 문법의 표준입니다.
 
-
 **JSX**: Babel에서 지원하는 HTML or XML 같은 문법을 자동으로 native JavaScript로 변환해줍니다.
 
 ```javascript
 var hello = (
-	<div class=\hello">
+	<div class="hello">
 		Hello, React!
 	</div>
 )
@@ -73,4 +72,4 @@ var hello = (
 <!-- 이렇게 작성해주세요 -->
 ```
 
-JSX는 이렇게 한번 감싸줘야하는 특징을 갖고 있습니다.
+JSX는 이렇게 한번 감싸줘야하는 특징을 갖고 있습니다.ㄴ
