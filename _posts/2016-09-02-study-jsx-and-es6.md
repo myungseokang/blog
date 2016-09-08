@@ -145,8 +145,20 @@ var HelloReact = React.createClass({
 
 5. Comment(주석)
 
+JSX에서의 주석은 매우 간단합니다!
+
+```javascript
+{ /* ~ COMMENT 작성 ~ */ }
+```
+
+요렇게 해주시면 됩니다. (중괄호 안에 javascript를 표현한다고 생각하시면 편할듯 하네요.)
+
+다만 한 가지 주의하실 점은 Nested Element의 규칙을 준수해야 합니다.
+즉, 주석 또한 container element 안에 있어야하는 셈인겁니다.
+
 6. Naming Convention(이름 규칙)
 
+모든 React 개체는 첫 문자가 대문자인 [PascalCase](http://zetawiki.com/wiki/%EC%B9%B4%EB%A9%9C%ED%91%9C%EA%B8%B0%EB%B2%95_camelCase,_%ED%8C%8C%EC%8A%A4%EC%B9%BC%ED%91%9C%EA%B8%B0%EB%B2%95_PascalCase)로 작성됩니다.
 
 7. [React 공식 홈페이지](https://facebook.github.io/react/)
  - [링크](https://facebook.github.io/react/docs/displaying-data.html)에 JSX 부분 나와 있습니다. 개쩝니다. 영어 된다면 꼭 봅시다.
