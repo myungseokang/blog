@@ -4,6 +4,7 @@ title:  "React 공부하기"
 date:   2016-09-01
 excerpt: "Studying React"
 tag:
+- JavaScript
 - React
 comments: true
 ---
@@ -12,6 +13,7 @@ comments: true
 
 페이스북에서 밀고있는 JS 라이브러리인 **React** 에 대해서 공부해볼 생각입니다.
 요즘 굉장히 핫 해서 공부하는게 재밌을 것 같습니다.
+
 
 ## 1. React 개념
 
@@ -28,7 +30,18 @@ Babel이란 ES6 문법으로 작성된 자바스크립트를 ES5 문법으로 �
 최신 브라우저는 ES6 문법을 지원하지만 오래된 브라우저는 지원을 안하기 때문입니다.
 
 
-## 2. React 특징
+## 2. npm? es6? jsx? 그게 뭔데?
+
+- npm: Node Package Manager의 약자로 JS 모듈들을 다운받을 수 있게 해주는 도구입니다. [npm 공식 홈페이지](https://docs.npmjs.com/getting-started/what-is-npm)
+
+- ES6: ECMAScript6 라는 말의 약자로써 2016년 1월에 발표된 JavaScript 문법의 표준입니다. [ES6 홈페이지](http://es6-features.org/#Constants)
+
+- **JSX**: Babel에서 지원하는 HTML or XML 같은 문법을 자동으로 native JavaScript로 변환해줍니다. [자세한 링크](https://leop0ld.github.io/posts/study-jsx)
+
+
+## 3. React 특징
+
+## 3-1. React 장단점
 
 리액트는 두개의 파일로 구성되어 있습니다(물론 min.js 버전도 있습니다.)
 
@@ -38,11 +51,13 @@ react.js 파일은 컴포넌트 부분을 담당하고, react-dom.js 파일은 �
 
 그리고 React가 주목받고 있는 이유이자 가장 React다운 특징은 바로 **Virtual DOM**입니다.
 
-## 3. npm? es6? jsx? 그게 뭔데?
+### 3.1 Virtual DOM
+ - Virtual DOM이란 쉽게 말해서 기존에 있던 View와 새로이 만들어진 Virtual View를 비교해서 다른 부분만 렌더링을 해주는 방법입니다.
+ 이 방법 덕분에 React의 속도가 빠를 수 있는 것 같습니다.
 
-- npm
+## 4. React 문법
 
-- ES6: ECMAScript6 라는 말의 약자로써 2016년 1월에 발표된 JavaScript 문법의 표준입니다.
+### props
 
-**JSX**: Babel에서 지원하는 HTML or XML 같은 문법을 자동으로 native JavaScript로 변환해줍니다.
+### state
 

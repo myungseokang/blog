@@ -1,16 +1,15 @@
 ---
 layout: post
-title:  "JSX & ES6 공부하기"
+title:  "JSX 공부하기"
 date:   2016-09-02
-excerpt: "Studying JSX & ES6"
+excerpt: "Studying JSX"
 tag:
 - JavaScript
-- ES6
 - JSX
 comments: true
 ---
 
-JSX & ES6 간단 정리
+JSX 간단 정리
 =======
 
 **[React 공식 홈페이지](https://facebook.github.io/react/)**
@@ -187,11 +186,3 @@ return 함수의 인자 부분에 들어가있는 것이 바로 JSX입니다.
 JSX 파일의 확장자의 경우에 요즘은 .js 를 사용하는 추세로 전환되어 가고 있다고 합니다. 친구네 회사같은 경우에는 아직 .jsx를 사용하고 있는 회사도 있다고 합니다.
 
 다양하게 다루고자 하면 너무 다양하게 다룰 수 있는 부분이라서 후에 진행하면서 추가할 것이 있다면 추가하도록 하겠습니다.
-
-## 2. ES6 정리
-
-### ES6 개념
-
-### ES6 특징
-
-### ES6 문법
