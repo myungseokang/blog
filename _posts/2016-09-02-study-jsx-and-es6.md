@@ -26,9 +26,11 @@ JavaScript + XML 의 합성으로 JSX 라는 이름이 생겼다고 합니다.
 기존의 XML을 허용하기 위해서 사용하는 JavaScript의 확장 문법입니다.
 JSX는 단순히 XML을 허용만 하는게 아니라, JavaScript의 대한 추가적인 기능도 제공합니다. 
 사용법은 아래와 같습니다.
+
 ```
 // JSX가 없을 때는 이렇게
 React.createElement('a', {href: 'https://leop0ld.github.io/posts/study-jsx-and-es6/'}, 'JSX & ES6 간단 정리')
+
 // JSX를 사용했을 때는 이렇게!
 <a href="https://leop0ld.github.io/posts/study-jsx-and-es6/">JSX & ES6 간단 정리</a>
 ```
@@ -49,11 +51,11 @@ React.createElement('a', {href: 'https://leop0ld.github.io/posts/study-jsx-and-e
 ```html
 <!-- Error -->
 var HelloReact = React.createClass({
-    render () {
-        return (
-		    <h1>Hello, React</h1>
-		    <p>UI Library</p>
-		);
+	render () {
+		return (
+		  <h1>Hello, React</h1>
+		  <p>UI Library</p>
+	  	);
 	}
 });
 ```
@@ -66,11 +68,11 @@ Nested Elements, 즉 감싸진 요소들.
 <!-- Correct -->
 var HelloReact = React.createClass({
     render () {
-      return (
-    	    <div>
-			    <h1>Hello, React</h1>
-			    <p>UI Library</p>
-		    </div>
+        return (
+    	  <div>
+			<h1>Hello, React</h1>
+			<p>UI Library</p>
+		  </div>
 		);
 	}
 });
@@ -87,10 +89,10 @@ var HelloReact = React.createClass({
 	render () {
 		let description = 'Welcome, Leop0ld!';
 		return (
-			<div>
-				<h1>Hello, Leop0ld!</h1>
-				<p>{description}</p>
-			</div>
+		  <div>
+			<h1>Hello, Leop0ld!</h1>
+			<p>{description}</p>
+		  </div>
 		);
 	}
 });
@@ -104,10 +106,10 @@ description 이라는 'Welcome, Leop0ld' 문자열을 가진 변수를 생성하
 var HelloReact = React.createClass({
 	render () {
 		return (
-			<div>
-				<h1>Hello, Leop0ld!</h1>
-				<p>{1 != 2 ? 'Leop0ld' : 'False'}</p>
-			</div>
+		  <div>
+			<h1>Hello, Leop0ld!</h1>
+			<p>{1 != 2 ? 'Leop0ld' : 'False'}</p>
+		  </div>
 		);
 	}
 });
@@ -132,10 +134,10 @@ var HelloReact = React.createClass({
 			borderRadius: '10px'
 		}
 		return (
-			<div>
-				<h1 style={leoStyle}>Hello, Leop0ld!</h1>
-				<p>{1 != 2 ? 'Leop0ld' : 'False'}</p>
-			</div>
+		  <div>
+			<h1 style={leoStyle}>Hello, Leop0ld!</h1>
+			<p>{1 != 2 ? 'Leop0ld' : 'False'}</p>
+		  </div>
 		);
 	}
 });
@@ -169,9 +171,9 @@ JSX에서의 주석은 매우 간단합니다!
 var HelloReact = React.createClass({
     render () {
         return (
-		    <div>
-			    Hello, <a href="https://facebook.github.io/react/">React</a>
-		    </div>
+		  <div>
+			Hello, <a href="https://facebook.github.io/react/">React</a>
+		  </div>
 	    );
 	}
 });
