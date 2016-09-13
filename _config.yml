@@ -1,7 +1,7 @@
 # Site
 title:              Leop0ld
-bio:                "Leop0ld! a brief Leop0ld's Blog."
-description:        "Keep Calm and Code Python."
+bio:                "Leop0ld! Personal Tech Blog."
+description:        "Keep Calm and Code Python and JavaScript."
 reading_time:       true
 words_per_minute:   200
 logo:               'assets/img/profile_image.jpg'
@@ -29,36 +29,13 @@ sass:
 disqus_shortname:   https-leop0ld-github-io
 
 # Social
-# if you don't have any of social below, comment the line.
-#google:
-  #plus:            #username
-  #analytics:
-  #verify:
-  #ad-client:
-  #ad-slot:
-#bing-verify:
-#email:
+email:              l3pold7@gmail.com
 twitter:            leop0ld7
 facebook:           leop0ld
 github:             Leop0ld
 #stackoverflow:     123456/username   from a "http://stackoverflow.com/users/123456/username" link
-#linkedin:          username
-#xing:              username
 instagram:          myungseokang
-#lastfm:            username
-#tumblr:            username
-#pinterest:         username
-#foursquare:        username
-steam:              l3opold7
-#dribbble:          username
-#youtube:           username
-#soundcloud:        username
-#weibo:             username
-#flickr:            username
-#codepen:           username
-#keybase:           username
-#xmpp:              username@server.com
-#hackernews:        username
+codepen:            Leop0ld
 
 # Gems
 gems:
