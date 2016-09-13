@@ -34,7 +34,7 @@ React는 위에서 언급했듯이 페이스북에서 사용하는 JS 라이브�
 React는 View 레이어만 담당하기 때문에 다른 부분 에는 다른 기술(EX. Node.js, AngularJS) 같은 것이 필요합니다.
 
 
-Addition. 
+Addition.
 
 **Babel?**
 Babel이란 ES6 문법으로 작성된 자바스크립트를 ES5 문법으로 바꿔주는 역할을 합니다.
@@ -70,7 +70,7 @@ React의 특징을 알아보도록 하겠습니다.
 - 위에서 말했듯이 Flux 패턴을 아주 잘 살린 Redux 라는 라이브러리를 많이 사용합니다.
 
 ## 5. props
-- props 는 컴포넌트 내에서 사용할 Immutable, 변경 불가능한 데이터를 지칭합니다.
+- props 는 컴포넌트 내에서 사용할 변경 불가능한 데이터를 지칭합니다.
 - props 는 Parent(부모) 에서 Child(자식) 에게 데이터를 전달할 때 사용합니다.
 
 ## 6. state
@@ -99,6 +99,22 @@ React의 특징을 알아보도록 하겠습니다.
 1번으로 진행할 분들은 [JSFiddle](https://jsfiddle.net/) 이라는 것을 써보시는 걸 추천드립니다.
 JS에 특화된 웹 IDE 같습니다.
 하지만 JavaScript 를 한 파일에 작성해야 하고, ES6 문법이 지원되지 않는 단점이 있습니다. 참고하시면 좋을 것 같습니다.
+
+## 0. 사용할 것들 미리 알아보기
+
+* React
+
+* Node.js & npm
+
+* webpack
+
+* Redux
+
+여기서는 추후 적용해보고 싶은 것들입니다.
+
+* MongoDB
+
+* JEST? (Test)
 
 ## 1. Global Package 설치하기
 
