@@ -102,19 +102,20 @@ JS에 특화된 웹 IDE 같습니다.
 
 ## 0. 사용할 것들 미리 알아보기
 
-* React
+* React: 공부를 하게 될 UI 컴포넌트 라이브러리
 
-* Node.js & npm
+* webpack: 모듈 번들러로, 의존성을 가진 모듈들을 다루고, 그 모듈로부터 정적인 asset을 생성한다.
 
-* webpack
+* Redux: Redux는 자바스크립트 앱을 위한 예측 가능한 상태 컨테이너입니다.
 
-* Redux
 
 여기서는 추후 적용해보고 싶은 것들입니다.
 
-* MongoDB
+* Node.js: 이미 npm을 사용하고 있지만 Node.js는 사용하고 있지 않아서 Express.js 같은 프레임워크의 형태로 사용할 예정입니다.
 
-* JEST? (Test)
+* MongoDB: NoSQL(Not Only SQL)이라는 의미의 데이터베이스입니다. Express를 사용하면서 같이 사용해보고 싶습니다.
+
+* JEST: Test를 위한 JS 프레임워크를 사용해볼 예정입니다.
 
 ## 1. Global Package 설치하기
 
