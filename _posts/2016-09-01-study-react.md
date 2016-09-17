@@ -72,6 +72,10 @@ React의 특징을 알아보도록 하겠습니다.
 ## 5. props
 - props 는 컴포넌트 내에서 사용할 Immutable, 변경 불가능한 데이터를 지칭합니다.
 - props 는 Parent(부모) 에서 Child(자식) 에게 데이터를 전달할 때 사용합니다.
+- 사용법은 { this.props.propsKey } 로 사용 가능합니다.
+- <> 괄호 안에 propsKey="propsValue" 이렇게 써주면 위에 말한 것처럼 사용 가능합니다.
+- this.props.children 은 기본적으로 가지고 있는 props입니다.
+- <Hello>Hello, React</Helllo> 의 경우 ```Hello, React``` 부분이 this.props.children 입니다.
 
 ## 6. state
 - state 는 컴포넌트 내에서 변경 가능한 데이터를 지칭합니다.
@@ -100,14 +104,190 @@ React의 특징을 알아보도록 하겠습니다.
 JS에 특화된 웹 IDE 같습니다.
 하지만 JavaScript 를 한 파일에 작성해야 하고, ES6 문법이 지원되지 않는 단점이 있습니다. 참고하시면 좋을 것 같습니다.
 
+
 ## 1. Global Package 설치하기
+
+**babel** 
+– ECMAScript6 를 지원하지 않는 환경에서 ECMAScript6 Syntax를 사용 할 수 있게 해줍니다.
+
+**webpack** 
+– 모듈 번들러로서, 자바스크립트 파일들을 하나로 합쳐줍니다.
+
+**webpack-dev-server** 
+– wepback에서 지원하는 간단한 개발서버로서 별도의 서버를 구축하지 않고도 웹서버를 열 수 있으며 hot-loader를 통하여 코드가 수정될때마다 자동으로 리로드 되게 할 수 있습니다.
+
+```
+$ npm install -g babel webpack webpack-dev-server
+```
+위의 명령어로 설치가 가능합니다.
+-g 옵션은 Global로 설치하겠다는 옵션입니다.
+
 
 ## 2. Project 생성
 
+```
+$ mkdir react_study && cd react_study
+$ npm init
+```
+
+위의 명령어로 react_study라는 폴더를 만들고 nodejs 프로젝트를 init, 생성했습니다.
+
+```
+├── node_modules/      # Nodejs 패키지들
+├── package.json       # 패키지 의존성 관리
+├── public             # Public path
+│   └── index.html     # index 페이지
+├── src                # React js 프로젝트 루트
+│   ├── components     # 컴포넌트 폴더
+│   │   └── App.js     # App 컴포넌트
+│   └── index.js       # webpack Entry Point
+└── webpack.config.js  # webpack 설정 파일
+```
+
+그리고 프로젝트의 구조는 위와 같습니다.
+이렇게 설정을 해줄 예정입니다.
+
+
 ## 3. Dependency 설치
+
+React를 사용할 것이므로 React를 설치하고, 디펜던시에 추가해주어야 합니다.
+디펜던시들은 package.json 파일에 쓰여집니다.
+
+설치와 동시에 디펜던시에 추가할 수 있는 **--save** 옵션을 사용합니다.
+
+```
+$ npm install --save react react-dom
+```
+
+babel에 대한 디펜던시도 추가해주어야 합니다.
+이것들은 개발 환경에서만 쓰일 것이기 때문에 **--save-dev** 옵션으로 설치해줍니다.
+
+```
+$ npm install --save-dev babel-core babel-loader babel-preset-react babel-preset-es2015 webpack webpack-dev-server
+```
+
+```json
+"dependencies": {
+  "react": "^15.3.1",
+  "react-dom": "^15.3.1"
+},
+"devDependencies": {
+  "babel-cli": "^6.14.0",
+  "babel-core": "^6.14.0",
+  "babel-loader": "^6.2.5",
+  "babel-preset-es2015": "^6.14.0",
+  "babel-preset-react": "^6.11.1",
+  "webpack": "^1.13.2",
+  "webpack-dev-server": "^1.15.1"
+}
+```
+
 
 ## 4. 여러 가지 설정
 
+**Webpack 설정**
+
+webpack.config.js 파일에서 webpack에 관한 설정을 해줄 수 있습니다.
+
+```javascript
+module.exports = {
+    entry: './src/index.js',
+ 
+    output: {
+        path: __dirname + '/public/',
+        filename: 'bundle.js'
+    },
+ 
+    devServer: {
+        inline: true,
+        port: 7777,
+        contentBase: __dirname + '/public/'
+    },
+ 
+    module: {
+            loaders: [
+                {
+                    test: /\.js$/,
+                    loader: 'babel',
+                    exclude: /node_modules/,
+                    query: {
+                        cacheDirectory: true,
+                        presets: ['es2015', 'react']
+                    }
+                }
+            ]
+        }
+};
+```
+
+요렇게 설정을 해줍니다.
+entry 부분은 제일 먼저 어떤 파일을 읽어들일건지 설정하는 부분입니다.
+entry 부터 시작해서 필요한 부분을 전부 읽어들인 뒤, 하나로 합쳐서 bundle.js 에 저장하게 됩니다.
+추가적으로는, 모듈을 통하여 ES6 문법으로 작성된 코드를 ES5 형태로 변환도 해줍니다.
+포트는 7777로 설정되었습니다.
+
+그리고 추가적으로 npm start 명령어를 입력했을 때 개발 서버가 작동되게끔 package.json 파일에 scripts 부분에 start를 추가해줍니다.
+
+```json
+"scripts": {
+  "start": "webpack-dev-server --hot"
+},
+```
+
+이제 설정이 얼추 마무리 되었습니다.
+
+
 ## 5. First 앱 작성
 
-## 6. Webpack 서버 실행
+App.js에 다음과 같이 작성했습니다.
+
+<script src="https://gist.github.com/Leop0ld/fc21c66a385dc2ff2857b557311dfbec.js"></script>
+
+그리고 아래는 index.html입니다.
+
+```html
+<!DOCTYPE html>
+<html>
+ 
+   <head>
+      <meta charset="UTF-8">
+      <title>React Study</title>
+   </head>
+ 
+   <body>
+      <div id="root"></div>
+      <script src="bundle.js"></script>
+   </body>
+ 
+</html>
+```
+
+마지막으로 아래는 webpack entry point인 index.js 파일입니다.
+
+```javascript
+import React from 'react';
+import ReactDOM from 'react-dom';
+import App from './components/App';
+ 
+const rootElement = document.getElementById('root');
+ReactDOM.render(<App />, rootElement);
+```
+
+
+## 6. Webpack 서버 실행, 결과 확인
+
+이제 터미널에서
+
+```
+$ npm start
+```
+
+명령어만 입력해주면 webpack dev server가 실행됩니다.
+
+이제 localhost:7777로 들어가서 확인해보면 아래와 같이 나옵니다.
+
+<center>
+  <img src="/assets/img/react1.jpg" alt="First React App" style="width: 400px; height: 200px; border-radius: 5px;"/>
+</center>
+
+감사합니다 :D
