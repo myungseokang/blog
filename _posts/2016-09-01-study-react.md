@@ -34,7 +34,7 @@ React는 위에서 언급했듯이 페이스북에서 사용하는 JS 라이브�
 React는 View 레이어만 담당하기 때문에 다른 부분 에는 다른 기술(EX. Node.js, AngularJS) 같은 것이 필요합니다.
 
 
-Addition. 
+Addition.
 
 **Babel?**
 Babel이란 ES6 문법으로 작성된 자바스크립트를 ES5 문법으로 바꿔주는 역할을 합니다.
@@ -70,7 +70,7 @@ React의 특징을 알아보도록 하겠습니다.
 - 위에서 말했듯이 Flux 패턴을 아주 잘 살린 Redux 라는 라이브러리를 많이 사용합니다.
 
 ## 5. props
-- props 는 컴포넌트 내에서 사용할 Immutable, 변경 불가능한 데이터를 지칭합니다.
+- props 는 컴포넌트 내에서 사용할 변경 불가능한 데이터를 지칭합니다.
 - props 는 Parent(부모) 에서 Child(자식) 에게 데이터를 전달할 때 사용합니다.
 - 사용법은 { this.props.propsKey } 로 사용 가능합니다.
 - <> 괄호 안에 propsKey="propsValue" 이렇게 써주면 위에 말한 것처럼 사용 가능합니다.
@@ -104,6 +104,23 @@ React의 특징을 알아보도록 하겠습니다.
 JS에 특화된 웹 IDE 같습니다.
 하지만 JavaScript 를 한 파일에 작성해야 하고, ES6 문법이 지원되지 않는 단점이 있습니다. 참고하시면 좋을 것 같습니다.
 
+
+## 0. 사용할 것들 미리 알아보기
+
+* React: 공부를 하게 될 UI 컴포넌트 라이브러리
+
+* webpack: 모듈 번들러로, 의존성을 가진 모듈들을 다루고, 그 모듈로부터 정적인 asset을 생성한다.
+
+* Redux: Redux는 자바스크립트 앱을 위한 예측 가능한 상태 컨테이너입니다.
+
+
+여기서는 추후 적용해보고 싶은 것들입니다.
+
+* Node.js: 이미 npm을 사용하고 있지만 Node.js는 사용하고 있지 않아서 Express.js 같은 프레임워크의 형태로 사용할 예정입니다.
+
+* MongoDB: NoSQL(Not Only SQL)이라는 의미의 데이터베이스입니다. Express를 사용하면서 같이 사용해보고 싶습니다.
+
+* JEST: Test를 위한 JS 프레임워크를 사용해볼 예정입니다.
 
 ## 1. Global Package 설치하기
 
@@ -239,6 +256,7 @@ entry 부터 시작해서 필요한 부분을 전부 읽어들인 뒤, 하나로
 
 ## 5. First 앱 작성
 
+<<<<<<< HEAD
 App.js에 다음과 같이 작성했습니다.
 
 <script src="https://gist.github.com/Leop0ld/fc21c66a385dc2ff2857b557311dfbec.js"></script>
