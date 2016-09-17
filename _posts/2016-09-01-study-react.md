@@ -256,7 +256,6 @@ entry 부터 시작해서 필요한 부분을 전부 읽어들인 뒤, 하나로
 
 ## 5. First 앱 작성
 
-<<<<<<< HEAD
 App.js에 다음과 같이 작성했습니다.
 
 <script src="https://gist.github.com/Leop0ld/fc21c66a385dc2ff2857b557311dfbec.js"></script>
