@@ -304,7 +304,7 @@ $ npm start
 이제 localhost:7777로 들어가서 확인해보면 아래와 같이 나옵니다.
 
 <center>
-  <img src="/assets/img/react1.png" alt="First React App" style="width: 400px; height: 200px; border-radius: 5px;"/>
+  <img src="/assets/img/react1.png" alt="First React App" style="width: 400px; height: 300px; border-radius: 5px;"/>
 </center>
 
 감사합니다 :D
