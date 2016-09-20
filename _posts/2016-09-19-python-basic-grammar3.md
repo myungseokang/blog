@@ -15,7 +15,7 @@ comments: true
 ## 14. Regex(정규 표현식)
 
 
-## 15. Class(클래스) + Object(객체)
+## 15. Class(클래스) + Object(객체
 
 
 ## 16. Init(초기화)

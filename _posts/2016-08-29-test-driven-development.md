@@ -38,10 +38,17 @@ TDD란?
 - 단위 테스트를 진행하고, 기능 테스트를 진행함으로서 두 번의 테스트를 거쳐 최소한의 코드로 개발하는 방법
 
 ## Selenium
-- Browser Emulator
-코드를 이용해서 실제 브라우저를 열어 웹페이지의 기능을 테스트 해볼 수 있습니다.
 
-간단하게 pip install selenium 명령어로 설치가 가능합니다.
+- Browser Emulator
+- 코드를 이용해서 실제 브라우저를 열어 웹페이지의 기능을 테스트 해볼 수 있습니다.
+
+간단하게 
+
+```shell
+$ pip install selenium
+```
+
+로 설치가 가능합니다.
 
 기본으로 Firefox 브라우저를 지원하지만 다른 브라우저들의 Webdriver를 설치하면 다른 브라우저에서도 테스트를 할 수 있습니다.
 셀레늄에서는 Waiting이 중요합니다.(the beauty of waiting)
