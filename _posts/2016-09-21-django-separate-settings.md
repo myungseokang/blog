@@ -57,5 +57,38 @@ import * 을 사용해도 되는 유일한 곳입니다.(라이브러리 등을 
 
 그 다음에 각각 설정을 해줍니다.
 
+만약 로컬에서는 로컬의 PostgreSQL을 사용하고 서버에서는 AWS의 RDS를 사용한다면 local.py에선 DB HOST 부분을 localhost로, 그리고 production.py에서는 AWS의 RDS 주소를 사용해주면 됩니다.
+
+이런 식으로 각각 설정을 해주시면 됩니다.
+
 이제 manage.py로 가보겠습니다.
 
+manage.py는 주로 개발할 때 사용하기 때문에 아래와 같이 settings.local 로 사용하도록 설정을 해주고 wsgi.py는 production을 사용하게 해줍니다.
+
+manage.py
+
+```python
+#!/usr/bin/env python
+import os
+import sys
+
+if __name__ == "__main__":
+    os.environ.setdefault("DJANGO_SETTINGS_MODULE", "<PROJECT_NAME>.settings.local")
+
+    from django.core.management import execute_from_command_line
+
+    execute_from_command_line(sys.argv)
+```
+
+wsgi.py
+
+```python
+import os
+os.environ.setdefault("DJANGO_SETTINGS_MODULE", "<PROJECT_NAME>.settings.production")
+
+from django.core.wsgi import get_wsgi_application
+application = get_wsgi_application()
+```
+
+이런 식으로 해줬습니다.
+읽어주셔서 감사합니다 :D
