@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Two scoops of Django 김승진 역자님과 미팅 with Django Girls"
-date:   2016-09-21
+date:   2016-09-23
 excerpt: "Two scoops of Django meeting with Django Girls"
 tag:
 - Django
