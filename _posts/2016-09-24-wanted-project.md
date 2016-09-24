@@ -4,6 +4,12 @@ title: "원하는 프로젝트 리스트"
 date: 2016-09-24
 excerpt: "Wanted Project list"
 tag:
+- Python
+- Django
+- Django REST Framework
+- React
+- React Native
+- Nodejs
 comment: true
 ---
 
