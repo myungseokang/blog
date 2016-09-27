@@ -126,6 +126,39 @@ export SECRET_KEY="my-secret-key"
 혹은 Pycharm을 사용하실 경우 Edit Run configurations 를 들어가보시면 환경 변수를 추가해줄 수 있는 부분이 있습니다.
 그 부분에 추가해주면 Pycharm Run 시킬 경우 사용이 가능합니다.(Pycharm에서는 위의 두 방법다 통하지 않고 오직 이 방법만이 통합니다. Pycharm Run을 위해서라면 이렇게 설정해주세요!)
 
+
+#### 2016.09.27 추가
+
+Ubuntu의 Apache 환경으로 배포할 때 secret.json을 못찾아서 500 에러가 발생하는 경우가 있었습니다.
+이 경우에는 아래와 같이 작성해주었습니다.
+
+settings/base.py 의 일부
+
+```python
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+
+secret_file = os.path.join(BASE_DIR, 'secret.json')
+
+with open(secret_file, 'r') as f:
+    secret = json.loads(f.read())
+
+
+def get_secret(setting, secret=secret):
+    """
+    :param setting: secret Dict 의 원하는 value 값을 가져올 수 있게하는 key 값
+    :param secret: 비밀 변수들의 실제 값을 담은 json 파일을 Dict화 한 변수
+    :return secret[setting]: secret.json 에서 가져온 Dict 의 setting 키를 가진 값을 리턴해줍니다.
+    """
+    try:
+        return secret[setting]
+    except KeyError:
+        error_msg = "Set the {0} environment variable".format(setting)
+        raise ImproperlyConfigured(error_msg)
+```
+
+이렇게 해주니 Ubuntu(AWS 서버)와 OS X(로컬) 모두 secret.json을 잘 가져왔습니다.
+이렇게 사용해주는 것이 좋을 듯 합니다.
+
 이상입니다.
 읽어주셔서 감사합니다 :D
 
