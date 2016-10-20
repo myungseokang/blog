@@ -10,7 +10,7 @@ tag:
 - React
 - React Native
 - Nodejs
-comment: true
+comments: true
 ---
 
 원하는 프로젝트 리스트

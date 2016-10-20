@@ -7,7 +7,7 @@ tag:
 - Django
 - Migration
 - South
-comment: true
+comments: true
 ---
 
 South에서 Migration으로 넘어가기
