@@ -50,8 +50,8 @@ ECMAScript: ECMA 인터내셔널의 ECMA-262 기술 규격에 정의된 표준�
 ECMAScript(이하 ES)는 꽤나 다양한 곳에 쓰인다.
 대표적으로 facebook이 만든 React, React Native 이다.
 최근들어 굉장히 많은 주목을 받고 있는 오픈소스이기 때문에 한번쯤은 들어봤으리라 생각된다.
-물론 이 두개말고도 여러 개의 다른것들이 존재하나( ~지식이 짧아서~ ) 여기까지만 하겠다.
-TypeScript 진영의 AngularJS가 대항마이다.( ~Github Star 수는 React가 매우 압도적으로 앞선ㄷ...~ )
+물론 이 두개말고도 여러 개의 다른것들이 존재하나(~~지식이 짧아서~~) 여기까지만 하겠다.
+TypeScript 진영의 AngularJS가 대항마이다.(~~Github Star 수는 React가 매우 압도적으로 앞선ㄷ...~~)
 
 ## 모양은 어떻게 생겼는지
 
@@ -59,6 +59,6 @@ TypeScript 진영의 AngularJS가 대항마이다.( ~Github Star 수는 React가
 
 너무 성의없게 썼다.
 그러나 다시 시작을 하기로 마음먹은 이상 제대로 해볼 생각이다.
-Node.js도 쓰면서 앞단은 React, 뒷단은 Node.js로 구성된 프로젝트도 하나 해보고 싶다.( ~Tutorial을 일단 먼저...~ )
+Node.js도 쓰면서 앞단은 React, 뒷단은 Node.js로 구성된 프로젝트도 하나 해보고 싶다.(~~Tutorial을 일단 먼저...~~)
 
 감사합니다 :D
