@@ -14,7 +14,7 @@ React 공부하기
 > 이 블로그, 저 블로그 많이 참고했습니다.
 
 페이스북에서 밀고있는 JS 라이브러리인 **React** 에 대해서 공부해볼 생각입니다.
-요즘 굉장히 핫 해서 공부하는게 재밌을 것 같습니다.
+요즘 굉장히 **핫** 해서 공부하는게 재밌을 것 같습니다.
 
 # Index
 
@@ -44,11 +44,11 @@ Babel이란 ES6 문법으로 작성된 자바스크립트를 ES5 문법으로 �
 
 # npm? es6? jsx? 그게 뭔데?
 
-- npm: Node Package Manager 의 약자로 JS 모듈들을 다운받을 수 있게 해주는 도구입니다. [npm 공식 홈페이지](https://docs.npmjs.com/getting-started/what-is-npm)
+- **npm** : Node Package Manager 의 약자로 JS 모듈들을 다운받을 수 있게 해주는 도구입니다. [npm 공식 홈페이지](https://docs.npmjs.com/getting-started/what-is-npm)
 
-- ES6: ECMAScript6 의 약자로써 2016년 1월에 발표된 JavaScript 문법의 표준입니다. [ES6 홈페이지](http://es6-features.org/#Constants)
+- **ES6** : ECMAScript6 의 약자로써 2016년 1월에 발표된 JavaScript 문법의 표준입니다. [ES6 홈페이지](http://es6-features.org/#Constants)
 
-- **JSX**: Babel에서 지원하는 HTML or XML 같은 문법을 자동으로 native JavaScript로 변환해줍니다. [자세한 링크](https://leop0ld.github.io/posts/study-jsx)
+- **JSX** : Babel에서 지원하는 HTML or XML 같은 문법을 자동으로 native JavaScript로 변환해줍니다. [자세한 링크](https://leop0ld.github.io/posts/study-jsx)
 
 
 # React 특징
