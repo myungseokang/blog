@@ -13,8 +13,8 @@ comments: false
 
 ## Features
 * Working at [OpenGallery](http://opengallery.co.kr)
-* Position: Web Developer(Full-stack)
+* Position: Web Developer
 * Use Python
-* Learning Django
+* Learning Django, Flask
 * I'm interested in Open Source and want to contribute!
-* Also interested in JS and studying.(Ex. jQuery, React, Node.js)
+* Also interested in Data Analytics and Visualization.
