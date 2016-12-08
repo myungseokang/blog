@@ -141,7 +141,7 @@ $ pyenv deactivate
 ### autoenv 설정하고 사용하기
 
 ```shell
-$ echo 'source /usr/local/opt/autoenv/activate.sh'
+$ echo 'source /usr/local/opt/autoenv/activate.sh' >> ~/.zshrc
 ```
 
 일단 다음 명령어를 입력해줍니다.
