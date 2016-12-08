@@ -2,7 +2,7 @@
 layout: post
 title:  "pyenv, virtualenv, autoenv 를 사용하여 Python 개발환경 구축하기"
 date:   2016-12-08
-excerpt: "Keep Calm and Code Python."
+excerpt: "Building a Python development environment using pyenv, virtualenv, and autoenv"
 tag:
 - Python
 - pyenv
