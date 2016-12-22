@@ -353,5 +353,4 @@ except CustomError as e:
 이렇게 예외 처리를 알아보았습니다.
 
 2편은 여기서 마칩니다!
-3편은 [여기](https://leop0ld.github.io/posts/python-basic-grammar3)서 보실 수 있습니다!
 감사합니다 :)
