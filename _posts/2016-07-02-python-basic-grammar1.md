@@ -545,5 +545,5 @@ print(set1)  # {1, 2, 4, 5}
 x의 위치에는 제거하고 싶은 값을 적어줍니다.
 
 1편은 여기서 마칩니다!
-2편은 [여기](https://leop0ld.github.io/posts/python-basic-grammar2)서 보실 수 있습니다!
+2편은 [여기](https://leop0ld.github.io/python-basic-grammar2/)서 보실 수 있습니다!
 감사합니다 :)
