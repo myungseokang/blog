@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Django ORM에 대해"
+title: "django ORM에 대해"
 date:   2016-12-12
 excerpt: "Django ORM에 대해"
 tag:
@@ -13,6 +13,7 @@ comments: true
 
 django ORM에 대해
 ====================
+> 부족한 부분은 댓글로 알려주시면 감사하겠습니다.
 
 요즘 django의 조금은 아랫단에 대해서 점차 생각이 들기 시작했다.
 
