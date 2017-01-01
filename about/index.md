@@ -12,9 +12,13 @@ comments: false
 </center>
 
 ## Features
-* Working at [OpenGallery](http://opengallery.co.kr)
+
+* Working at [OpenGallery](http://www.opengallery.co.kr/)
+
 * Position: Web Developer
-* Use Python
-* Learning Django, Flask
-* I'm interested in Open Source and want to contribute!
-* Also interested in Data Analytics and Visualization.
+
+* I'm interested in Python, Django, Flask
+
+* Also, interested in JS(ECMAScript, React, Node.js, Angular2)
+
+* Django Girls Organizer and Facilitator
