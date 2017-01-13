@@ -11,33 +11,43 @@ tag:
 comments: true
 ---
 
+## 2017.01.13 추가
+
+pyenv를 brew로 설치해서 쓰다보니까 버전 업그레이드 문제가 있었습니다.
+
+때문에 git으로 설치 방법을 바꾸겠습니다.
+
 ## 설치에 앞서
 
 각각이 어떤 역할을 하는지 간략하게 설명하고 넘어가겠습니다.
 
-- pyenv : "*Python Version Management*", 로컬에 다양한 파이썬 버전을 설치하고 사용할 수 있도록 해줍니다.
+- pyenv : "**Python Version Management**", 로컬에 다양한 파이썬 버전을 설치하고 사용할 수 있도록 해줍니다.
 
-- virtualenv : “*Virtual Python Environment builder*”, 로컬에 다양한 파이썬 환경을 구축하고 사용할 수 있도록 해줍니다.
+- virtualenv : “**Virtual Python Environment builder**”, 로컬에 다양한 파이썬 환경을 구축하고 사용할 수 있도록 해줍니다.
 
-- autoenv : 특정 프로젝트 폴더로 들어가면 자동으로 지정해준 쉘 스크립트를 실행해줍니다.
+- autoenv : 특정 프로젝트 폴더로 들어가면 **자동으로 지정해준 쉘 스크립트를 실행**해줍니다.
 
-## 본격적으로 설치!
+## pyenv 설치하기!
 
 ```shell
-$ brew update
-$ brew install pyenv pyenv-virtualenv autoenv
+$ git clone https://github.com/yyuu/pyenv.git ~/.pyenv
 ```
 
-(귀찮으니 한꺼번에...)위의 명령어로 설치할 수 있습니다.
+위의 명령어로 설치할 수 있습니다.
 
-
-### pyenv 설정하고 사용하기
+## pyenv 설정하고 사용하기
 
 ```shell
-$ echo 'eval "$(pyenv virtualenv-init -)"' >> ~/.zshrc
+$ echo 'export PYENV_ROOT="$HOME/.pyenv"' >> ~/.zshrc
+$ echo 'export PATH="$PYENV_ROOT/bin:$PATH""' >> ~/.zshrc
+$ echo 'eval "$(pyenv init -)"' >> ~/.zshrc
 ```
 
 이제 쉘을 껐다가 켠 후 확인해보면 됩니다.
+
+```shell
+$ source ~/.zshrc
+```
 
 ```shell
 $ pyenv versions
@@ -89,10 +99,26 @@ $ pyenv uninstall {PYTHON_VERSION}
 
 더 자세한 설명은 `pyenv --help` 를 입력하시면 확인하실 수 있습니다!
 
+## pyenv-virtualenv 설치하기!
 
-### virtualenv 설정하고 사용하기
+```shell
+$ git clone https://github.com/yyuu/pyenv-virtualenv.git ~/.pyenv/plugins/pyenv-virtualenv
+```
 
-pyenv 와 동시에 pyenv-virtualenv 도 설치를 했기 때문에 이것 역시 사용할 수 있습니다.
+## pyenv-virtualenv 설정하고 사용하기
+
+pyenv 와 동시에 pyenv-virtualenv 도 설치를 했기 때문에 설치는 건너뛰고 설정을 해준 뒤에 사용할 수 있습니다.
+한 줄만 추가해주면 됩니다.
+
+```shell
+$ echo 'eval "$(pyenv virtualenv-init -)"' >> ~/.zshrc
+```
+
+이제 다시 셸을 재시작 해줍니다.
+
+```shell
+$ source ~/.zshrc
+```
 
 위에서 `pyenv versions` 라는 명령어를 다뤘었는데, pyenv-virtualenv 가 설치되어 있을 경우 가상 개발 환경 리스트도 모두 보여줍니다.
 
@@ -138,15 +164,26 @@ $ pyenv deactivate
 
 그렇다면 이제 autoenv로 넘어 가보겠습니다.
 
-### autoenv 설정하고 사용하기
+## autoenv 설치하기!
 
 ```shell
-$ echo 'source /usr/local/opt/autoenv/activate.sh' >> ~/.zshrc
+$ git clone git://github.com/kennethreitz/autoenv.git ~/.autoenv
 ```
 
-일단 다음 명령어를 입력해줍니다.
+## autoenv 설정하고 사용하기
 
 처음에 설치할 때 autoenv까지 같이 설치해줬기 때문에 설정만 잘 해준다면 바로 사용이 가능합니다.
+아래와 같이 설정을 해줍니다!
+
+```shell
+$ echo 'source ~/.autoenv/activate.sh' >> ~/.zshrc
+```
+
+그리고 다시 셸을 재시작해줍니다.
+
+```shell
+$ source ~/.zshrc
+```
 
 사용법도 아주 간단합니다.
 
