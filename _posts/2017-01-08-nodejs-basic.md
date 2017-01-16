@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Node.js 개념 정리"
-date:   2017-01-09
+date:   2017-01-08
 excerpt: "Conceptual Theorem of Node.js"
 tag:
 - Node.js
