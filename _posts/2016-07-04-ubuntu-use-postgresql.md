@@ -3,7 +3,7 @@ layout: post
 title:  "Ubuntu에서 PostgreSQL 사용하기"
 date:   2016-07-04
 excerpt: "Using PostgreSQL in Ubuntu"
-tag:
+categories:
 - Python
 - Ubuntu
 - PostgreSQL

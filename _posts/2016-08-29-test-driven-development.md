@@ -3,7 +3,7 @@ layout: post
 title:  "TDD 알아보기"
 date:   2016-08-29
 excerpt: "Learning Test-Driven Development"
-tag:
+categories:
 - Python
 - Django
 - Functional Test

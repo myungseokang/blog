@@ -3,7 +3,7 @@ layout: post
 title:  "Mac에서 oh my zsh와 iTerm 사용하기"
 date:   2016-08-27
 excerpt: "Using oh my zsh and iTerm2 in Mac"
-tag:
+categories:
 - Mac
 - zsh
 - oh my zsh

@@ -3,7 +3,7 @@ layout: post
 title: "django ORM에 대해"
 date:   2016-12-12
 excerpt: "django ORM에 대해"
-tag:
+categories:
 - Python
 - ORM
 - django

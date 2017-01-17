@@ -3,7 +3,7 @@ layout: post
 title: "AWS Elastic Beanstalk Health Check 관련 문제"
 date:   2017-01-17
 excerpt: "Problem about Health Check on AWS Elastic Beanstalk"
-tag:
+categories:
 - Django
 - Elastic Beanstalk
 comments: true

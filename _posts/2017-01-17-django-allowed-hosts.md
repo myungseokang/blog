@@ -3,7 +3,7 @@ layout: post
 title: "Django ALLOWED_HOSTS 관련 문제"
 date:   2017-01-17
 excerpt: "Problem about ALLOWED_HOSTS in Django"
-tag:
+categories:
 - Django
 comments: true
 ---

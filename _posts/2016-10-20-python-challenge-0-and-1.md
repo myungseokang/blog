@@ -3,7 +3,7 @@ layout: post
 title:  "Python Challenge 0번, 1번 풀이"
 date:   2016-10-20
 excerpt: "Solve Python Challenge Level 0, 1"
-tag:
+categories:
 - Python
 - Python Challenge
 comments: true

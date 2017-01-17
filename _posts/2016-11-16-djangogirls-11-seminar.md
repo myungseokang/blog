@@ -3,7 +3,7 @@ layout: post
 title:  "Django Girls Seoul 11월 세미나 발표자를 맡게 되었습니다!"
 date:   2016-11-16
 excerpt: "Django Girls Seoul November Seminar"
-tag:
+categories:
 - Django
 - Django Girls
 comments: true

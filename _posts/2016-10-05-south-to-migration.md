@@ -3,7 +3,7 @@ layout: post
 title: "Django South에서 Migration으로 넘어가기"   
 date: 2016-09-24
 excerpt: "Migrate South to Migration"
-tag:
+categories:
 - Django
 - Migration
 - South

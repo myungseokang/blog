@@ -3,7 +3,7 @@ layout: post
 title:  "Perceptron 알아보기"
 date:   2016-08-11
 excerpt: "Learning Perceptron"
-tag:
+categories:
 - Python
 - Perceptron
 - Neural Network

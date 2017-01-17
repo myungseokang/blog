@@ -3,7 +3,7 @@ layout: post
 title:  "Django에서 PostgreSQL 사용하기"
 date:   2016-07-05
 excerpt: "Using PostgreSQL in Django"
-tag:
+categories:
 - Python
 - Ubuntu
 - Django

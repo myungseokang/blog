@@ -3,7 +3,7 @@ layout: post
 title:  "Mac에서 Sublime Text3 사용하기"
 date:   2016-08-24
 excerpt: "Using Pyenv, Virtualenv, Autoenv in Mac"
-tag:
+categories:
 - Mac
 - Sublime Text
 - Sublime Text3

@@ -3,7 +3,7 @@ layout: post
 title: "Python으로 문자열 가지고 놀기"
 date: 2016-09-26
 excerpt: "Trifle text with Python"
-tag:
+categories:
 - Python
 comments: true
 ---

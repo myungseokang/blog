@@ -3,7 +3,7 @@ layout: post
 title:  "Django에서 S3에 Static, Media 파일 Serve하고 사용하기"
 date:   2016-07-27
 excerpt: "Using S3 for Serving Static and Media files in Django"
-tag:
+categories:
 - Python
 - Django
 - AWS

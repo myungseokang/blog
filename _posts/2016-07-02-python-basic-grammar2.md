@@ -3,7 +3,7 @@ layout: post
 title:  "Python 기초 문법 알아보기 - 2"
 date:   2016-07-02
 excerpt: "Learning Python Basic Grammar - 2"
-tag:
+categories:
 - Python
 - Python Grammar
 comments: true

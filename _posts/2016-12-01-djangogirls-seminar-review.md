@@ -3,7 +3,7 @@ layout: post
 title:  "Django Girls Seoul 11월 세미나 발표자 후기"
 date:   2016-12-01
 excerpt: "Review Django Girls Seoul Nov Seminar."
-tag:
+categories:
 - Django Girls
 - Django
 comments: true

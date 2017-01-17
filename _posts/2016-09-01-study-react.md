@@ -3,7 +3,7 @@ layout: post
 title:  "React 공부하기"
 date:   2016-09-01
 excerpt: "Studying React"
-tag:
+categories:
 - JavaScript
 - React
 comments: true

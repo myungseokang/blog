@@ -3,7 +3,7 @@ layout: post
 title:  "Django REST Framework 공부하기"
 date:   2016-07-06
 excerpt: "Studying Django REST Framework"
-tag:
+categories:
 - Python
 - Django Rest Framework
 comments: true

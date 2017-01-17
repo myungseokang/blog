@@ -3,7 +3,7 @@ layout: post
 title:  "Bootstrap 없이 Clipboard.js 적용하기"
 date:   2016-10-11
 excerpt: "Apply Clipboard.js without Bootstrap"
-tag:
+categories:
 - JavaScript
 - Clipboard.js
 comments: true

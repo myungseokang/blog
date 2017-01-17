@@ -3,7 +3,7 @@ layout: post
 title:  "드디어 HHKB BT를 만나다!"
 date:   2016-11-15
 excerpt: "Buy HHKB BT"
-tag:
+categories:
 - HHKB BT
 - Keyboard
 comments: true

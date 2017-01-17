@@ -3,7 +3,7 @@ layout: post
 title:  "EC2에서 Nginx+uWSGI로 python3로 작성한 django 앱 배포하기"
 date:   2016-07-29
 excerpt: "Using Nginx+uWSGI for Deploying Django project"
-tag:
+categories:
 - Python
 - Django
 - Nginx
