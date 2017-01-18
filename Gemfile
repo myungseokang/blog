@@ -1,7 +1,10 @@
-source "https://rubygems.org"
+source 'https://rubygems.org'
 
-group :jekyll_plugins do
-  gem "jekyll-paginate"
-  gem "jekyll-sitemap"
-  gem "octopress-autoprefixer"
-end
+# 'github-pages' includes 'jekyll' gem 
+gem 'github-pages'
+gem 'bourbon'
+gem 'jemoji'
+gem 'jekyll-feed'
+gem 'jekyll-paginate'
+gem 'jekyll-mentions'
+gem 'jekyll-redirect-from'

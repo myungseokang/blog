@@ -1,38 +1,57 @@
-# Site settings
-email: l3opold7@gmail.com
-baseurl: ""
-paginate: 5
-paginate_path: "/blog/page-:num"
-google_analytics: UA-84594819-1
-
-# SEO settings
-title: Leop0ld
-description: Leop0ld's Personal Tech Blog!
-url: ""
-twitter_username: __leop0ld__
-default_img: 
-
-# Profile settings
-name: Myungseo Kang
-profile_img: 
-profile: Web Developer / Djangogirls Seoul Organizer
-social:
-  github: https://github.com/Leop0ld
-  facebook: https://fb.me/leop0ld
-  instagram: https://instagram.com/myungseokang
-  linkedin: https://linkedin.com/in/leop0ld
-  codepen: https://codepen.io/Leop0ld
-
-
 # Build settings
-include: ["_categories"]
-exclude: ["Gemfile", "Gemfile.lock"]
-markdown: kramdown
-permalink: /:year/:month/:day/:title/
+gems:
+  - jemoji
+  - jekyll-paginate
+  - jekyll-feed
+  - jekyll-mentions
+  - jekyll-redirect-from
 
-# Sass
-sass:
-  style: compressed
+# Site settings
+title: "Leop0ld"
+description: "Personal TECH Blog!"
+email: "l3op0ld7@gmail.com"
+#blog logo
+logo: "/assets/img/profile.jpg"
+# blog cover
+cover: "/assets/img/cover.jpg"
 
-# Gems
-gems: [jekyll-paginate, jekyll-sitemap, octopress-autoprefixer]
+authors:
+  leop0ld:
+    name: Myungseo Kang
+    image: /assets/img/profile.jpg
+
+paginate: 10
+
+url: "http://leop0ld.github.io" # the base hostname & protocol for your site
+baseurl: ""
+#used to display twitter cards
+twitter_handle: '@__leop0ld__'
+
+#fill in disqus shortname to use disqus
+disqus: 'https-leop0ld-github-io'
+
+timezone: Asia/Seoul
+
+# social icons and sharing options
+social:
+
+  - icon: facebook
+    url: http://fb.me/leop0ld
+    desc: Leop0ld's facebook
+    share_url: https://www.facebook.com/sharer.php
+    share_title: "?t="
+    share_link: "&amp;u="
+
+  - icon: github
+    url:  https://github.com/Leop0ld
+    desc: Leop0ld's GitHub
+    share_url:
+    share_title:
+    share_link:
+
+  - icon: twitter
+    url:  https://twitter.com/__leop0ld__
+    desc: Leop0ld's Twitter
+    share_url: http://twitter.com/share
+    share_title: "?text="
+    share_link: "&amp;url="

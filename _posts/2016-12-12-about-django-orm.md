@@ -64,26 +64,26 @@ SQL 쿼리문까지 신경 쓰기에는 django 하나의 개념을 전부 알기
 
 그래서 django를 이용해 ORM의 간단한 사용법을 위해 예를 들어보겠다.
 
-```python
+{% highlight python %}
 class Car(models.Model):
     name = models.CharField(max_length=32)
     price = models.PossitiveIntegerField()
-```
+{% endhighlight %}
 
 이러한 모델이 있다고 가정하겠다.
 
 요롷게 사용할 수 있다.
 
-```python
+{% highlight python %}
 Car.objects.all() # 전체 목록을 QuerySet 리스트로 반환
 Car.objects.get(조건) # Car들 중에 조건에 맞는 단 1개의 객체만 반환
 Car.objects.filter(조건) # Car들 중에 조건에 맞는 객체들의 리스트를 반환
 Car.objects.create(인자=값) # Car 객체를 인자로 넘겨준 값으로 생성
-```
+{% endhighlight %}
 
 등등... 더 많은 정보를 알고 싶다면 [django 공식문서](https://docs.djangoproject.com/en/1.10/ref/models/querysets/)로 가면 많은 것들을 확인할 수 있다.
 
-~~django 처럼 문서화 잘되어있는 오픈소스 프로젝트도 드묾 django 하세요 django~~
+<del>django 처럼 문서화 잘되어있는 오픈소스 프로젝트도 드묾 django 하세요 django</del>
 
 이상 django ORM 자랑을 마치고... 원래는 SQLAlchemy와 비교 도 해보고 싶었으나 SQLAlchemy에 대한 숙련도도 부족하고(사실 django ORM도 잘 쓰지는 않는거같고...) 해서 비교는 어려울 것 같고, 다음에 SQLAlchemy와 django ORM을 좀 더 잘 다루게 되었을 때를 기약하겠습니다.
 
