@@ -1,12 +1,9 @@
 ---
 layout: post
-title:  "React 공부하기"
-date:   2016-09-01
-excerpt: "Studying React"
-tag:
-- JavaScript
-- React
-comments: true
+title: "React 공부하기"
+date: 2016-09-01
+categories: React
+author: leop0ld
 ---
 
 React 공부하기

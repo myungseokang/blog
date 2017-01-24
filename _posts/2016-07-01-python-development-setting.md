@@ -1,15 +1,9 @@
 ---
 layout: post
-title:  "Python 개발환경 세팅하기"
-date:   2016-07-01
-excerpt: "Keep Calm and Code Python."
-tag:
-- Python
-- Ubuntu
-- pyenv
-- virtualenv
-- autoenv
-comments: true
+title: "Python 개발환경 세팅하기"
+date: 2016-07-01
+categories: Python
+author: leop0ld
 ---
 
 # Ubuntu Python 개발환경 세팅하기

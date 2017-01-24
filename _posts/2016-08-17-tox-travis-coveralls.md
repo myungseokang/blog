@@ -1,14 +1,9 @@
 ---
 layout: post
-title:  "Github, Tox, Travis CI and Coveralls"
-date:   2016-08-17
-excerpt: "Pycon 08-17"
-tag:
-- Travis CI
-- Tox
-- Coveralls
-- Github
-comments: true
+title: "Github, Tox, Travis CI and Coveralls"
+date: 2016-08-17
+categories: Python
+author: leop0ld
 ---
 
 ## Github

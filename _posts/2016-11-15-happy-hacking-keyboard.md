@@ -1,12 +1,9 @@
 ---
 layout: post
-title:  "드디어 HHKB BT를 만나다!"
-date:   2016-11-15
-excerpt: "Buy HHKB BT"
-tag:
-- HHKB BT
-- Keyboard
-comments: true
+title: "드디어 HHKB BT를 만나다!"
+date: 2016-11-15
+categories: Keyboard
+author: leop0ld
 ---
 
 HHKB BT

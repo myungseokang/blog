@@ -1,15 +1,9 @@
 ---
 layout: post
-title:  "TDD 알아보기"
-date:   2016-08-29
-excerpt: "Learning Test-Driven Development"
-tag:
-- Python
-- Django
-- Functional Test
-- Unit Test
-- Test-Driven Development
-comments: true
+title: "TDD 알아보기"
+date: 2016-08-29
+categories: Django
+author: leop0ld
 ---
 
 # TDD 알아보기

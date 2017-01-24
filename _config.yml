@@ -1,51 +1,57 @@
-# Site
-title:              Leop0ld
-bio:                "Leop0ld! Personal Tech Blog."
-description:        "Keep Calm and Code Python"
-reading_time:       true
-words_per_minute:   200
-logo:               'assets/img/profile_image.jpg'
-background:         'assets/img/placeholder-big.jpg'
-tiled_bg:           false   # Set this true if you want to tile your background image, otherwise it will be covered
-locale:             ko_KR
-url:                https://leop0ld.github.io
-
-# Jekyll
-permalink:          /:title/
-markdown:           kramdown
-highlighter:        rouge
-kramdown:
-  auto_ids:         true
-  footnote_nr:      1
-  entity_output:    as_char
-  toc_levels:       1..6
-  enable_coderay:   false
-mathjax:            true
-sass:
-  sass_dir:         _sass
-  style:            compressed
-
-# Comments
-disqus_shortname:   https-leop0ld-github-io
-
-# Social
-email:              l3pold7@gmail.com
-twitter:            leop0ld7
-facebook:           leop0ld
-github:             Leop0ld
-#stackoverflow:     123456/username   from a "http://stackoverflow.com/users/123456/username" link
-instagram:          myungseokang
-codepen:            Leop0ld
-
-# Gems
+# Build settings
 gems:
-  - jekyll-mentions
+  - jemoji
+  - jekyll-paginate
   - jekyll-feed
-  - jekyll-sitemap
-  - jekyll-gist
+  - jekyll-mentions
+  - jekyll-redirect-from
 
-jekyll-mentions:
-    base_url: "https://github.com"
+# Site settings
+title: "Leop0ld"
+description: "Personal TECH Blog!"
+email: "l3op0ld7@gmail.com"
+#blog logo
+logo: "/assets/img/profile.jpg"
+# blog cover
+cover: "/assets/img/cover.jpg"
 
-# Exclude list
-exclude: [README.md, Gemfile, Gemfile.lock, node_modules, gulpfile.js, package.json, _site, src, vendor, CNAME, LICENSE, Rakefile]
+authors:
+  leop0ld:
+    name: Myungseo Kang
+    image: /assets/img/profile.jpg
+
+paginate: 10
+
+url: "http://leop0ld.github.io" # the base hostname & protocol for your site
+baseurl: ""
+#used to display twitter cards
+twitter_handle: '@__leop0ld__'
+
+#fill in disqus shortname to use disqus
+disqus: 'https-leop0ld-github-io'
+
+timezone: Asia/Seoul
+
+# social icons and sharing options
+social:
+
+  - icon: facebook
+    url: http://fb.me/leop0ld
+    desc: Leop0ld's facebook
+    share_url: https://www.facebook.com/sharer.php
+    share_title: "?t="
+    share_link: "&amp;u="
+
+  - icon: github
+    url:  https://github.com/Leop0ld
+    desc: Leop0ld's GitHub
+    share_url:
+    share_title:
+    share_link:
+
+  - icon: twitter
+    url:  https://twitter.com/__leop0ld__
+    desc: Leop0ld's Twitter
+    share_url: http://twitter.com/share
+    share_title: "?text="
+    share_link: "&amp;url="

@@ -1,12 +1,9 @@
 ---
 layout: post
-title:  "살포시 JavaScript 진영에 발 들여놓기"
-date:   2016-11-05
-excerpt: "Start Studying JavaScript"
-tag:
-- JavaScript
-- Study
-comments: true
+title: "살포시 JavaScript 진영에 발 들여놓기"
+date: 2016-11-05
+categories: JavaScript
+author: leop0ld
 ---
 
 살포시 JavaScript 진영에 발 들여놓기

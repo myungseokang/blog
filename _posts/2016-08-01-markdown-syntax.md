@@ -1,13 +1,9 @@
 ---
 layout: post
-title:  "Markdown 문법 알아보기"
-date:   2016-08-01
-excerpt: "Learning Markdown Grammar"
-tag:
-- markdown
-- syntax
-- jekyll
-comments: true
+title: "Markdown 문법 알아보기"
+date: 2016-08-01
+categories: Markdown
+author: leop0ld
 ---
 
 ## HTML Elements

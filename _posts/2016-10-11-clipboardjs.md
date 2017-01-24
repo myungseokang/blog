@@ -1,12 +1,9 @@
 ---
 layout: post
-title:  "Bootstrap 없이 Clipboard.js 적용하기"
-date:   2016-10-11
-excerpt: "Apply Clipboard.js without Bootstrap"
-tag:
-- JavaScript
-- Clipboard.js
-comments: true
+title: "Bootstrap 없이 Clipboard.js 적용하기"
+date: 2016-10-11
+categories: JavaScript
+author: leop0ld
 ---
 
 Bootstrap 없이 Clipboard.js 적용하기

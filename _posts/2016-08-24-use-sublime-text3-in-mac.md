@@ -1,13 +1,9 @@
 ---
 layout: post
-title:  "Mac에서 Sublime Text3 사용하기"
-date:   2016-08-24
-excerpt: "Using Pyenv, Virtualenv, Autoenv in Mac"
-tag:
-- Mac
-- Sublime Text
-- Sublime Text3
-comments: true
+title: "Mac에서 Sublime Text3 사용하기"
+date: 2016-08-24
+categories: Mac
+author: leop0ld
 ---
 
 # Mac에서 Sublime Text3 설치하고 사용하기

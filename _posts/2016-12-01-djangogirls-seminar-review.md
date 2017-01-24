@@ -1,12 +1,9 @@
 ---
 layout: post
-title:  "Django Girls Seoul 11월 세미나 발표자 후기"
-date:   2016-12-01
-excerpt: "Review Django Girls Seoul Nov Seminar."
-tag:
-- Django Girls
-- Django
-comments: true
+title: "Django Girls Seoul 11월 세미나 발표자 후기"
+date: 2016-12-01
+categories: Django
+author: leop0ld
 ---
 
 # Django Girls Seoul 11월 세미나 발표자 후기

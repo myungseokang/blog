@@ -1,14 +1,9 @@
 ---
 layout: post
-title:  "Buy Macbook Pro Retina!"
-date:   2016-08-22
-excerpt: "Macbook Pro Retina"
-tag:
-- Mac
-- Macbook Pro Retina
-- Macbook
-- Apple
-comments: true
+title: "Buy Macbook Pro Retina!"
+date: 2016-08-22
+categories: Mac
+author: leop0ld
 ---
 
 ## Macbook Pro Retina 구입!
