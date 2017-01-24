@@ -1,14 +1,9 @@
 ---
 layout: post
-title:  "Django에서 PostgreSQL 사용하기"
-date:   2016-07-05
-excerpt: "Using PostgreSQL in Django"
-categories:
-- Python
-- Ubuntu
-- Django
-- PostgreSQL
-comments: true
+title: "Django에서 PostgreSQL 사용하기"
+date: 2016-07-05
+categories: Django
+author: leop0ld
 ---
 
 # Django에서 PostgreSQL 사용하기

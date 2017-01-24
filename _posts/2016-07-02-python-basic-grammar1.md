@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  "Python 기초 문법 알아보기 - 1"
-date:   2016-07-02
+title: "Python 기초 문법 알아보기 - 1"
+date: 2016-07-02
 categories: Python
 author: leop0ld
 ---

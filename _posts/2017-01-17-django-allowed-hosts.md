@@ -1,11 +1,9 @@
 ---
 layout: post
 title: "Django ALLOWED_HOSTS 관련 문제"
-date:   2017-01-17
-excerpt: "Problem about ALLOWED_HOSTS in Django"
-categories:
-- Django
-comments: true
+date: 2017-01-17
+categories: Django
+author: leop0ld
 ---
 
 최근에 회사에서 Django 프로젝트(아주 간단한 It worked! 프로젝트) 를 Python 3.4.5 + django 1.10.5 + Nginx + uWSGI 를 사용하여 배포를 해보려고 하다가 난관에 봉착했다.

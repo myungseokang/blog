@@ -1,13 +1,9 @@
 ---
 layout: post
-title:  "Mac에서 Homebrew 설치하고 사용하기"
-date:   2016-08-23
-excerpt: "Using Homebrew in Mac"
-categories:
-- Mac
-- MacBook
-- Homebrew
-comments: true
+title: "Mac에서 Homebrew 설치하고 사용하기"
+date: 2016-08-23
+categories: Mac
+author: leop0ld
 ---
 
 # Mac에서 Homebrew 사용하기 + Sublime Text 사용하기

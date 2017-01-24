@@ -1,12 +1,9 @@
 ---
 layout: post
-title:  "Django REST Framework 공부하기"
-date:   2016-07-06
-excerpt: "Studying Django REST Framework"
-categories:
-- Python
-- Django Rest Framework
-comments: true
+title: "Django REST Framework 공부하기"
+date: 2016-07-06
+categories: Django
+author: leop0ld
 ---
 
 # Django REST Framework 공부하기

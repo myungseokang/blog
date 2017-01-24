@@ -1,11 +1,9 @@
 ---
 layout: post
 title: "Node.js 개념 정리"
-date:   2017-01-08
-excerpt: "Conceptual Theorem of Node.js"
-categories:
-- Node.js
-comments: true
+date: 2017-01-08
+categories: Nodejs
+author: leop0ld
 ---
 
 # Node.js 개념 정리

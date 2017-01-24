@@ -1,12 +1,9 @@
 ---
 layout: post
 title: "Django에서 settings.py 분리하기"
-date:   2016-09-21
-excerpt: "Separate settings.py in Django"
-categories:
-- Django
-- settings
-comments: true
+date: 2016-09-21
+categories: Django
+author: leop0ld
 ---
 
 Django에서 settings.py 분리하기

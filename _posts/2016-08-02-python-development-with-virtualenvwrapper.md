@@ -1,14 +1,9 @@
 ---
 layout: post
-title:  "Ubuntu에서 virtualenv + virtualenvwrapper 사용해서 python 개발환경 세팅하기"
-date:   2016-08-02
-excerpt: "Using Virtualenv + Virtualenvwrapper at Ubuntu"
-categories:
-- Python
-- Ubuntu
-- Virtualenv
-- virtualenvwrapper
-comments: true
+title: "Ubuntu에서 virtualenv + virtualenvwrapper 사용해서 python 개발환경 세팅하기"
+date: 2016-08-02
+categories: Python
+author: leop0ld
 ---
 
 # Ubuntu에서 virtualenv + virtualenvwrapper 사용해서 python 개발환경 세팅하

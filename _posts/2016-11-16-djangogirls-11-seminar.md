@@ -1,12 +1,9 @@
 ---
 layout: post
-title:  "Django Girls Seoul 11월 세미나 발표자를 맡게 되었습니다!"
-date:   2016-11-16
-excerpt: "Django Girls Seoul November Seminar"
-categories:
-- Django
-- Django Girls
-comments: true
+title: "Django Girls Seoul 11월 세미나 발표자를 맡게 되었습니다!"
+date: 2016-11-16
+categories: Django
+author: leop0ld
 ---
 
 Django Girls Seminar에서 발표를 하게된 이유

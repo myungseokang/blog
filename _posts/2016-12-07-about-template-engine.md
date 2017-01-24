@@ -1,13 +1,9 @@
 ---
 layout: post
 title: "Template Engine에 대해"
-date:   2016-12-11
-excerpt: "About Template Engine"
-categories:
-- Template Engine
-- django Template
-- Jinja2
-comments: true
+date: 2016-12-11
+categories: Django
+author: leop0ld
 ---
 
 Template Engine에 대해
