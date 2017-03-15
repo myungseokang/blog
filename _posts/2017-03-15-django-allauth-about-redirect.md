@@ -1,12 +1,12 @@
 ---
 layout: post
-title: "django-allauth 라이브러리의 redirect에 대해"
+title: "django-allauth 소셜로그인 후의 redirect에 대해"
 date: 2017-03-15
 categories: Django
 author: leop0ld
 ---
 
-이번 포스팅은 django-allauth를 사용했을 때 login 한 뒤에 redirect 하는 것에 관련된 자료가 스택오버플로우나 다른 곳에 정리된 것이 없어서 정리해보려고 한다.
+이번 포스팅은 django-allauth를 사용했을 때 소셜로그인 한 뒤에 redirect 하는 것에 관련된 자료가 스택오버플로우나 다른 곳에 정리된 것이 없어서 정리해보려고 한다.
 
 ## 원래는 작동했었는데...
 
