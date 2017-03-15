@@ -60,21 +60,21 @@ Python 에서 `HttpResponseRedirect` 를 return 했다고 판단. 그래서 Pyth
 
 break point를 찍고 한 줄씩 실행시켜 가면서 하나하나 확인해봤다.
 
-문제는 django-allauth 쪽에서 정의되어 있는 `login_by_token` 이라는 함수였다. ([Github Link](https://github.com/pennersr/django-allauth/blob/master/allauth/socialaccount/providers/facebook/views.py#L73))
+문제는 django-allauth 쪽에서 정의되어 있는 `login_by_token` 이라는 함수였다. (<a href="https://github.com/pennersr/django-allauth/blob/master/allauth/socialaccount/providers/facebook/views.py#L73" target="_blank">Github Link</a>)
 
 여기서 보면 `ret` 이라는 놈을 return 한다.
 
-이 놈은 [여기](https://github.com/pennersr/django-allauth/blob/master/allauth/socialaccount/providers/facebook/views.py#L114)서 값을 return 받는다.
+이 놈은 <a href="https://github.com/pennersr/django-allauth/blob/master/allauth/socialaccount/providers/facebook/views.py#L114" target="_blank">여기</a> 서 값을 return 받는다.
 
 Pycharm 디버깅 모드에서는 한 depth를 파고 들어갈 수 있는 버튼이 있다.
 
 그걸 이용해서 파고 들어가봤다.
 
-그렇게 파고 들어가다보니 [이것](https://github.com/pennersr/django-allauth/blob/master/allauth/socialaccount/helpers.py#L56) 과 마주쳤다.
+그렇게 파고 들어가다보니 <a href="https://github.com/pennersr/django-allauth/blob/master/allauth/socialaccount/helpers.py#L56" target="_blank">이것</a> 과 마주쳤다.
 
 이 `perform_login` 함수가 거의 문제의 근원이었다.
 
-이걸 다시 파고 들어가보면 [이것](https://github.com/pennersr/django-allauth/blob/master/allauth/account/utils.py#L146) 과 마주친다.
+이걸 다시 파고 들어가보면 <a href="https://github.com/pennersr/django-allauth/blob/master/allauth/account/utils.py#L146" target="_blank">이것</a> 과 마주친다.
 
 이 떄쯤 2차 멘붕...
 
