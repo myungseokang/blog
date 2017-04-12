@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Django에서 POST 메서드를 처리하는 View 테스트하기"
+title: "테스트 초보의 테스트 삽질기 with Django"
 date: 2017-04-12
 categories: Django
 author: leop0ld
