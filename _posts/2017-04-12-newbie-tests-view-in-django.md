@@ -11,6 +11,33 @@ Test all the things!
 
 ![Test all the things!](/assets/img/testallthethings.png)
 
+2017.05.02 UPDATE
+---
+
+`django.test.Client` 의 `login()` 메서드는 email 로그인이 가능했다...
+
+```python
+self.client.login(email='l3opold7@gmail.com', password='password')
+```
+
+위와 같이 작성할 경우 로그인 처리가 된다. ( ~~역시 Django가 이런 처리를 안해놨을 리가 없어!~~ )
+
+그리고 또한 csrf token을 쓸 일이 꽤 있어서 TestCase의 메서드로 빼기로 했다.
+
+```python
+class BlahTest(TestCase):
+    def get_csrftoken(self):
+        """
+        Get csrf token
+        """
+        response = self.client.get('/')
+        return response.cookies.get('csrftoken')
+```
+
+이런 식으로 빼서 `self.get_csrftoken()` 식으로 썼다.
+
+<br>
+
 최근에 POST 메서드를 처리하는 View 를 다시 볼 일이 있어서 **아 이제는 진짜 제대로 된 테스트 코드를 짜보자!** 하는 마음으로 테스트 코드를 짜보기로 했다.
 
 지금 현재 프로젝트에는 [`circleci`](circleci.com) 가 붙어있고, [`pytest-django`](https://pytest-django.readthedocs.io/en/latest/) 와 [`flake8`](http://flake8.pycqa.org/en/latest/) 를 사용하고 있다.
