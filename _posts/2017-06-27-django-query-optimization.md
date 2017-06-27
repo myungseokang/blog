@@ -150,6 +150,16 @@ django debug toolbar는 개발 환경에서 사용되는 아주 유용한 도구
 
 저는 쿼리 최적화 작업을 하면서 거의 계속 봤었던 것 같습니다.
 
+아래는 debug toolbar 의 사용할 때 모습입니다.
+
+<img src="/assets/img/django-debug-toolbar-1.png" alt="django debug toolbar" style="max-height: 700px;" />
+
+이렇게 오른쪽 옆에 패널처럼 보이게 됩니다.
+
+![django debug toolbar](/assets/img/django-debug-toolbar-2.png)
+
+그리고 각 정보에 대해 세부적으로도 확인할 수 있고, 위처럼 중복된 쿼리는 **Duplicated** 라고 나타내줍니다.
+
 진짜 좋습니다. ~~debug toolbar 쓰세요. 두번 쓰세요.~~
 
 이상입니다. 읽어주셔서 감사합니다 :D
