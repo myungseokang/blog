@@ -45,6 +45,17 @@ SQL문을 확인해보니 inet 으로 type은 같았습니다.
 일단 처음에는 dump 파일에 south_migration~~~ 라는 table들이 눈에 띄었습니다.
 south가 없어졌으니 이 테이블또한 필요없다고 판단해서 dump 파일에서 제거해주었습니다.
 
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle"
+     style="display:block; text-align:center;"
+     data-ad-format="fluid"
+     data-ad-layout="in-article"
+     data-ad-client="ca-pub-1864899826477546"
+     data-ad-slot="2703362319"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
 그 다음에
 
 ```

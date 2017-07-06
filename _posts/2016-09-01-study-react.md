@@ -78,6 +78,16 @@ React의 특징을 알아보도록 하겠습니다.
 - state 는 컴포넌트 내에서 변경 가능한 데이터를 지칭합니다.
 - state 는 외부에서 데이터를 변경할 때, this.setState()를 사용해서 변경합니다.
 
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle"
+     style="display:block; text-align:center;"
+     data-ad-format="fluid"
+     data-ad-layout="in-article"
+     data-ad-client="ca-pub-1864899826477546"
+     data-ad-slot="2703362319"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # React 개발환경 세팅하기
 
@@ -161,6 +171,16 @@ $ npm init
 그리고 프로젝트의 구조는 위와 같습니다.
 이렇게 설정을 해줄 예정입니다.
 
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle"
+     style="display:block; text-align:center;"
+     data-ad-format="fluid"
+     data-ad-layout="in-article"
+     data-ad-client="ca-pub-1864899826477546"
+     data-ad-slot="2703362319"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 3. Dependency 설치
 

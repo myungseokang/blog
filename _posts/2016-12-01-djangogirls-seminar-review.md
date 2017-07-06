@@ -33,6 +33,17 @@ Django Girls Seoul 11월 세미나에서 발표하게 된 이유나 동기 같�
 발표에 대해서 제일 하고 싶은 말은 역시 말하는 부분에서 매끄럽지 못했고, 이런 규모의 사람들 앞에서 하는 발표도 처음이다 보니 진행에 있어서 많이 미숙했던 것 같다. 이렇다보니 시간이 45분 할당되어있었는데 35분도 못한 채로 발표를 끝마쳤다. 사실 아쉬움이 제일 많이 남았고, 뿌듯함, 즐거움 도 약간씩은 있었다.
 발표를 끝마친뒤 이대로 집 가기는 너무너무 아쉬워서 혼자서 옆에 있는 스타벅X에서 혼자 코딩했다!
 
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle"
+     style="display:block; text-align:center;"
+     data-ad-format="fluid"
+     data-ad-layout="in-article"
+     data-ad-client="ca-pub-1864899826477546"
+     data-ad-slot="2703362319"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
 ## 다음에 발표자로 서게 될 기회가 다시 찾아온다면?
 
 내게 "**다음에도 발표를 할 것이냐**" 라고 물으신다면 당연히 "**네**" 라고 말할 수 있다.

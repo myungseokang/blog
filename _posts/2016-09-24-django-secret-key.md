@@ -78,6 +78,17 @@ SECRET_KEY = get_secret('SECRET_KEY') # my-secret-key
 이렇게 분리해주는 것이 **설정 파일 패턴** 이고, 환경 변수 패턴은 환경 변수에 대한 지식이 어느정도 필요합니다.
 막 어려운 부분은 아니니(그리고 대부분의 개발자 분들이라면 알고 계실듯) 쉽게 하실 수 있습니다.
 
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle"
+     style="display:block; text-align:center;"
+     data-ad-format="fluid"
+     data-ad-layout="in-article"
+     data-ad-client="ca-pub-1864899826477546"
+     data-ad-slot="2703362319"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
 ## 환경 변수 패턴
 
 linux or OS X 기준으로 설명하겠습니다(윈도우 사용자분들에게는 미리 사과의 말씀을...)

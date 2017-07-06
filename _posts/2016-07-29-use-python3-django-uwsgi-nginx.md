@@ -6,7 +6,7 @@ categories: Django
 author: leop0ld
 ---
 
-# EC2에서 Nginx+uWSGI로 Python3로 작성한 django 앱 배포하
+# EC2에서 Nginx+uWSGI로 Python3로 작성한 django 앱 배포하기
 > Python 3.x 버전 기준
 
 매우 많이 참고한 곳
@@ -70,6 +70,16 @@ collectstatic 명령어 쓸 때, settings.py에 static_root는 설정되어 있�
 마지막으로 runserver로 확인함
 잘 실행된다면 uwsgi 설정쪽으로 넘어감
 
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle"
+     style="display:block; text-align:center;"
+     data-ad-format="fluid"
+     data-ad-layout="in-article"
+     data-ad-client="ca-pub-1864899826477546"
+     data-ad-slot="2703362319"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 2. uWSGI 설정
 

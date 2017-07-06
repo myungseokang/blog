@@ -68,6 +68,16 @@ An explicit wait is code you define to wait for a certain condition to occur bef
 implicit wait 같은 경우에는 그 시간내에 로딩이 되지 않을 경우 테스트의 결과가 의도한대로 나오지 않을 수 있기때문에 explicit wait을 쓰는 것이 편합니다.
 Never Use Stupid Wait!
 
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle"
+     style="display:block; text-align:center;"
+     data-ad-format="fluid"
+     data-ad-layout="in-article"
+     data-ad-client="ca-pub-1864899826477546"
+     data-ad-slot="2703362319"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 **Running selenium on AWS**
 

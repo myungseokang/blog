@@ -29,6 +29,17 @@ settings 부분도 많이 바뀌었습니다.
 Django 1.6에서는 ```TEMPLATE_DEBUG = DEBUG``` 이런 식으로 관리했으나 
 Django 1.10에서는 ```TEMPLATE = {...}``` 이런 식으로 Dict 형태로 관리해서 이 부분또한 변경해주어야 했습니다.
 
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle"
+     style="display:block; text-align:center;"
+     data-ad-format="fluid"
+     data-ad-layout="in-article"
+     data-ad-client="ca-pub-1864899826477546"
+     data-ad-slot="2703362319"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
 ## 3. 그 밖의 외부 라이브러리
 
 그 밖에 Django에 붙여서 사용하던 외부 라이브러리들 중에도 에러를 뱉는 부분이 있어서 그 부분또한 봐줬어야 했습니다.
