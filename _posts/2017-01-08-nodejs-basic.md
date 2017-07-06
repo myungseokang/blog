@@ -68,6 +68,16 @@ EventEmitter를 이용해서 이벤트를 발생시킬 수도 있다.
 
 > 조대협님의 [글](http://bcho.tistory.com/876) 중 일부
 
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle"
+     style="display:block; text-align:center;"
+     data-ad-format="fluid"
+     data-ad-layout="in-article"
+     data-ad-client="ca-pub-1864899826477546"
+     data-ad-slot="2703362319"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 이러한 Node.js 를 내가 선택한 이유
 

@@ -54,6 +54,17 @@ JS와 Python을 같이 보던 도중 개발자 도구의 `Network` 탭을 봤는
 
 여기서부터 오기가 돋았다.
 
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle"
+     style="display:block; text-align:center;"
+     data-ad-format="fluid"
+     data-ad-layout="in-article"
+     data-ad-client="ca-pub-1864899826477546"
+     data-ad-slot="2703362319"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
 ## 2차 멘붕의 시작
 
 Python 에서 `HttpResponseRedirect` 를 return 했다고 판단. 그래서 Python도 Pycharm을 이용해서 break point를 찍고 디버깅 모드로 실행했다. ( ~~JetBrain 사랑합니다. 디버깅 짱편함~~ )

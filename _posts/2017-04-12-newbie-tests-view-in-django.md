@@ -107,6 +107,17 @@ class UserViewTest(TestCase):
 
 그렇다는 건 위 코드의 `response` 가 `HttpResponseForbidden` 라는 건데, 원래는 `HttpResponseRedirect` 여야 했다.
 
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle"
+     style="display:block; text-align:center;"
+     data-ad-format="fluid"
+     data-ad-layout="in-article"
+     data-ad-client="ca-pub-1864899826477546"
+     data-ad-slot="2703362319"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
 실패를 겪고 다시 도전
 ---
 

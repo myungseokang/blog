@@ -62,6 +62,16 @@ D3S Hackathon 의 시작은 9XD 송년회 모임에서 대덕마이스터고 친
 
 저번에 다른 학교도 요청이 많아서 요번에는 전체 특성화고 / 마이스터고 대상으로 하고 선정하는 방법으로 하지 않을까 싶다.(뇌피셜... 정해진 건 아무것도 없을 것 같다.)
 
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle"
+     style="display:block; text-align:center;"
+     data-ad-format="fluid"
+     data-ad-layout="in-article"
+     data-ad-client="ca-pub-1864899826477546"
+     data-ad-slot="2703362319"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## GDG KC Firebased Hackathon 의 시작
 

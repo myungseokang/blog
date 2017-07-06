@@ -86,6 +86,17 @@ polls/
 
 이것또한 뒤에서 설명해보겠다.
 
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle"
+     style="display:block; text-align:center;"
+     data-ad-format="fluid"
+     data-ad-layout="in-article"
+     data-ad-client="ca-pub-1864899826477546"
+     data-ad-slot="2703362319"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
 2. Command Python 파일 작성하기
 
 Command Python 파일은 단 1개의 조건이 필요하다.

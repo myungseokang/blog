@@ -22,6 +22,16 @@ AWS 에서 제공하는 PaaS 서비스인 EB 는 자체만으로는 과금이 �
 
 다만 RDS, EC2, Elastic Load Balancer, EBS 등등을 사용하게 되면 과금이 될 수 있으니 **주의**하세요!
 
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle"
+     style="display:block; text-align:center;"
+     data-ad-format="fluid"
+     data-ad-layout="in-article"
+     data-ad-client="ca-pub-1864899826477546"
+     data-ad-slot="2703362319"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ### 0. virtualenv 만들기
 
