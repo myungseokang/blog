@@ -66,6 +66,16 @@ ALTER ROLE
 
 이제 데이터베이스쪽 설정은 끝났습니다.
 
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle"
+     style="display:block; text-align:center;"
+     data-ad-format="fluid"
+     data-ad-layout="in-article"
+     data-ad-client="ca-pub-1864899826477546"
+     data-ad-slot="2703362319"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 2. Django 설정
 
