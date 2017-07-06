@@ -44,6 +44,17 @@ select\_related 와 prefetch\_related 도 마찬가지다. (내부적으로 JOIN
 
 이제 이것에 대해 알아보도록 하겠다.
 
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle"
+     style="display:block; text-align:center;"
+     data-ad-format="fluid"
+     data-ad-layout="in-article"
+     data-ad-client="ca-pub-1864899826477546"
+     data-ad-slot="2703362319"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
 ## 설명 시작하기 앞서
 
 아래와 같은 모델 구조에서 간단하게 select\_related, prefetch\_related 를 이해해보려고 한다.
