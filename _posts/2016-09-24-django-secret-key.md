@@ -1,9 +1,13 @@
 ---
 layout: post
-title: "Django에서 SECRET_KEY 관리하기"
-date: 2016-09-24
-categories: Django
+title: "django에서 SECRET_KEY 관리하기"
+categories: posts
+excerpt: "Manage SECRET_KEY in django"
+tags: [django]
 author: leop0ld
+comments: true
+share: true
+date: 2016-09-24
 ---
 
 Django에서 SECRET_KEY 관리하기

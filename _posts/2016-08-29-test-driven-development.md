@@ -1,9 +1,13 @@
 ---
 layout: post
-title: "TDD 알아보기"
-date: 2016-08-29
-categories: Django
+title: "TDD(Test-Driven Development) 알아보기"
+categories: posts
+excerpt: "Studying TDD(Test-Driven Development)"
+tags: [study]
 author: leop0ld
+comments: true
+share: true
+date: 2016-08-29
 ---
 
 # TDD 알아보기

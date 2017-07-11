@@ -1,9 +1,13 @@
 ---
 layout: post
 title: "Python 기초 문법 알아보기 - 1"
-date: 2016-07-02
-categories: Python
+categories: posts
+excerpt: "Studying python basic grammer - 1"
+tags: [ubuntu, postgresql]
 author: leop0ld
+comments: true
+share: true
+date: 2016-07-02
 ---
 
 # Python 문법 알아보기 - 1

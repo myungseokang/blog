@@ -1,9 +1,13 @@
 ---
 layout: post
 title: "Python 개발환경 세팅하기"
-date: 2016-07-01
-categories: Python
+categories: posts
+excerpt: "Building a Python development environment"
+tags: [pyenv, virtualenv, autoenv, python]
 author: leop0ld
+comments: true
+share: true
+date: 2016-07-01
 ---
 
 # Ubuntu Python 개발환경 세팅하기

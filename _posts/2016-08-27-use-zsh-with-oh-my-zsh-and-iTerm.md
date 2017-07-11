@@ -1,16 +1,20 @@
 ---
 layout: post
-title: "Mac에서 oh my zsh와 iTerm 사용하기"
-date: 2016-08-27
-categories: Mac
+title: "mac OS 에서 oh my zsh와 iTerm2 사용하기"
+categories: posts
+excerpt: "Using oh my zsh and iTerm2 in mac OS"
+tags: [mac-os]
 author: leop0ld
+comments: true
+share: true
+date: 2016-08-27
 ---
 
-# Mac에서 oh my zsh와 iTerm 사용하기
+# Mac에서 oh my zsh와 iTerm2 사용하기
 
-먼저 iTerm을 설치해줍니다.
+먼저 iTerm2 을 설치해줍니다.
 
-[iTerm Download](https://www.iterm2.com/)
+[iTerm2 Download](https://www.iterm2.com/)
 
 잘 받았다면 이제 zsh 설정을 해봅시다.
 

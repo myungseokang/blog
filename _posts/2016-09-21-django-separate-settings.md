@@ -1,16 +1,20 @@
 ---
 layout: post
-title: "Django에서 settings.py 분리하기"
-date: 2016-09-21
-categories: Django
+title: "django 에서 settings.py 여러 개로 분리하기"
+categories: posts
+excerpt: "Splitting settings.py into mutiple pieces in django"
+tags: [django]
 author: leop0ld
+comments: true
+share: true
+date: 2016-09-21
 ---
 
-Django에서 settings.py 분리하기
+django 에서 settings.py 여러 개로 분리하기
 =====
 
 ## settings.py 분리의 필요성
-Django 프로젝트를 진행하다보면 여러 개발자가 한 프로젝트를 작업하게 됩니다.
+django 프로젝트를 진행하다보면 여러 개발자가 한 프로젝트를 작업하게 됩니다.
 또한 각 개발자분들마다 사용하던(익숙한) 데이터베이스와 환경 설정 등이 다를 수도 있습니다.
 그리고 제일 중요한 부분은 production에서는 settings.py의 DEBUG가 False 여야 하는데 개발 환경에서는 TRUE로 해놓고 작업하다가 다시 False로 바꿔주고 서버로 올려줘야하는 아주아주 귀찮은 일이 닥치게 됩니다.
 항상 귀찮음이 사람들을 발전시키는 것 같습니다.
@@ -20,7 +24,7 @@ Django 프로젝트를 진행하다보면 여러 개발자가 한 프로젝트�
 
 일반적으로 3개의 settings, 많으면 4,5개 까지도 가능합니다.
 
-## settings.py 분리하기
+## settings.py 여러 개로 분리하기
 
 아래는 <project_name>/<project_name>/settings(폴더) 의 경로에 있는 파일의 구조입니다.
 

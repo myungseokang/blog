@@ -1,9 +1,13 @@
 ---
 layout: post
-title: "Django 1.6에서 1.10(1.11)로 마이그레이션 할 때 막혔던 부분 정리"   
-date: 2016-09-24
-categories: Django
+title: "django 1.6에서 1.10(1.11)로 마이그레이션 할 때 막혔던 부분 정리"
+categories: posts
+excerpt: "Cleanup when I migrated from django 1.6 to 1.10 (1.11)"
+tags: [django]
 author: leop0ld
+comments: true
+share: true
+date: 2016-09-28
 ---
 
 Django 1.6에서 1.10(1.11)로 마이그레이션 할 때 막혔던 부분 정리

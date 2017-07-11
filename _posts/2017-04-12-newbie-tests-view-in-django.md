@@ -1,15 +1,21 @@
 ---
 layout: post
-title: "테스트 초보의 테스트 삽질기 with Django"
-date: 2017-04-12
-categories: Django
+title: "테스트 초보의 테스트 삽질기 with django"
+categories: posts
+excerpt: "Newbie's test shovel with django"
+tags: [django]
 author: leop0ld
+comments: true
+share: true
+date: 2017-04-12
 ---
 
 Test all the things!
 ---
 
-![Test all the things!](/assets/img/testallthethings.png)
+<div style="text-align: center;">
+<img src="/assets/img/testallthethings.png" alt="Test all the things!" />
+</div>
 
 2017.05.02 UPDATE
 ---

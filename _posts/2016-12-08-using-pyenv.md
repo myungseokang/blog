@@ -1,9 +1,13 @@
 ---
 layout: post
 title: "pyenv, virtualenv, autoenv 를 사용하여 Python 개발환경 구축하기"
-date: 2016-12-08
-categories: Python
+categories: posts
+excerpt: "Building a develop environment using pyenv, virtualenv, autoenv"
+tags: [python, pyenv, virtualenv, autoenv]
 author: leop0ld
+comments: true
+share: true
+date: 2016-12-08
 ---
 
 ## 2017.01.13 추가

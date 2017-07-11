@@ -1,9 +1,13 @@
 ---
 layout: post
 title: "Ubuntu에서 PostgreSQL 사용하기"
-date: 2016-07-04
-categories: Python
+categories: posts
+excerpt: "Using PostgreSQL in Ubuntu"
+tags: [ubuntu, postgresql]
 author: leop0ld
+comments: true
+share: true
+date: 2016-07-04
 ---
 
 # Ubuntu에서 PostgreSQL 사용하기

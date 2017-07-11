@@ -1,9 +1,13 @@
 ---
 layout: post
 title: "django ORM에 대해"
-date: 2016-12-12
-categories: Django
+categories: posts
+excerpt: "About django ORM"
+tags: [django]
 author: leop0ld
+comments: true
+share: true
+date: 2016-12-12
 ---
 
 django ORM에 대해

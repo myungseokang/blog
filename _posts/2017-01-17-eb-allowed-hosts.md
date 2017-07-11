@@ -1,9 +1,13 @@
 ---
 layout: post
-title: "AWS Elastic Beanstalk Health Check 관련 문제"
-date: 2017-01-17
-categories: Django
+title: "AWS Elastic Beanstalk Health check 관련 문제"
+categories: posts
+excerpt: "Problem about AWS Elastic Beanstalk's Health check"
+tags: [django]
 author: leop0ld
+comments: true
+share: true
+date: 2017-01-17
 ---
 
 이 부분은 월요일 장고 스터디에서 주워들은 내용이다. 일단은 직접 겪어보지는 못했고, **겪을법한 일** 이라서 정리를 해두려고 한다.

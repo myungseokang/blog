@@ -1,9 +1,13 @@
 ---
 layout: post
-title: "select_related, prefetch_related 그리고 debug toolbar"
-date: 2017-06-27
-categories: django
+title: "select\_related, prefetch\_related 그리고 debug toolbar"
+categories: posts
+excerpt: "select\_related, prefetch\_related and debug toolbar"
+tags: [django]
 author: leop0ld
+comments: true
+share: true
+date: 2017-06-27
 ---
 
 > 이 글은 django 1.11 LTS 버전 기준으로 작성되었습니다.

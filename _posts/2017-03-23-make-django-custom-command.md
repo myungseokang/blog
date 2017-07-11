@@ -1,9 +1,13 @@
 ---
 layout: post
-title: "Django 나만의 Command 만들어보기"
-date: 2017-03-23
-categories: Django
+title: "django 나만의 Command 만들어보기"
+categories: posts
+excerpt: "Make my custom command in django"
+tags: [django]
 author: leop0ld
+comments: true
+share: true
+date: 2017-03-23
 ---
 
 Django 에는 `Command` 가 있다.

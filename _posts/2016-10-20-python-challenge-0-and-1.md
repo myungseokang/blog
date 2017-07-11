@@ -1,9 +1,13 @@
 ---
 layout: post
 title: "Python Challenge 0번, 1번 풀이"
-date: 2016-10-20
-categories: Python
+categories: posts
+excerpt: "Solving python challenge 0, 1"
+tags: [python]
 author: leop0ld
+comments: true
+share: true
+date: 2016-10-20
 ---
 
 Python Challenge 0번, 1번 풀이

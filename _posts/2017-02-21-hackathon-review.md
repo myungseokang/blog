@@ -1,9 +1,13 @@
 ---
 layout: post
 title: "Hackathon에 대한 회고"
-date: 2017-02-21
-categories: Review
+categories: posts
+excerpt: "Review about Hack-a-thon"
+tags: [django]
 author: leop0ld
+comments: true
+share: true
+date: 2017-02-21
 ---
 
 ~~지금 너무 졸려서 의식의 흐름대로 작성하였으니 양해 부탁드립니다~~

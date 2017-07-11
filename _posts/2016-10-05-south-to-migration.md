@@ -1,9 +1,13 @@
 ---
 layout: post
-title: "Django South에서 Migration으로 넘어가기"   
-date: 2016-09-24
-categories: Django
+title: "django South에서 Migration으로 넘어가기"
+categories: posts
+excerpt: "Moving from django South to Migration"
+tags: [django]
 author: leop0ld
+comments: true
+share: true
+date: 2016-10-05
 ---
 
 South에서 Migration으로 넘어가기

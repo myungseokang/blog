@@ -1,12 +1,16 @@
 ---
 layout: post
-title: "EC2에서 Nginx+uWSGI로 python3로 작성한 django 앱 배포하기"
-date: 2016-07-29
-categories: Django
+title: "EC2에서 Nginx + uWSGI로 python3로 작성한 django project 배포하기"
+categories: posts
+excerpt: "Deploying django project made by python3 using Nginx + uWSGI"
+tags: [django, nginx, uwsgi, aws, deploy]
 author: leop0ld
+comments: true
+share: true
+date: 2016-07-29
 ---
 
-# EC2에서 Nginx+uWSGI로 Python3로 작성한 django 앱 배포하기
+# EC2에서 Nginx + uWSGI로 Python3로 작성한 django project 배포하기
 > Python 3.x 버전 기준
 
 매우 많이 참고한 곳
