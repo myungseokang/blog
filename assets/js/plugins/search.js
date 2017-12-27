@@ -96,14 +96,7 @@ function toggleLoadingClass() {
  * @return null
  */
 function getSearchResults(callbackFunction) {
-    $.ajax({
-        type: 'GET',
-        url: BASE_URL + jsonFeedUrl,
-        dataType: 'json',
-        headers: {
-          'Access-Control-Allow-Origin': '*'
-        }
-    }).done(callbackFunction);
+    $.get(BASE_URL + jsonFeedUrl, callbackFunction, "json");
 }
 
 

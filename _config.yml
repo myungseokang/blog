@@ -5,7 +5,7 @@ locale: ko_KR
 description: Leop0ld's personal TECH blog!
 logo: profile.jpg
 search: true
-url: https://leop0ld.github.io
+url: http://blog.leop0lg.org
 
 # Jekyll configuration
 
@@ -37,7 +37,7 @@ exclude: ["lib", "config.rb", "Capfile", "config", "log", "Rakefile", "Rakefile.
 # Site owner
 owner:
   name: Leop0ld
-  avatar: profile.jpg 
+  avatar: profile.jpg
   email: l3opold7@gmail.com
   disqus-shortname: https-leop0ld-github-io
   twitter: __leop0ld__
@@ -54,6 +54,6 @@ owner:
     plus: #username
     analytics: UA-84594819-1
     verify:
-    ad-client: 
-    ad-slot: 
+    ad-client:
+    ad-slot:
   bing-verify:
