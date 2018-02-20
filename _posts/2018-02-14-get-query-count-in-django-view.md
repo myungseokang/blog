@@ -33,10 +33,3 @@ date: 2018-02-14
 <a href="https://docs.djangoproject.com/ko/2.0/faq/models/" target="_blank">해당 공식문서 바로가기</a>
 
 감사합니다 :D
-
-<script src="https://utteranc.es/client.js"
-        repo="leop0ld/leop0ld.github.io"
-        branch="master"
-        issue-term="Django view 안에서 쿼리 개수 확인하기"
-        async>
-</script>
