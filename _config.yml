@@ -2,7 +2,7 @@
 
 title: Leop0ld
 locale: ko_KR
-description: Leop0ld's personal TECH blog!
+description: Leop0ld's TECH blog!
 logo: profile.jpg
 search: true
 url: http://blog.leop0ld.org
@@ -39,7 +39,6 @@ owner:
   name: Leop0ld
   avatar: profile.jpg
   email: l3opold7@gmail.com
-  disqus-shortname: https-leop0ld-github-io
   twitter: __leop0ld__
   facebook: leop0ld
   github: leop0ld
