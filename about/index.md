@@ -20,6 +20,6 @@ image:
 
 - **Interested**: Python, Django, Golang, Docker, DevOps, Open Source, Testing, Automation ... etc
 
-- **[Resume](http://blog.leop0ld.org/resume/){:target="_blank"}**
+- **[Resume](http://resume.leop0ld.org/)**
 
 - 그리고 **Leopold 사의 키보드**, **고양이** 와 **힙합** 을 좋아합니다.
