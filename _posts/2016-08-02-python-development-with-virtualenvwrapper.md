@@ -7,6 +7,7 @@ tags: [python, ubuntu, virtualenv]
 author: leop0ld
 comments: true
 share: true
+ads: true
 date: 2016-08-02
 ---
 

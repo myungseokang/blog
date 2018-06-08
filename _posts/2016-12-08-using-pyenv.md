@@ -7,6 +7,7 @@ tags: [python, pyenv, virtualenv, autoenv]
 author: leop0ld
 comments: true
 share: true
+ads: true
 date: 2016-12-08
 ---
 

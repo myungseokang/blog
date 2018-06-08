@@ -7,6 +7,7 @@ tags: [django, nginx, uwsgi, aws, deploy]
 author: leop0ld
 comments: true
 share: true
+ads: true
 date: 2016-07-29
 ---
 

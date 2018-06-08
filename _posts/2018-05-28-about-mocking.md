@@ -7,6 +7,7 @@ tags: [python, test, mocking]
 author: leop0ld
 comments: true
 share: true
+ads: true
 date: 2018-05-31
 ---
 

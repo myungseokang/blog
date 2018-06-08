@@ -7,6 +7,7 @@ tags: [django]
 author: leop0ld
 comments: true
 share: true
+ads: true
 date: 2017-03-23
 ---
 

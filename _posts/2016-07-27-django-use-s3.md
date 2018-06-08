@@ -7,6 +7,7 @@ tags: [django, aws]
 author: leop0ld
 comments: true
 share: true
+ads: true
 date: 2016-07-27
 ---
 

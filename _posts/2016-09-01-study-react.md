@@ -7,6 +7,7 @@ tags: [javascript, react, study]
 author: leop0ld
 comments: true
 share: true
+ads: true
 date: 2016-09-01
 ---
 
