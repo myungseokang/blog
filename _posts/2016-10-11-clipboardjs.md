@@ -174,6 +174,11 @@ tooltipped 클래스와 tooltipped-s 클래스가 쓰인 곳을 가져와보니 
 
 <script src="https://gist.github.com/Leop0ld/e8b7234421049657767b11ef5cd4181d.js"></script>
 
+아래는 데모입니다.
+
+<p data-height="265" data-theme-id="0" data-slug-hash="dKOWev" data-default-tab="css,result" data-user="Leop0ld" data-embed-version="2" data-pen-title="copy text demo" class="codepen">See the Pen <a href="https://codepen.io/Leop0ld/pen/dKOWev/">copy text demo</a> by Myungseo Kang (<a href="https://codepen.io/Leop0ld">@Leop0ld</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+<script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+
 이렇게 쓰니 tooltip이 잘 떠주었습니다.
 도움 되셨길 바랍니다.
 
