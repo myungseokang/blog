@@ -17,6 +17,8 @@ date: 2018-07-17
 Django 공식 문서에서 **쿼리 표현식 (Query Expressions)**이란 `create`, `update`, `filter`, `order by`, `annotation`, `aggreagate`의 일부로 사용할 수 있는 값 혹은 표현식을 일컫는다.
 이러한 쿼리 표현식의 핵심이 되는 클래스가 바로 `F()` 객체이다.
 
+## F()...?
+
 Django 공식 문서에서 `F()` 객체에 대한 정의를 보자면,
 
 > F() 객체는 모델의 필드 혹은 어노테이트된 열의 값을 나타낸다.
@@ -58,6 +60,8 @@ reporter = Reporters.objects.get(pk=reporter.pk)
 reporter.refresh_from_db()
 ```
 
+## F() 객체 쓰면 뭐가 좋나요?
+
 `F()` 객체의 이점은
 
 1. Python이 아닌 데이터베이스에서 해당 연산을 처리한다는 점과,
@@ -70,21 +74,6 @@ reporter.refresh_from_db()
 그렇게 되면 1번 스레드의 작업은 손실된다.
 
 하지만 `F()` 객체를 사용하게 될 경우, Python에서 해당 값을 메모리에 가지고 있다가 처리하는 것이 아니라 데이터베이스에서 해당 작업을 처리하기 때문에 이러한 경쟁 조건을 피할 수 있다.
-
-이렇게 좋은 `F()` 객체를 사용할 때도 주의해야할 점이 있다.
-
-모델 필드에 할당된 `F()` 객체는 모델 인스턴스를 저장한 후에도 유지되며 각 `save()`에 적용됩니다.
-
-```python
-reporter = Reporters.objects.get(name='Tintin')
-reporter.stories_filed = F('stories_filed') + 1
-reporter.save()
-
-reporter.name = 'Tintin Jr.'
-reporter.save()
-```
-
-처음 `reporter.stories_filed` 값이 1이었다고 가정하고, 위의 코드를 실행하게 되면 `reporter.stories_filed` 값은 3이 되어있다.
 
 `F()` 객체는 어노테이션, 필터링, 정렬에도 굉장히 효과적으로 사용할 수 있다.
 
@@ -119,6 +108,23 @@ Ticket.objects.annotate(
 ```
 
 그리고 `F()` 객체가 `ForeignKey`를 참조하게 될 경우, `F()` 객체는 모델 인스턴스 대신 `primary key`를 반환한다.
+
+## 주의해야할 점이 있나요?
+
+이렇게 좋은 `F()` 객체를 사용할 때도 **주의해야할 점이 있다**.
+
+모델 필드에 할당된 `F()` 객체는 모델 인스턴스를 저장한 후에도 유지되며 각 `save()`에 적용된다.
+
+```python
+reporter = Reporters.objects.get(name='Tintin')
+reporter.stories_filed = F('stories_filed') + 1
+reporter.save()
+
+reporter.name = 'Tintin Jr.'
+reporter.save()
+```
+
+처음 `reporter.stories_filed` 값이 1이었다고 가정하고, 위의 코드를 실행하게 되면 `reporter.stories_filed` 값은 3이 되어있다.
 
 외에도 `F()` 객체의 사용법은 굉장히 다양하다. 때에 따라 적절한 사용법을 찾으면 좋을 것 같다.
 
