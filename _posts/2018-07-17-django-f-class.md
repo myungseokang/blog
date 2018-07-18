@@ -68,13 +68,17 @@ reporter.refresh_from_db()
 2. 몇몇 작업에 필요한 쿼리 수를 줄일 수 있다는 점이다.
 3. 그리고 `F()` 객체의 또 다른 이점은 **경쟁 조건 (race condition)을 피할 수 있다는 점이다**.
 
-만약 Python 스레드가 여러 개가 실행되고 있던 경우에, 2개의 스레드(1번, 2번)에서 `reporter.stories_filed` 값을 1 증가시켰다고 가정해보자.
+만약 Python 스레드가 여러 개가 실행되고 있던 경우에, 2개의 스레드(1번, 2번)에서 `reporter.stories_filed` 값을 1 증가시키는 작업을 하고 있다고 가정해보자.
 
-그러면 1번 스레드가 `reporter.stories_filed` 값을 데이터베이스에서 Python 메모리로 가져와서 값을 1 증가시킨 뒤, 데이터베이스에 저장한다.
+더해서 `reporter.stories_filed` 값이 1이었다고 가정해보자.
 
-그리고 2번 스레드가 동시에 `reporter.stories_filed` 값에 접근해서 1번 스레드에서 증가시키기 전과 같은 값을 가져왔었다고 치자.
+그러면 1번 스레드는 데이터베이스에서 Python 메모리로 값을 가져와서 Python 연산자를 통해 1 증가시킨 값인 2를 데이터베이스에 저장하려고 한다.
+
+그리고 2번 스레드가 1번 스레드가 데이터베이스에 채 저장하기 전에 값에 접근해서 1번 스레드에서 증가시키기 전과 같은 값인 2를 계산해냈다.
 
 그렇게 되면 2번 스레드는 1번 스레드가 했었던 작업과 정확히 똑같은 작업을 하게 되고, 1번 스레드의 작업은 손실된다.
+
+즉, 2개의 스레드를 돌려 2를 증가하게 하고 싶었으나 1밖에 증가시키지 못한 것이다.
 
 하지만 `F()` 객체를 사용하게 될 경우, Python에서 해당 값을 메모리에 가지고 있다가 처리하는 것이 아니라 데이터베이스에서 해당 작업을 처리하기 때문에 이러한 경쟁 조건을 피할 수 있다.
 
@@ -102,7 +106,7 @@ company = Company.objects.annotate(
 
 만약 필드가 다른 타입이라면, `F()` 객체에서는 `output_field`를 지정할 수 없으니 아래처럼 `ExpressionWrapper`로 해당 표현식을 감싸줘야 한다.
 
-```
+```python
 from django.db.models import DateTimeField, ExpressionWrapper, F
 
 Ticket.objects.annotate(
