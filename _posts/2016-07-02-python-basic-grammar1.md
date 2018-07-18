@@ -3,7 +3,7 @@ layout: post
 title: "Python 기초 문법 알아보기 - 1"
 categories: posts
 excerpt: "Studying python basic grammer - 1"
-tags: [ubuntu, postgresql]
+tags: [python, grammar]
 author: leop0ld
 comments: true
 share: true

@@ -3,7 +3,7 @@ layout: post
 title: "select\_related, prefetch\_related 그리고 debug toolbar"
 categories: posts
 excerpt: "select\_related, prefetch\_related and debug toolbar"
-tags: [django]
+tags: [python, django]
 author: leop0ld
 comments: true
 share: true
@@ -114,17 +114,6 @@ N(여기서는 Car 모델)의 입장에서 바라볼 때 1(Person)은 1개밖에
 
 이런 경우에 select_related 를 사용한다.
 
-<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<ins class="adsbygoogle"
-     style="display:block; text-align:center;"
-     data-ad-format="fluid"
-     data-ad-layout="in-article"
-     data-ad-client="ca-pub-1864899826477546"
-     data-ad-slot="2703362319"></ins>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
-
 ## prefetch_related
 
 **prefetch_related** 는 반대로 M:N 에 관계에서 사용할 수 있고, 1:N 의 관계에서 1이 사용할 수 있다.
@@ -176,8 +165,8 @@ django debug toolbar는 개발 환경에서 사용되는 아주 유용한 도구
 
 ![django debug toolbar](/assets/img/django-debug-toolbar-2.png)
 
-그리고 각 정보에 대해 세부적으로도 확인할 수 있고, 위처럼 중복된 쿼리는 **Duplicated** 라고 나타내준다. (정말 편리하지 않은가... 꼭 쓰자!)
+그리고 각 정보에 대해 세부적으로도 확인할 수 있고, 위처럼 중복된 쿼리는 **Duplicated** 라고 나타내준다. 정말 편리하다.
 
-진짜 좋다. ~~debug toolbar 쓰세요. 두번 쓰세요.~~
+진짜 좋다. debug toolbar 꼭 쓰세요. 두 번 쓰세요.
 
 읽어주셔서 감사합니다 :D

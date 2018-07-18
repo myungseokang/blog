@@ -1,9 +1,9 @@
 ---
 layout: post
-title: "django 나만의 Command 만들어보기"
+title: "Django 나만의 Management Command 만들어보기"
 categories: posts
-excerpt: "Make my custom command in django"
-tags: [django]
+excerpt: "Make my management command in django"
+tags: [python, django]
 author: leop0ld
 comments: true
 share: true
@@ -11,11 +11,11 @@ ads: true
 date: 2017-03-23
 ---
 
-Django 에는 `Command` 가 있다.
+Django 에는 `Management Command` 가 있다.
 
-예를 들면 `python manage.py <command>` 혹은 `django-admin <command>` 로 사용한 것이 바로 `Command` 이다.
+예를 들면 `python manage.py <command>` 혹은 `django-admin <command>` 로 사용한 것이 바로 `Management Command` 이다.
 
-보통 사용하는 커맨드(Django 내장 Command)로는 아래와 같은 것들이 있다.
+보통 사용하는 Command(Django 내장 Command)로는 아래와 같은 것들이 있다.
 
 ```
 $ django-admin startapp
@@ -25,19 +25,19 @@ $ python manage.py runserver
 $ python manage.py shell
 ```
 
-등등 더 많은 내장 Command 가 있다.
+등등 더 많은 내장 Command가 있다.
 
 자세한 건 [공식문서](https://docs.djangoproject.com/en/1.10/ref/django-admin/#available-commands) 를 찾아가서 보면 된다.
 
-오늘 이야기하고 싶은 것은 이러한 내장 Command 가 아닌 내가 원하는 로직을 수행할 수 있는 **나만의 Custom Command** 를 만드는 것이다.
+오늘 이야기하고 싶은 것은 이러한 내장 Command가 아닌 내가 원하는 로직을 수행할 수 있는 **나만의 Management Command** 를 만드는 것이다.
 
-이러한 Custom Command 를 사실 어디다가 써야할 지 궁금해할 수도 있다.
+이러한 Management Command 를 사실 어디다가 써야할 지 궁금해할 수도 있다.
 
-(잘못된 방법일 수 있으나) 현재 회사에서는 Cron Task 를 이 Custom Command 를 만들어서 처리하고 있다.
+(잘못된 방법일 수 있으나) 현재 회사에서는 Cron Task 처리를 이 Management Command를 만들어서 하고 있다.
 
-이 말인 즉슨, Custom Command 를 만들어두고, Crontab 을 이용해서 일정 주기마다 그 명령어를 실행되게끔 하고 있다.
+이 말인 즉슨, Management Command를 만들어두고, Crontab을 이용해서 일정 주기마다 그 명령어를 실행되게끔 하고 있다.
 
-내 개인적인 생각으로는 Custom Command는 **정형화 되어있는 반복적인 작업** 에 좋지 않을까 생각된다.
+내 개인적인 생각으로는 Management Command는 **정형화 되어있는 반복적인 작업**에 좋지 않을까 생각된다.
 
 장고 공식 문서에도 이렇게 적혀있다.
 
@@ -47,9 +47,7 @@ Standalone scripts
 Custom management commands are especially useful for running standalone scripts or for scripts that are periodically executed from the UNIX crontab or from Windows scheduled tasks control panel.
 ```
 
-Custom Command 는 주기적으로 실행하는 UNIX의 Crontab이나 Window의 Schedule Task, 독립 실행형(?) 스크립트에 특히 유용하다. ( ~~영어를 잘 못합니다 ㅠㅠ~~ )
-
-라고 적혀있는 듯 하다.
+Management Command는 주기적으로 실행하는 UNIX의 Crontab이나 Window의 Schedule Task, 독립 실행형(?) 스크립트에 특히 유용하다.
 
 우리 회사는 그럭저럭 잘 쓰고 있는 모양이다.
 
@@ -59,7 +57,7 @@ Custom Command 는 주기적으로 실행하는 UNIX의 Crontab이나 Window의 
 
 1. 위치 선정
 
-Command 는 정해진 위치에 있어야만 실행 가능하다.
+Management Command는 정해진 위치에 있어야만 실행 가능하다.
 
 그 위치는 아래와 같다.
 
@@ -79,32 +77,21 @@ polls/
 
 위는 Django 에서 하나의 App 구조이다.
 
-참고로 Command 는 `<앱이름>/management/commands/<커맨드이름>.py` 와 같은 경로로 되어있다.
+참고로 Command는 `<앱이름>/management/commands/<커맨드이름>.py`와 같은 경로로 되어있다.
 
-따라서 위와 같이 파일을 만들어놓고 `INSTALLED_APPS` 에 `polls` 를 추가해주게 되면 `python manage.py closepoll` 이라는 나만의 커스텀 Command 를 사용할 수 있는 것이다.
+따라서 위와 같이 파일을 만들어놓고 `INSTALLED_APPS`에 `polls`를 추가해주게 되면 `python manage.py closepoll`이라는 나만의 Management Command를 사용할 수 있는 것이다.
 
 그리고 같이 나온 저 `_private.py` 라는 파일은 장고 공식 문서에 나온 설명에 따르면 저 파일은 커맨드로 사용할 수 없다고 한다.
 
-즉 커맨드로 만들고 싶지 않은 유틸 같은 것들을 작성하면 좋을 것 같다.
+즉 Management Command로 만들고 싶지 않으나 Management Command에서 공통적으로 사용되는 코드를 적기 좋을 것 같다.
 
-그러면 `closepoll.py` 라는 Python 파일은 어떻게 작성해야 할까?
+그러면 `closepoll.py`이라는 Python 파일은 어떻게 작성해야 할까?
 
-이것또한 뒤에서 설명해보겠다.
+이것 또한 뒤에서 설명해보겠다.
 
-<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<ins class="adsbygoogle"
-     style="display:block; text-align:center;"
-     data-ad-format="fluid"
-     data-ad-layout="in-article"
-     data-ad-client="ca-pub-1864899826477546"
-     data-ad-slot="2703362319"></ins>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
+2. Management Command 작성하기
 
-2. Command Python 파일 작성하기
-
-Command Python 파일은 단 1개의 조건이 필요하다.
+Management Command가 될 Python 파일은 단 1개의 조건이 필요하다.
 
 `Command` 라는 클래스를 작성하되, `BaseCommand` or `BaseCommand`의 서브 클래스 중 하나를 상속받는 클래스를 작성하여야 한다.
 
@@ -148,7 +135,7 @@ help 변수 같은 경우에는 `python manage.py closepoll --help` 를 입력�
 
 메서드 이름에서부터 인자를 추가해줄 것만 같이 생겼다.
 
-정답이다.( ~~응?~~ )
+정답이다.
 
 아래 코드를 보고 설명해보겠다.
 
@@ -216,14 +203,14 @@ Note
 When you are using management commands and wish to provide console output, you should write to self.stdout and self.stderr, instead of printing to stdout and stderr directly. By using these proxies, it becomes much easier to test your custom command. Note also that you don’t need to end messages with a newline character, it will be added automatically, unless you specify the ending parameter
 ```
 
-Custom Command 를 사용하고 콘솔 출력을 제공하려면 stdout 및 stderr에 직접 인쇄하는 대신 self.stdout 및 self.stderr 에 기록해야 한다고 적혀있다.
+Management Command 를 사용하고 콘솔 출력을 제공하려면 stdout 및 stderr에 직접 인쇄하는 대신 self.stdout 및 self.stderr 에 기록해야 한다고 적혀있다.
 
 그리고 또 end message 매개변수를 설정해주지 않으면 자동으로 개행문자가 추가된다.
 
 ending 인자를 굳이 정해줄 필요없다.
 
-Custom Command 에 대해서 조금 알아봤다.
+Management Command 에 대해서 조금 알아봤다.
 
 관련된 한글 자료가 많이 없는 듯 하여 작성해보았는데 도움이 되셨길 바랍니다.
 
-읽어주셔서 감사합니다 :)
+읽어주셔서 고맙습니다 :)

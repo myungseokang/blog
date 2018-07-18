@@ -1,9 +1,9 @@
 ---
 layout: post
-title: "django 에서 ALLOWED_HOSTS 관련 문제"
+title: "Django 에서 ALLOWED_HOSTS 관련 문제"
 categories: posts
 excerpt: "Problem about ALLOWED_HOSTS in django"
-tags: [django]
+tags: [python, django]
 author: leop0ld
 comments: true
 share: true
@@ -23,7 +23,7 @@ Nginx 설정도 분명히 잘 되어있고, uWSGI 설정도 문제 없어 보였
 
 나: "사수님 이거 Nginx + uWSGI 써서 요롷게 해봤는데 안되는데 왜 안되는 지 아시나여...?!"
 
-사수님: "엇 이거 django 버전이 몇인가요?"
+사수님: "엇 이거 Django 버전이 몇인가요?"
 
 나: "아마 최신버전일테니 1.10.5(최근에 릴리즈됨)일걸...요?!"
 
@@ -47,7 +47,7 @@ In older versions, ALLOWED_HOSTS wasn’t checked if DEBUG=True.
 This was also changed in Django 1.9.11 and 1.8.16 to prevent a DNS rebinding attack.
 ```
 
-내 멋대로 해석: 옛날 버전에서는 `ALLOWED_HOSTS` 가 `DEBUG=True` 일 때 체크되지 않았음. 근데 이거 **DNS rebinding** 공격 막기 위해서 바뀌었는데, Django 1.9.11 버전이랑 1.8.16 에서도 바뀜 ㅇㅇ.
+내 멋대로 해석: 옛날 버전에서는 `ALLOWED_HOSTS` 가 `DEBUG=True` 일 때 체크되지 않았음. 근데 이거 **DNS rebinding** 공격 막기 위해서 바뀌었는데, Django 1.9.11 버전이랑 1.8.16 에서도 바뀌었다는 것이다.
 
 Django 쪽에서도 꽤나 급하게 바꿨는 지 마이너한 버전 업그레이드에서 전부 올려버렸다.
 

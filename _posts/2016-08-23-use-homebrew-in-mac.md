@@ -3,7 +3,7 @@ layout: post
 title: "Mac에서 Homebrew 설치하고 사용하기"
 categories: posts
 excerpt: "Using Sublime Text3 in mac OS"
-tags: [mac-os]
+tags: [macos, homebrew]
 author: leop0ld
 comments: true
 share: true

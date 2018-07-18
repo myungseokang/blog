@@ -1,9 +1,9 @@
 ---
 layout: post
-title: "django에서 SECRET_KEY 관리하기"
+title: "Django에서 SECRET_KEY 관리하기"
 categories: posts
-excerpt: "Manage SECRET_KEY in django"
-tags: [django]
+excerpt: "Manage SECRET_KEY in Django"
+tags: [python, django]
 author: leop0ld
 comments: true
 share: true
@@ -11,15 +11,16 @@ ads: true
 date: 2016-09-24
 ---
 
-Django에서 SECRET_KEY 관리하기
-=====
+Django는 보안이 잘 되어있는 편입니다.
 
-Django는 보안이 잘되어 있는 편입니다.
 김승진 역자님은 보안에 신경을 덜 쓰기 위해 프레임워크를 사용한다고 말씀하셨습니다.
-그만큼 보안이 잘되어있지만 **SECRET_KEY** 라는 것을 settings.py에서 한번쯤은 보셨을 겁니다.
+
+그만큼 보안이 잘 되어있지만 **SECRET_KEY** 라는 것을 settings.py에서 한번쯤은 보셨을 겁니다.
 
 이것이 잘 막아주고 있는 편입니다.
-하지만 Github이나 Bitbucket 같은 원격 저장소에 업로드할 때 이 SECRET_KEY를 올리게 되면 보안에 매우매우매우매우매우매우 취약해집니다.(사실상 뚫어주세요 하는것이나 매한가지)
+
+하지만 Github이나 Bitbucket 같은 원격 저장소에 업로드할 때 이 SECRET_KEY를 올리게 되면 보안에 **매우매우매우매우** 취약해집니다.
+
 물론 private repo면 상관이 없으나 public으로 업로드를 한다면...? + AWS를 사용하면서 ACCESS_KEY와 SECRET_ACCESS_KEY를 같이 올렸다면...?
 
 개인 프로젝트 같은 경우 운영 서버에 올려서 돌리는 경우가 적기 때문에 피해가 덜 하지만 실제 운영중인 서비스가 이런 실수를 하게되면 정말 치명적입니다.
@@ -82,17 +83,6 @@ SECRET_KEY = get_secret('SECRET_KEY') # my-secret-key
 
 이렇게 분리해주는 것이 **설정 파일 패턴** 이고, 환경 변수 패턴은 환경 변수에 대한 지식이 어느정도 필요합니다.
 막 어려운 부분은 아니니(그리고 대부분의 개발자 분들이라면 알고 계실듯) 쉽게 하실 수 있습니다.
-
-<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<ins class="adsbygoogle"
-     style="display:block; text-align:center;"
-     data-ad-format="fluid"
-     data-ad-layout="in-article"
-     data-ad-client="ca-pub-1864899826477546"
-     data-ad-slot="2703362319"></ins>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
 
 ## 환경 변수 패턴
 

@@ -22,15 +22,15 @@ date: 2016-07-27
 
 ## 1. S3 설정하기
 
- - 버킷을 만드세요
- - 새로운 유저를 만드세요. AWS IAM으로 가서 'create new users'를 클릭하세요. 5개의 칸이 한꺼번에 뜬는데 한개만 만드셔도 무방합니다. 그리고 하단의  'Generate an access key for each User' 체크 박스를 선택하세요.
- - Credentials를 복사 해놓으셔도 좋고, 다운로드 받으셔도 좋습니다.
- - 생성하고 나서 Users카테고리에 가서 새로 생성한 User의 상세 화면으로 들어가세요
- - User ARN(Amazon Resource Name)을 복사 해놓으세요. 세팅에 쓰여요
- - 이제 S3버킷으로 돌아가세요.
- - 버킷을 선택하고 Properties의  Permissions에서 bucket policy를 클릭해서 수정해주세요.
- - 아래의 소스를 입력하시고, "BUCKET-NAME", "USER-ARN"만 자신의 상황에 맞게 변경해주시면 됩니다.
- - 첫번째 설정은 컨텐츠를  publicly readable하게 설정. 두번째 설정은 특정 유저가 S3에 작업 할 수 있는 모든 권한을 주는 것입니다.
+- 버킷을 만드세요.
+- 새로운 유저를 만드세요. AWS IAM으로 가서 'create new users'를 클릭하세요. 5개의 칸이 한꺼번에 뜨는데 한 개만 만드셔도 무방합니다. 그리고 하단의 'Generate an access key for each User' 체크 박스를 선택하세요.
+- Credentials을 복사 해놓으셔도 좋고, 다운로드 받으셔도 좋습니다.
+- 생성하고 나서 Users 카테고리로 가서 새로 생성한 User의 상세 화면으로 들어가세요.
+- User ARN(Amazon Resource Name)을 복사 해놓으세요. 세팅에 쓰여요.
+- 이제 S3 버킷으로 돌아가세요.
+- 버킷을 선택하고 Properties의 Permissions에서 bucket policy를 클릭해서 수정해주세요.
+- 아래의 소스를 입력하시고, "BUCKET-NAME", "USER-ARN"만 자신의 상황에 맞게 변경해주시면 됩니다.
+- 첫 번째 설정은 컨텐츠를 publicly readable하게 설정. 두번째 설정은 특정 유저가 S3에 작업 할 수 있는 모든 권한을 주는 것입니다.
 
 ```json
 {
@@ -62,7 +62,7 @@ date: 2016-07-27
 }
 ```
 
- - 만약 특정 누군가에게 추가 권한을 주고 싶다면, 아래와 같이 설정해준다. 아래 설정은 특정인에게 버킷에 있는 아이템을 복제해 갈수 있는 권한을 준느 것이다.
+- 만약 특정 누군가에게 추가 권한을 주고 싶다면, 아래와 같이 설정해준다. 아래 설정은 특정인에게 버킷에 있는 아이템을 복제해 갈수 있는 권한을 준느 것이다.
 
 ```json
     {

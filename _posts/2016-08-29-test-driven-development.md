@@ -3,7 +3,7 @@ layout: post
 title: "TDD(Test-Driven Development) 알아보기"
 categories: posts
 excerpt: "Studying TDD(Test-Driven Development)"
-tags: [study]
+tags: [tdd, test, study]
 author: leop0ld
 comments: true
 share: true

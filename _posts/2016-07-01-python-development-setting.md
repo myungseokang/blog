@@ -134,17 +134,6 @@ $ pyenv activate venv
 
 그리고 이런 복잡한 과정들을 폴더를 옮기면 자동으로 virtualenv를 바꿔주는 것이 autoenv입니다.
 
-<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<ins class="adsbygoogle"
-     style="display:block; text-align:center;"
-     data-ad-format="fluid"
-     data-ad-layout="in-article"
-     data-ad-client="ca-pub-1864899826477546"
-     data-ad-slot="2703362319"></ins>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
-
 ## 3. autoenv 설치하기
 
 autoenv는 폴더를 이동하면 자동으로 virtualenv가 설정되도록 해주는 것입니다.

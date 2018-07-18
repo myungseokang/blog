@@ -11,9 +11,6 @@ ads: true
 date: 2016-10-11
 ---
 
-Bootstrap 없이 Clipboard.js 적용하기
-===
-
 지금 진행중인 프로젝트에 Clipboard.js를 적용해야 하는데 Bootstrap을 사용하지 않아서 Copied라는 팝업을 띄우는 데에 많이 애를 먹었습니다;
 되게 간단한 부분이었음에도 불구하고 굉장한 삽질을 했기에 간단하게나마 적어보려고 합니다.
 

@@ -11,8 +11,8 @@ ads: true
 date: 2016-08-02
 ---
 
-# Ubuntu에서 virtualenv + virtualenvwrapper 사용해서 python 개발환경 세팅하
-> python 3.x 기준
+# Ubuntu에서 virtualenv + virtualenvwrapper 사용해서 python 개발환경 세팅하기
+> Python 3.x 기준
 
 ## 0. 필수 패키지 설치
 > pass
