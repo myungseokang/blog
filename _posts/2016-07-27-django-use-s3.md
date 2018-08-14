@@ -95,8 +95,6 @@ if DEBUG:
     MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 else:
-    DEFAULT_FILE_STORAGE = 'storages.backends.s3boto.S3BotoStorage'
-
     # AWS Setting
     AWS_REGION = 'ap-northeast-2'
     AWS_STORAGE_BUCKET_NAME = 'BUCKET_NAME'
