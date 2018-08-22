@@ -167,7 +167,7 @@ QuerySet에서 다른 데이터가 필요하다면 그냥 계산하세요.
 1. `display_inbox`가 `False`일 경우 데이터베이스 쿼리가 발생하지 않아서 QuerySet이 게으르기(lazy) 때문입니다.
 2. <a href="https://docs.djangoproject.com/ko/2.1/ref/templates/builtins/#std:templatetag-with" target="_blank">with</a>를 사용하면 나중에 사용할 수 있도록 `user.emails.all`을 변수에 저장하여 다시 사용할 수 있습니다.
 3. `{% raw %}{% if emails %}{% endraw %}` 행은 `QuerySet.__bool__()`이 호출되도록 합니다. 이 경우 `user.emails.all()` 쿼리가 데이터베이스에서 실행되고 최소한 첫 번째 행은 ORM 객체로 변환됩니다. 결과가 없으면 `False`를 반환하고 그렇지 않으면 `True`를 반환합니다.
-4. `{{ emails|length }}`를 사용하면 `QuerySet.__len__()`을 호출하여 다른 쿼리를 수행하지 않고 나머지 캐시를 채웁니다.
+4. `{% raw %}{{ emails|length }}{% endraw %}`를 사용하면 `QuerySet.__len__()`을 호출하여 다른 쿼리를 수행하지 않고 나머지 캐시를 채웁니다.
 5. `for` 루프는 이미 채워진 캐시를 반복합니다.
 
 전체적으로 이 코드는 하나 또는 0개의 데이터베이스 쿼리를 수행합니다. 수행된 유일한 의도적 최적화는 `with` 태그의 사용입니다.
