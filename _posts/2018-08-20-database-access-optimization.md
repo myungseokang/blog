@@ -96,15 +96,35 @@ QuerySet의 캐싱 동작을 사용하려면 <a href="https://docs.djangoproject
 - <a href="https://docs.djangoproject.com/ko/2.1/topics/db/sql/" target="_blank">raw SQL</a> 사용하기
     - 그래도 부족할 경우, 완전하게 raw SQL를 사용할 수도 있습니다.
 
-## 4. 고유하거나 인덱스된 열을 사용한 개별 객체 검색하는 경우
+## 4. 고유(`unique`)하거나 인덱스된 열을 사용한 개별 객체 검색하는 경우
 
 `get()`을 사용하여 개별 객체를 검색할 때 `unique` 또는 `db_index` 열을 사용하는 데는 두 가지 이유가 있습니다.
 
-첫 번째는 데이터베이스 인덱스로 인해 쿼리 속도가 빨라집니다.
+첫 번째, 데이터베이스 인덱스로 인해 쿼리 속도가 빨라집니다.
 
 또한 여러 객체가 조건과 일치하면 쿼리가 훨씬 느리게 실행될 수 있습니다.
 
-열에 고유한 제한 조건이 있으면 이것이 결코 발생하지 않을 것이기 때문입니다.
+열에 고유한 제한 조건이 있다면 위와 같은 현상이 일어나지 않을 것이기 때문에 `get()`을 사용할 때는 `unique`, `db_index` 된 열을 사용합니다.
+
+두 번째, 조회는 단 하나의 객체가 반환될 것이라고 보장하지 않습니다.
+
+쿼리가 두 개 이상의 객체와 일치하면 데이터베이스에서 모든 객체를 검색하여 전송합니다.
+
+수백 또는 수천 개의 레코드가 반환되면 이 페널티는 상당히 클 수 있습니다.
+
+<a href="https://docs.djangoproject.com/ko/2.1/topics/db/queries/#queryset-model-example" target="_blank">예시 Weblog 모델</a>
+
+```python
+# 이 코드보다
+>>> entry = Entry.objects.get(headline="News Item Title")
+```
+
+```python
+# 이 코드가 빠릅니다
+>>> entry = Entry.objects.get(id=10)
+```
+
+위 코드보다 아래 코드가 빠른 이유는 `id`라는 열이 데이터베이스에 의해 인덱스되었고, 고유하다는 것을 보장받기 때문입니다.
 
 ## 5. 필요한 항목은 즉시 검색하세요
 
