@@ -8,7 +8,7 @@ author: leop0ld
 comments: true
 share: true
 ads: true
-date: 2018-08-22
+date: 2018-08-20
 ---
 
 > 이 글은 Django 2.1 기준으로 작성되었습니다.<br/>
