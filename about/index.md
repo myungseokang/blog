@@ -13,13 +13,11 @@ image:
 
 - **Name** : 강명서 (Myungseo Kang, a.k.a **Leop0ld**)
 
-- **Mail** : <a href="mailto:l3opold7@gmail.com">l3opold7@gmail.com</a>
+- **Mail** : <a href="mailto:iam@leop0ld.org">iam@leop0ld.org</a>
 
 - **Who**
 : 게으르기 위해 부지런한 Software Engineer 가 되고 싶습니다.
 
 - **Interested**: Python, Django, Golang, Docker, DevOps, Testing, Automation ... etc
 
-- **[Resume](http://resume.leop0ld.org/)**
-
-- 그리고 **Leopold 사의 키보드**, **고양이** 를 좋아합니다.
+- 그리고 **키보드**, **고양이** 를 좋아합니다.
