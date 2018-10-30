@@ -5,18 +5,18 @@ My tech stacks
 ---
 [![StackShare](https://img.shields.io/badge/tech-stack-0690fa.svg?style=flat)](https://stackshare.io/Leop0ld/my-stack)
 
+
+
 Installation
 ---
 
-Require Ruby (at least 2.1)
-
 ```bash
-# Install gem
+$ brew update
+$ brew install rbenv
+$ rbenv install 2.3.8
+$ rbenv rehash
+$ rbenv global 2.3.8
 $ gem install bundler
-```
-
-``` bash
-# Install dependecies
 $ bundle install
 ```
 
