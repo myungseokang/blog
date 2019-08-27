@@ -46,9 +46,7 @@ OSC 가 왜 필요한지 설명하려면 기존의 MySQL `ALTER TABLE` 의 방�
 `WRITE` 락 거는 부분을 제거하고, 그 기능을 Trigger 를 사용해서 원본 테이블의 `READ`, `WRITE` 를 가능하게 했습니다.
 
 > GitHub 에서 사용하는 OSC 도구 <a href="https://github.com/github/gh-ost" target="_blank">gh-ost</a> 에서는 Trigger 를 사용하지 않는다고 합니다.
-> <a href="https://github.com/github/gh-ost/blob/master/doc/why-triggerless.md" target="_blank">트리거가 제약이 많고 위험부담이 있다고 말하고 있습니다.</a>
-> 대신 binary log stream 을 이용해서 변경 사항을 감지하고, 비동기적으로 고스트 테이블에 적용한다고 합니다.
-> 이 글에서는 `gh-ost` 에 대해서는 다루지 않습니다.
+> 자세한 이야기는 뒤에서!
 
 ### Online Schema Change 쉽게 못 쓰나?
 
@@ -98,6 +96,10 @@ Facebook OSC 의 작동 순서 및 방식에 관련된 글을 따로 작성할 �
 <img src="https://github.com/github/gh-ost/raw/master/doc/images/gh-ost-general-flow.png" alt="GitHub gh-ost flow image"/>
 
 다른 솔루션들은 전부 Trigger 로 문제점을 해결했는데, 유일하게 `gh-ost` 만 Triggerless Design 을 사용해서 제일 흥미로웠습니다.
+
+gh-ost 개발진은 <a href="https://github.com/github/gh-ost/blob/master/doc/why-triggerless.md" target="_blank">트리거가 제약이 많고 위험부담이 있다고 말하고 있습니다.</a>
+
+그래서 Trigger 대신 binary log stream 을 이용해서 변경 사항을 감지하고, 비동기적으로 고스트 테이블에 적용한다고 합니다.
 
 하지만, FK 지원이 되지 않고, <a href="https://github.com/github/gh-ost/blob/master/doc/requirements-and-limitations.md#limitations" target="_blank">일부 제약사항</a> 때문에 프로덕션에서는 일부분만 적용해볼 수 있을 것 같습니다.
 
