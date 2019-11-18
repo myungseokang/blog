@@ -5,7 +5,7 @@ locale: ko_KR
 description: TECH blog!
 logo: profile.jpg
 search: true
-url: https://blog.myungseokang.tech
+url: https://blog.myungseokang.dev
 
 # Jekyll configuration
 
@@ -36,12 +36,12 @@ exclude: ["lib", "config.rb", "Capfile", "config", "log", "Rakefile", "Rakefile.
 
 # Site owner
 owner:
-  name: Leop0ld
+  name: Myungseo Kang
   avatar: profile.jpg
-  email: iam@leop0ld.org
-  twitter: __leop0ld__
-  facebook: leop0ld
-  github: leop0ld
+  email: l3opold7@gmail.com
+  twitter: myungseokang
+  facebook: kangmyungseo
+  github: myungseokang
   stackexchange: https://stackoverflow.com/users/5506957/leop0ld
   linkedin: leop0ld
   instagram: #myungseo.kang
