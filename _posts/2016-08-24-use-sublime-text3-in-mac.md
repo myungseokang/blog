@@ -4,7 +4,7 @@ title: "macOS 에서 Sublime Text3 사용하기"
 categories: posts
 excerpt: "Using Sublime Text3 in macOS"
 tags: [macos, sublimetext3]
-author: leop0ld
+author: myungseokang
 comments: true
 share: true
 ads: true

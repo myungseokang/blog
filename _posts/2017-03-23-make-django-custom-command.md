@@ -4,7 +4,7 @@ title: "Django 나만의 Management Command 만들어보기"
 categories: posts
 excerpt: "Make my management command in django"
 tags: [python, django]
-author: leop0ld
+author: myungseokang
 comments: true
 share: true
 ads: true

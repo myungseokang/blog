@@ -4,7 +4,7 @@ title: "테스트 초보의 테스트 삽질기 with Django"
 categories: posts
 excerpt: "Newbie's test shovel with Django"
 tags: [test, python, django]
-author: leop0ld
+author: myungseokang
 comments: true
 share: true
 ads: true
@@ -93,7 +93,7 @@ class UserViewTest(TestCase):
         self.client.login(user)
 
         post_data = {
-            'name': 'leop0ld',
+            'name': 'myungseokang',
         }
 
         request = self.client.post(reverse('blah:blah'), data=post_data, follow=True)
@@ -102,7 +102,7 @@ class UserViewTest(TestCase):
         response = blah_view(request)
 
         self.assertRedirects(response, [(reverse('blah:blah2'), 302)])
-        self.assertEqual(user.name, 'leop0ld')
+        self.assertEqual(user.name, 'myungseokang')
 
 ```
 
@@ -173,7 +173,7 @@ class UserViewTest(TestCase):
 
         # POST를 보내기 위한 Form 데이터
         post_data = {
-            'name': 'leop0ld',
+            'name': 'myungseokang',
             'csrfmiddlewaretoken': csrf_token,
         }
 
@@ -187,7 +187,7 @@ class UserViewTest(TestCase):
 
         # POST 처리된 뒤 결과 비교
         self.assertEqual(response.status_code, 302)
-        self.assertEqual(user.name, 'leop0ld')
+        self.assertEqual(user.name, 'myungseokang')
 
 ```
 

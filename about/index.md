@@ -11,9 +11,9 @@ image:
 
 ## Profile
 
-- **Name** : 강명서 (Myungseo Kang, a.k.a **Leop0ld**)
+- **Name** : 강명서 (Myungseo Kang)
 
-- **Mail** : <a href="mailto:iam@leop0ld.org">iam@leop0ld.org</a>
+- **Mail** : <a href="mailto:l3opold7@gmail.com">l3opold7@gmail.com</a>
 
 - **Who**
 : 게으르기 위해 부지런한 Software Engineer 가 되고 싶습니다.

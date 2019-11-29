@@ -4,7 +4,7 @@ title: "Django에서 F() 객체 알아보기"
 categories: posts
 excerpt: "F expressions in Django"
 tags: [python, django, f-expressions]
-author: leop0ld
+author: myungseokang
 comments: true
 share: true
 ads: true

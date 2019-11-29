@@ -4,7 +4,7 @@ title: "select\_related, prefetch\_related 그리고 debug toolbar"
 categories: posts
 excerpt: "select\_related, prefetch\_related and debug toolbar"
 tags: [python, django]
-author: leop0ld
+author: myungseokang
 comments: true
 share: true
 ads: true

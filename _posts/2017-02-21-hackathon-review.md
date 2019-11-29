@@ -4,7 +4,7 @@ title: "Hackathon에 대한 회고"
 categories: posts
 excerpt: "Review about Hack-a-thon"
 tags: [django]
-author: leop0ld
+author: myungseokang
 comments: true
 share: true
 ads: true
@@ -96,7 +96,7 @@ GDG KC 슬랙에서 놀고 있었는데, 때마침 경완님이 Firebased Hackat
 
 더해서 그냥 나머지 시간에는 심심해서 졸렸다.
 
-그런 부분에서 나도 해커톤 할까 했는데 그냥 [중고나라 크롤링](https://github.com/Leop0ld/joonggo_crawling) 하는거 짜다가 말았다.
+그런 부분에서 나도 해커톤 할까 했는데 그냥 [중고나라 크롤링](https://github.com/myungseokang/joonggo_crawling) 하는거 짜다가 말았다.
 
 ## GDG 는 앞으로...
 

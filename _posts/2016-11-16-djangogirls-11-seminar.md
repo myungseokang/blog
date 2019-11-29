@@ -4,7 +4,7 @@ title: "Django Girls Seoul 11월 세미나 발표자를 맡게 되었습니다!"
 categories: posts
 excerpt: "I'm presenter at Django Girls Seoul Nov seminar"
 tags: [djangogirls, django]
-author: leop0ld
+author: myungseokang
 comments: true
 share: true
 ads: true

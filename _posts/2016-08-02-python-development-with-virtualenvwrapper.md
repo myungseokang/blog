@@ -4,7 +4,7 @@ title: "Ubuntu에서 virtualenv + virtualenvwrapper 사용해서 python 개발�
 categories: posts
 excerpt: "Building a develop envrionment using virtualenv, virtualenvwrapper in Ubuntu"
 tags: [python, ubuntu, virtualenv]
-author: leop0ld
+author: myungseokang
 comments: true
 share: true
 ads: true

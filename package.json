@@ -1,13 +1,13 @@
 {
-  "name": "Leop0ld's TECH Blog",
-  "author": "Leop0ld <l3opold7@gmail.com>",
-  "homepage": "https://blog.leop0ld.org",
+  "name": "Myungseo Kang DEV Blog",
+  "author": "myungseokang <l3opold7@gmail.com>",
+  "homepage": "https://blog.myungseokang.dev",
   "repository": {
     "type": "git",
-    "url": "git://github.com/leop0ld/blog.git"
+    "url": "git://github.com/myungseokang/blog.git"
   },
   "bugs": {
-    "url": "https://github.com/leop0ld/blog/issues"
+    "url": "https://github.com/myungseokang/blog/issues"
   },
   "engines": {
     "node": ">= 0.10.0"

@@ -4,7 +4,7 @@ title: "Planet Hackathon 후기"
 categories: posts
 excerpt: "Review of Planet Hackathon"
 tags: [hackathon]
-author: leop0ld
+author: myungseokang
 comments: true
 share: true
 ads: true
@@ -167,7 +167,7 @@ Planet Hackathon은 경쟁이 없는 해커톤이지만 최고상은 있다.
 
 <img src="/assets/img/leopold-750r.jpg" alt="레오폴드 750R PD 갈축"/>
 
-개인적으로 레오폴드라는 회사의 키보드를 좋아해서 닉네임으로 <b>"leop0ld"</b>를 사용하는데 이런 상품을 받게되어 너무 기쁘다.
+개인적으로 레오폴드라는 회사의 키보드를 좋아해서 닉네임으로 <b>"myungseokang"</b>를 사용하는데 이런 상품을 받게되어 너무 기쁘다.
 
 ## 느낀 점
 

@@ -4,7 +4,7 @@ title: "django 1.6에서 1.10(1.11)로 마이그레이션 할 때 막혔던 부�
 categories: posts
 excerpt: "Cleanup when I migrated from django 1.6 to 1.10 (1.11)"
 tags: [django]
-author: leop0ld
+author: myungseokang
 comments: true
 share: true
 ads: true
@@ -22,24 +22,13 @@ Django 1.6에서는 syncdb 라는 명령어로 South 라이브러리를 사용�
 하지만 Django가 1.7 버전으로 올라가면서 이것을 내장하고 migration 파일을 사용하도록 바뀌었습니다.
 
 따라서 이 변화를 따라가야했습니다.
-자세한 사항은 [링크](https://leop0ld.github.io/posts/south-to-migration)을 참고해주시면 감사하겠습니다.
+자세한 사항은 [링크](https://blog.myungseokang.dev/posts/south-to-migration)을 참고해주시면 감사하겠습니다.
 
 ## 2. Settings
 
 settings 부분도 많이 바뀌었습니다.
 Django 1.6에서는 ```TEMPLATE_DEBUG = DEBUG``` 이런 식으로 관리했으나 
 Django 1.10에서는 ```TEMPLATE = {...}``` 이런 식으로 Dict 형태로 관리해서 이 부분또한 변경해주어야 했습니다.
-
-<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<ins class="adsbygoogle"
-     style="display:block; text-align:center;"
-     data-ad-format="fluid"
-     data-ad-layout="in-article"
-     data-ad-client="ca-pub-1864899826477546"
-     data-ad-slot="2703362319"></ins>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
 
 ## 3. 그 밖의 외부 라이브러리
 

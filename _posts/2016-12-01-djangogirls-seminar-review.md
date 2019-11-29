@@ -4,7 +4,7 @@ title: "Django Girls Seoul 11월 세미나 발표자 후기"
 categories: posts
 excerpt: "Review about Django Girls Seoul Nov seminar"
 tags: [djangogirls, review]
-author: leop0ld
+author: myungseokang
 comments: true
 share: true
 ads: true
@@ -13,7 +13,7 @@ date: 2016-12-01
 
 > 이 글은 의식의 흐름 기법에 따라 작성되었기 때문에 그 부분은 양해를 부탁드립니다.
 
-Django Girls Seoul 11월 세미나에서 발표하게 된 이유나 동기 같은 것은 [전 포스트](https://blog.leop0ld.org/posts/djangogirls-11-seminar/)에서 확인하실 수 있습니다!
+Django Girls Seoul 11월 세미나에서 발표하게 된 이유나 동기 같은 것은 [전 포스트](https://blog.myungseokang.dev/posts/djangogirls-11-seminar/)에서 확인하실 수 있습니다!
 
 ## 세미나 발표자가 된 기분?
 

@@ -4,7 +4,7 @@ title: "EC2에서 Nginx + uWSGI로 python3로 작성한 django project 배포하
 categories: posts
 excerpt: "Deploying django project made by python3 using Nginx + uWSGI"
 tags: [django, nginx, uwsgi, aws, deploy]
-author: leop0ld
+author: myungseokang
 comments: true
 share: true
 ads: true

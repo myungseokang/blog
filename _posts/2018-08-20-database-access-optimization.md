@@ -4,7 +4,7 @@ title: "Django에서 DB 액세스 최적화하기"
 categories: posts
 excerpt: "Optimize DB access in Django"
 tags: [python, django, database, optimization]
-author: leop0ld
+author: myungseokang
 comments: true
 share: true
 ads: true

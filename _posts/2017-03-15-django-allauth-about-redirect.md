@@ -4,7 +4,7 @@ title: "django-allauth 소셜로그인 후의 redirect에 대해"
 categories: posts
 excerpt: "About redirect after social auth at django-allauth"
 tags: [python, django, django-allauth]
-author: leop0ld
+author: myungseokang
 comments: true
 share: true
 ads: true

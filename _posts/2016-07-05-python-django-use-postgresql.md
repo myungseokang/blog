@@ -4,7 +4,7 @@ title: "django 에서 PostgreSQL 사용하기"
 categories: posts
 excerpt: "Using PostgreSQL in django"
 tags: [django, postgresql]
-author: leop0ld
+author: myungseokang
 comments: true
 share: true
 ads: true

@@ -4,7 +4,7 @@ title: "Mocking 알아보기 with Python"
 categories: posts
 excerpt: "Mocking with Python"
 tags: [python, test, mocking]
-author: leop0ld
+author: myungseokang
 comments: true
 share: true
 ads: true
@@ -65,7 +65,7 @@ Mocking 이라는 작업은 위에서 말했듯이 실제 값이 아닌 가짜 �
 
 아래의 Gist에 작성된 코드를 이용해서 설명을 해보려한다.
 
-<script src="https://gist.github.com/Leop0ld/ee9d746fd1739ee9a58f5d74bb3b8674.js"></script>
+<script src="https://gist.github.com/myungseokang/ee9d746fd1739ee9a58f5d74bb3b8674.js"></script>
 
 먼저 `google_query` 라는 함수를 작성하고, 해당 함수는 `requests` 라는 라이브러리를 이용해 google 에 GET 요청을 보내고 해당 response 객체의 content 속성을 반환한다.
 

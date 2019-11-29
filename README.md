@@ -1,4 +1,4 @@
-Leop0ld's TECH blog :four_leaf_clover:
+Myungseo Kang's DEV Blog :four_leaf_clover:
 ===
 
 My tech stacks

@@ -4,7 +4,7 @@ title: "Django에서 SECRET_KEY 관리하기"
 categories: posts
 excerpt: "Manage SECRET_KEY in Django"
 tags: [python, django]
-author: leop0ld
+author: myungseokang
 comments: true
 share: true
 ads: true

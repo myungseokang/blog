@@ -4,7 +4,7 @@ title: "Bootstrap 없이 Clipboard.js 적용하기"
 categories: posts
 excerpt: "Applying Clipboard.js without Bootstrap"
 tags: [javascript]
-author: leop0ld
+author: myungseokang
 comments: true
 share: true
 ads: true
@@ -169,7 +169,7 @@ tooltipped 클래스와 tooltipped-s 클래스가 쓰인 곳을 가져와보니 
 
 그래서 이것을 한군데에 모아보면 다음과 같은 코드가 나옵니다.
 
-<script src="https://gist.github.com/Leop0ld/e8b7234421049657767b11ef5cd4181d.js"></script>
+<script src="https://gist.github.com/myungseokang/e8b7234421049657767b11ef5cd4181d.js"></script>
 
 아래는 데모입니다.
 

@@ -4,7 +4,7 @@ title: "Django에서 settings.py 여러 개로 분리하기"
 categories: posts
 excerpt: "Splitting settings.py into mutiple pieces in Django"
 tags: [python, django]
-author: leop0ld
+author: myungseokang
 comments: true
 share: true
 ads: true

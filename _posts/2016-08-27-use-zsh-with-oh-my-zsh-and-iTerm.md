@@ -4,7 +4,7 @@ title: "macOS 에서 oh my zsh와 iTerm2 사용하기"
 categories: posts
 excerpt: "Using oh my zsh and iTerm2 in macOS"
 tags: [macos]
-author: leop0ld
+author: myungseokang
 comments: true
 share: true
 ads: true

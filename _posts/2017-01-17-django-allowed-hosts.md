@@ -4,7 +4,7 @@ title: "Django 에서 ALLOWED_HOSTS 관련 문제"
 categories: posts
 excerpt: "Problem about ALLOWED_HOSTS in django"
 tags: [python, django]
-author: leop0ld
+author: myungseokang
 comments: true
 share: true
 ads: true

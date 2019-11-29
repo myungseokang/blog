@@ -4,7 +4,7 @@ title: "Online Schema Change"
 categories: posts
 excerpt: "Online Schema Change"
 tags: [database, mysql, online-schema-change]
-author: leop0ld
+author: myungseokang
 comments: true
 share: true
 ads: true

@@ -4,7 +4,7 @@ title: "django 에서 S3에 Static, media 파일 저장하고 사용하기"
 categories: posts
 excerpt: "Serving media files in django using S3"
 tags: [django, aws]
-author: leop0ld
+author: myungseokang
 comments: true
 share: true
 ads: true

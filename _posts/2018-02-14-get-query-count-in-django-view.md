@@ -4,7 +4,7 @@ title: "Django view 안에서 쿼리 개수 확인하기"
 categories: posts
 excerpt: "Get query count in Django view"
 tags: [django]
-author: leop0ld
+author: myungseokang
 comments: true
 share: true
 ads: true
@@ -19,7 +19,7 @@ date: 2018-02-14
 
 그럴 떄 쉽게 View 단에서 쿼리 개수를 console 에 나타낼 수 있는 방법을 소개해볼까 한다.
 
-<script src="https://gist.github.com/Leop0ld/ecd3993980d2204c317390da8b1668ad.js"></script>
+<script src="https://gist.github.com/myungseokang/ecd3993980d2204c317390da8b1668ad.js"></script>
 
 필자가 작성한 `connection.queries`는 `sql`과 `time`이라는 속성을 가진 Dictionary의 List를 반환하고 있다.
 

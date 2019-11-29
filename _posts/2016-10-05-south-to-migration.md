@@ -4,7 +4,7 @@ title: "django South에서 Migration으로 넘어가기"
 categories: posts
 excerpt: "Moving from django South to Migration"
 tags: [django]
-author: leop0ld
+author: myungseokang
 comments: true
 share: true
 ads: true

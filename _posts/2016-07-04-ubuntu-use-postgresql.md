@@ -4,7 +4,7 @@ title: "Ubuntu에서 PostgreSQL 사용하기"
 categories: posts
 excerpt: "Using PostgreSQL in Ubuntu"
 tags: [ubuntu, postgresql]
-author: leop0ld
+author: myungseokang
 comments: true
 share: true
 ads: true
