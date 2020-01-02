@@ -4,7 +4,7 @@ title: "Python 개발환경 세팅하기"
 categories: posts
 excerpt: "Building a Python development environment"
 tags: [pyenv, virtualenv, autoenv, python]
-author: leop0ld
+author: myungseokang
 comments: true
 share: true
 ads: true

@@ -4,7 +4,7 @@ title: "Python 기초 문법 알아보기 - 2"
 categories: posts
 excerpt: "Studying python basic grammer - 2"
 tags: [python, grammar]
-author: leop0ld
+author: myungseokang
 comments: true
 share: true
 ads: true
