@@ -30,8 +30,6 @@ date: 2021-02-15
 >>> # https://docs.python.org/ko/3/library/collections.abc.html#collections.abc.Sized
 >>> from collections import abc
 >>>
->>> abc.Sized
-<class \'collections.abc.Sized\'>
 >>> class Cup:
 ...     def __len__(self):
 ...         return 0
