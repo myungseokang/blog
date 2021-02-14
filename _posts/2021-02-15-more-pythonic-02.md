@@ -31,7 +31,7 @@ date: 2021-02-15
 >>> from collections import abc
 >>>
 >>> abc.Sized
-<class 'collections.abc.Sized'>
+<class \'collections.abc.Sized\'>
 >>> class Cup:
 ...     def __len__(self):
 ...         return 0
@@ -85,8 +85,6 @@ True
 ### iterator (반복자)
 
 `iterator` 클래스 역시 <a href="https://docs.python.org/ko/3/library/collections.abc.html#collections.abc.Iterator" target="_blank">Python 공식 문서</a>에서 확인해봤을 때, `__iter__()`, `__next__()` 메서드를 제공하는 클래스라고 설명되어 있습니다.
-
-예시를 작성해보자면,
 
 ```python
 class CardDeck:
