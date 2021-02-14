@@ -3,7 +3,7 @@ layout: post
 title: "More Pythonic #2 - Duck Typing, iterator"
 categories: posts
 excerpt: "More Pythonic #2 - Duck Typing, iterator"
-tags: [python]
+tags: [python, more pythonic]
 author: myungseokang
 comments: true
 share: true

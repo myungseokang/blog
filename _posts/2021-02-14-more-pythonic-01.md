@@ -3,7 +3,7 @@ layout: post
 title: "More Pythonic #1 - comprehension"
 categories: posts
 excerpt: "More Pythonic #1 - comprehension"
-tags: [python]
+tags: [python, more pythonic]
 author: myungseokang
 comments: true
 share: true
