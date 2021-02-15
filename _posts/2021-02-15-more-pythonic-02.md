@@ -51,11 +51,11 @@ True
 
 이제 본격적으로 `sequence` 부터 Python 공식 문서에서 알아보자면,
 
-> An iterable which supports efficient element access using integer indices via the __getitem__() special method and defines a __len__() method that returns the length of the sequence.
-> Some built-in sequence types are list, str, tuple, and bytes. Note that dict also supports __getitem__() and __len__(), but is considered a mapping rather than a sequence because the lookups use arbitrary immutable keys rather than integers.
+> An iterable which supports efficient element access using integer indices via the `__getitem__()` special method and defines a `__len__()` method that returns the length of the sequence.
+> Some built-in sequence types are list, str, tuple, and bytes. Note that dict also supports `__getitem__()` and `__len__()`, but is considered a mapping rather than a sequence because the lookups use arbitrary immutable keys rather than integers.
 
-> __getitem__() 메서드를 통해 정수 인덱스를 사용하여 효율적으로 개체에 접근을 지원하고, 시퀀스의 길이를 반환하는 __len__() 메서드를 정의하는 반복형입니다.
-> 내장 시퀀스 타입은 list, str, tuple, bytes 가 있습니다. dict 타입도 __getitem__(), __len__() 메서드를 지원하지만 조회할 때, 정수가 아닌 불변 (immutable) 키를 사용하기 때문에 시퀀스가 아닌 매핑으로 간주됩니다.
+> `__getitem__()` 메서드를 통해 정수 인덱스를 사용하여 효율적으로 개체에 접근을 지원하고, 시퀀스의 길이를 반환하는 `__len__()` 메서드를 정의하는 반복형입니다.
+> 내장 시퀀스 타입은 list, str, tuple, bytes 가 있습니다. dict 타입도 `__getitem__()`, `__len__()` 메서드를 지원하지만 조회할 때, 정수가 아닌 불변 (immutable) 키를 사용하기 때문에 시퀀스가 아닌 매핑으로 간주됩니다.
 
 요약하면, `sequence` 타입은 `__getitem__()`, `__len__()` 메서드를 지원하는 `iterable` 이 될 것 같습니다.
 
@@ -65,17 +65,17 @@ True
 먼저 `iterable` 에 대해서 알아보면, Python 공식 문서에서는 아래와 같이 설명하고 있습니다.
 
 > An object capable of returning its members one at a time.
-> Examples of iterables include all sequence types (such as list, str, and tuple) and some non-sequence types like dict, file objects, and objects of any classes you define with an __iter__() method or with a __getitem__() method that implements Sequence semantics.
+> Examples of iterables include all sequence types (such as list, str, and tuple) and some non-sequence types like dict, file objects, and objects of any classes you define with an `__iter__()` method or with a `__getitem__()` method that implements Sequence semantics.
 
 해석해보면,
 
 > 한 번에 한 개의 멤버를 반환할 수 있는 객체.
-> 예를 들어 모든 시퀀스 타입 (list, str, tuple) 을 포함한 반복형 그리고 논시퀀스 타입 (dict, file 객체 혹은 시퀀스 문법에 맞게 __iter__(), __getitem__() 메서드가 구현된 클래스) 가 있다.
+> 예를 들어 모든 시퀀스 타입 (list, str, tuple) 을 포함한 반복형 그리고 논시퀀스 타입 (dict, file 객체 혹은 시퀀스 문법에 맞게 `__iter__()`, `__getitem__()` 메서드가 구현된 클래스) 가 있다.
 
 
 설명에 따르면 `iterable` 타입은 `__iter__()` 메서드를 지원하거나 `__getitem__()` 메서드를 지원하는 클래스인데, <a href="https://docs.python.org/ko/3/library/collections.abc.html#collections.abc.Iterable" target="_blank">이 링크</a> 에서는 주의해서 봐야한다고 말하고 있습니다.
 
-> isinstance(obj, Iterable)를 검사하면 Iterable로 등록되었거나 __iter__() 메서드가 있는 클래스를 감지하지만, __getitem__() 메서드로 이터레이트 하는 클래스는 감지하지 않습니다. 객체가 이터러블인지를 확인하는 유일하게 신뢰성 있는 방법은 iter(obj)를 호출하는 것입니다.
+> `isinstance(obj, Iterable)` 를 검사하면 Iterable로 등록되었거나 `__iter__()` 메서드가 있는 클래스를 감지하지만, `__getitem__()` 메서드로 이터레이트 하는 클래스는 감지하지 않습니다. 객체가 Iterable 인지를 확인하는 유일하게 신뢰성 있는 방법은 `iter(obj)` 를 호출하는 것입니다.
 
 위의 말에 따라서 추상 베이스 클래스인 `abc.Iterable` 에는 `__iter__()` 만 포함되어 있지만, 실제로 객체가 이터러블한 지는 `iter()` 메서드를 호출해야 알 수 있다는 것입니다.
 
@@ -169,7 +169,7 @@ for card in deck:
 52
 ```
 
-for 문이 실행되면서 deck 객체에 대해서 `next()` 메서드가 호출되고, 기본적으로 `next()` 메서드에서 `StopIteration` 오류가 발생하면 iterator 가 중지되기 때문에 52까지만 출력되고 종료되는 것을 확인할 수 있습니다.
+for 문이 실행되면서 deck 객체에 대해서 `next()` 메서드가 호출되고, 기본적으로 `next()` 메서드에서 `StopIteration` 오류가 발생하면 `iterator` 가 중지되기 때문에 52까지만 출력되고 종료되는 것을 확인할 수 있습니다.
 
 이렇게 이번 포스팅에서는 Python 에서의 Duck Typing, `sequence`, `iterable`, `iterator` 에 대해서 적어보았습니다. 원래 이 포스팅에서는 `iterable`, `iterator` 에 대해 얘기하려고 했으나 작성하다보니 포스팅 내용이 길어지게 되었네요...
 
