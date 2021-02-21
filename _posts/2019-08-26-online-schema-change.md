@@ -3,7 +3,7 @@ layout: post
 title: "Online Schema Change"
 categories: posts
 excerpt: "Online Schema Change"
-tags: [database, mysql, online-schema-change]
+tags: [database, mysql, online schema change]
 author: myungseokang
 comments: true
 share: true
