@@ -19,7 +19,6 @@ date: 2021-02-21
 
 첫 도입 당시에는 되게 만족하면서 사용했다가 최근 여러가지 문제점으로 인해 다른 방식을 고민하게 되었는데, 문제점들을 하나씩 다뤄보겠습니다.
 
-![percona toolkit](https://www.google.com/url?sa=i&url=https%3A%2F%2Fhoing.io%2Farchives%2Ftag%2Fpercona-pt-online-schema-change&psig=AOvVaw2w89TVH9FYbDTmzRoztFOq&ust=1613999568299000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCKjR6omH--4CFQAAAAAdAAAAABAK)
 
 ### 첫 도입, 신문물을 접하다
 
